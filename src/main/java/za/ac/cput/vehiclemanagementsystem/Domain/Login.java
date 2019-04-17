@@ -1,10 +1,10 @@
 package za.ac.cput.vehiclemanagementsystem.Domain;
 
-import javafx.util.Builder;
 
 public class Login {
     private String username;
     private String password;
+    private String errorMessage;
 
     private Login()
     {
@@ -15,16 +15,7 @@ public class Login {
     {
         this.username = builder.username;
         this.password = builder.password;
-    }
-
-    public String getUsername()
-    {
-        return username;
-    }
-
-    public String getPassword()
-    {
-        return password;
+        this.errorMessage = builder.errorMsg;
     }
 
 
@@ -32,6 +23,7 @@ public class Login {
     {
         private String username;
         private String password;
+        private String errorMsg;
 
         public Builder username(String name)
         {
@@ -45,6 +37,12 @@ public class Login {
             return this;
         }
 
+        public Builder errorMessage(String msg)
+        {
+            this.errorMsg = msg;
+            return this;
+        }
+
         public Login build()
         {
             return new Login(this);
@@ -53,9 +51,25 @@ public class Login {
 
     }
 
+
+    public String getUsername()
+    {
+        return username;
+    }
+
+    public String getPassword()
+    {
+        return password;
+    }
+    public String getErrorMessage()
+    {
+        return errorMessage;
+    }
+
+
     public String toString()
     {
-        String str = "**** Login ****\n" + "\t Username: " + username + "Password: " + password;
+        String str = "**** Login ****\n" + "Username: " + getUsername() + "\nPassword: " + getPassword();
         return str;
     }
 
