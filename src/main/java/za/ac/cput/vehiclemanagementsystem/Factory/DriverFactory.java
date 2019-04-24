@@ -7,7 +7,7 @@ public class DriverFactory {
     public static Driver getDriver(int empNo, String name, String surname)
     {
         return new Driver.Builder()
-                .empNumb(empNo)
+                .driverNo(empNo)
                 .empName(name)
                 .empSurname(surname)
                 .build();

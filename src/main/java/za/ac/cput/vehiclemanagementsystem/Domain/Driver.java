@@ -2,7 +2,7 @@ package za.ac.cput.vehiclemanagementsystem.Domain;
 
 public class Driver {
 
-    private int empNumb;
+    private int driverNo;
     private String empName;
     private String empSurname;
 
@@ -13,7 +13,7 @@ public class Driver {
 
     public Driver(Builder builder)
     {
-        this.empNumb = builder.empNumb;
+        this.driverNo = builder.driverNo;
         this.empName = builder.empName;
         this.empSurname = builder.empSurname;
 
@@ -21,14 +21,14 @@ public class Driver {
 
     public static class Builder
     {
-        private int empNumb;
+        private int driverNo;
         private String empName;
         private String empSurname;
 
 
-        public Builder empNumb(int empNo)
+        public Builder driverNo(int empNo)
         {
-            this.empNumb = empNo;
+            this.driverNo = empNo;
             return this;
         }
 
@@ -53,7 +53,7 @@ public class Driver {
 
     public int getEmpNumb()
     {
-        return empNumb;
+        return driverNo;
     }
 
     public String getEmpName()
@@ -70,7 +70,7 @@ public class Driver {
     @Override
     public String toString() {
         return "------ Driver ------\n" +
-                "Emp Number : " + empNumb +
+                "Emp Number : " + driverNo +
                 "\nEmp Name : '" + empName + '\'' +
                 "\nEmp Surname : '" + empSurname + '\'';
     }

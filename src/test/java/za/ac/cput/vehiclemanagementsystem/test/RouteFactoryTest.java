@@ -1,9 +1,10 @@
-package za.ac.cput.vehiclemanagementsystem.Factory;
+package za.ac.cput.vehiclemanagementsystem.test;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import za.ac.cput.vehiclemanagementsystem.Domain.Routes;
+import za.ac.cput.vehiclemanagementsystem.Factory.RouteFactory;
 
 import static org.junit.Assert.*;
 
