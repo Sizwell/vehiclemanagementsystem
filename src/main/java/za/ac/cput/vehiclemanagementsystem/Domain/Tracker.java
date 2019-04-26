@@ -1,17 +1,17 @@
 package za.ac.cput.vehiclemanagementsystem.Domain;
 
-public class RegisterVehicle {
+public class Tracker {
 
     private String vinNo;
     private String model;
     private String make;
 
-    public RegisterVehicle()
+    public Tracker()
     {
 
     }
 
-    public RegisterVehicle(Builder builder)
+    public Tracker(Builder builder)
     {
         this.vinNo = builder.vinNo;
         this.model = builder.model;
@@ -42,9 +42,9 @@ public class RegisterVehicle {
             return this;
         }
 
-        public RegisterVehicle build()
+        public Tracker build()
         {
-            return new RegisterVehicle(this);
+            return new Tracker(this);
         }
     }
 
@@ -65,10 +65,11 @@ public class RegisterVehicle {
 
     @Override
     public String toString() {
-        return "------ Register Vehicle ------\n" +
+        return "------ Vehicle Tracker ------\n" +
                 "VIN No : " + vinNo +
                 "\nModel : '" + model + '\'' +
                 "\nMake : '" + make + '\'';
 
     }
+
 }

@@ -6,8 +6,6 @@ import org.junit.Test;
 import za.ac.cput.vehiclemanagementsystem.Domain.RemoveEmployee;
 import za.ac.cput.vehiclemanagementsystem.Factory.RemoveEmployeeFactory;
 
-import static org.junit.Assert.*;
-
 public class RemoveEmployeeFactoryTest {
 
     private RemoveEmployee removeEmployee;

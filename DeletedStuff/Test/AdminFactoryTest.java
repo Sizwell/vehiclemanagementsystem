@@ -4,9 +4,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import za.ac.cput.vehiclemanagementsystem.Domain.Admin;
-import za.ac.cput.vehiclemanagementsystem.Domain.AdminFactory;
-
-import static org.junit.Assert.*;
+import za.ac.cput.vehiclemanagementsystem.Factory.AdminFactory;
 
 public class AdminFactoryTest {
 

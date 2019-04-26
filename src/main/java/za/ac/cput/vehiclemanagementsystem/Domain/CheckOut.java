@@ -1,16 +1,16 @@
 package za.ac.cput.vehiclemanagementsystem.Domain;
 
-public class UpdateEmployee {
+public class CheckOut {
 
     private int eNo;
     private String eName;
 
-    public UpdateEmployee()
+    public CheckOut()
     {
 
     }
 
-    public UpdateEmployee(Builder builder)
+    public CheckOut(Builder builder)
     {
         this.eNo = builder.eNo;
         this.eName = builder.eName;
@@ -33,9 +33,9 @@ public class UpdateEmployee {
             return this;
         }
 
-        public UpdateEmployee build()
+        public CheckOut build()
         {
-            return new UpdateEmployee(this);
+            return new CheckOut(this);
         }
 
     }
@@ -50,7 +50,7 @@ public class UpdateEmployee {
 
     @Override
     public String toString() {
-        return "------ Update Employee ------" +
+        return "------ Employee Check-out------" +
                 "\nEmployee No : " + eNo +
                 "\nEmployee Name : '" + eName + '\'';
     }

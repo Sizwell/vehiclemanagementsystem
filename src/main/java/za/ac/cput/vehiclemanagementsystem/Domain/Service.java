@@ -1,30 +1,38 @@
 package za.ac.cput.vehiclemanagementsystem.Domain;
 
-public class RemoveVehicle {
+public class Service {
 
     private String vinNo;
     private String model;
+    private String make;
 
-    public RemoveVehicle()
+    public Service()
     {
 
     }
 
-    public RemoveVehicle(Builder builder)
+    public Service(Builder builder)
     {
         this.vinNo = builder.vinNo;
         this.model = builder.model;
+        this.make = builder.make;
     }
-
 
     public static class Builder
     {
         private String vinNo;
         private String model;
+        private String make;
 
         public Builder vinNo(String vin)
         {
             this.vinNo = vin;
+            return this;
+        }
+
+        public Builder make(String make)
+        {
+            this.make = make;
             return this;
         }
 
@@ -34,9 +42,9 @@ public class RemoveVehicle {
             return this;
         }
 
-        public RemoveVehicle build()
+        public Service build()
         {
-            return new RemoveVehicle(this);
+            return new Service(this);
         }
     }
 
@@ -50,11 +58,17 @@ public class RemoveVehicle {
         return model;
     }
 
+    public String getMake()
+    {
+        return make;
+    }
+
     @Override
     public String toString() {
-        return "------ Remove Vehicle ------\n" +
+        return "------ Register Vehicle ------\n" +
                 "VIN No : " + vinNo +
-                "\nModel : '" + model + '\'' ;
+                "\nModel : '" + model + '\'' +
+                "\nMake : '" + make + '\'';
 
     }
 }

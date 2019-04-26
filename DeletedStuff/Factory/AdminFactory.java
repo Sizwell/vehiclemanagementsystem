@@ -1,4 +1,6 @@
-package za.ac.cput.vehiclemanagementsystem.Domain;
+package za.ac.cput.vehiclemanagementsystem.Factory;
+
+import za.ac.cput.vehiclemanagementsystem.Domain.Admin;
 
 public class AdminFactory {
 

@@ -1,17 +1,17 @@
-package za.ac.cput.vehiclemanagementsystem.Factory;
+package za.ac.cput.vehiclemanagementsystem.test;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class LuxuryCoachFactoryTest {
+public class QuantumFactoryTest {
 
     @Before
     public void setUp() throws Exception {
     }
 
     @Test
-    public void getMyLuxuryCoach() {
+    public void getMyQuantum() {
     }
 }

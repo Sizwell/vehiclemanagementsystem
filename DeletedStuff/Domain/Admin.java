@@ -1,10 +1,14 @@
 package za.ac.cput.vehiclemanagementsystem.Domain;
 
+import java.util.List;
+
 public class Admin {
 
     private int empNumb;
     private String empName;
     private String empSurname;
+
+
 
     public Admin()
     {
