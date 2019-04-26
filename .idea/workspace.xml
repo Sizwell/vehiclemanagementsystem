@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5222083b-b4c0-4ea0-b701-e93f6fbc0cb7" name="Default Changelist" comment="">
+    <list default="true" id="5222083b-b4c0-4ea0-b701-e93f6fbc0cb7" name="Default Changelist" comment="Updated Vehicle Management (VMS)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/AddEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/CheckIn.java" afterDir="false" />
@@ -264,7 +264,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556320518641" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556321099425" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -421,7 +421,7 @@
       <workItem from="1556141562656" duration="2007000" />
       <workItem from="1556274258781" duration="1924000" />
       <workItem from="1556309624241" duration="3910000" />
-      <workItem from="1556318704915" duration="1618000" />
+      <workItem from="1556318704915" duration="2267000" />
     </task>
     <task id="LOCAL-00001" summary="First commit for Vehicle Management System (VMS)">
       <created>1554893283617</created>
@@ -480,13 +480,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83456000" />
+    <option name="totallyTimeSpent" value="84105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24432677" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24432677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
