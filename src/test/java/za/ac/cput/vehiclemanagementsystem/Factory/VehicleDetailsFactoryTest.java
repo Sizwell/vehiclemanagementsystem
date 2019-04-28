@@ -13,14 +13,12 @@ public class VehicleDetailsFactoryTest {
     private VehicleDetails vDetails;
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         vDetails = VehicleDetailsFactory.getDetails("CA 725-430", "Quantum");
     }
 
     @Test
-    public void getDetails()
-    {
+    public void getDetails() {
         Assert.assertNotNull(vDetails.toString());
         System.out.println(vDetails.toString());
     }

@@ -7,61 +7,51 @@ public class TourBus {
     private String vehName;
 
 
-    public TourBus()
-    {
+    public TourBus() {
 
     }
 
-    public TourBus(Builder builder)
-    {
+    public TourBus(Builder builder) {
         this.vinNo = builder.vinNo;
         this.busType = builder.busType;
         this.vehName = builder.vehName;
     }
 
-    public static class Builder
-    {
+    public static class Builder {
         private String vinNo;
         private String busType;
         private String vehName;
 
-        public Builder vinNo(String vin)
-        {
+        public Builder vinNo(String vin) {
             this.vinNo = vin;
             return this;
         }
 
-        public Builder busType(String type)
-        {
+        public Builder busType(String type) {
             this.busType = type;
             return this;
         }
 
-        public Builder vehName(String name)
-        {
+        public Builder vehName(String name) {
             this.vehName = name;
             return this;
         }
 
-        public TourBus build()
-        {
+        public TourBus build() {
             return new TourBus(this);
         }
 
     }
 
-    public String getVinNo()
-    {
+    public String getVinNo() {
         return vinNo;
     }
 
-    public String getBusType()
-    {
+    public String getBusType() {
         return busType;
     }
 
-    public String getVehName()
-    {
+    public String getVehName() {
         return vehName;
     }
 

@@ -11,20 +11,17 @@ public class RemoveEmployeeFactoryTest {
     private RemoveEmployee removeEmployee;
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         removeEmployee = RemoveEmployeeFactory.getEmployee(201302051, "Monde");
     }
 
     @Test
-    public void getEmployee()
-    {
+    public void getEmployee() {
         Assert.assertNotNull(removeEmployee);
     }
 
     @Test
-    public void getEmpNo()
-    {
+    public void getEmpNo() {
         Assert.assertEquals(removeEmployee.geteNo(), 201302051);
     }
 }

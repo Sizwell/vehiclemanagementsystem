@@ -6,60 +6,50 @@ public class Employee {
     private String empName;
     private String empSurname;
 
-    public Employee()
-    {
+    public Employee() {
 
     }
 
-    public Employee(Builder builder)
-    {
+    public Employee(Builder builder) {
         this.empNumb = builder.empNumb;
         this.empName = builder.empName;
         this.empSurname = builder.empSurname;
     }
 
-    public static class Builder
-    {
+    public static class Builder {
         private int empNumb;
         private String empName;
         private String empSurname;
 
-        public Builder empNumb(int empNo)
-        {
+        public Builder empNumb(int empNo) {
             this.empNumb = empNo;
             return this;
         }
 
-        public Builder empName(String empNme)
-        {
+        public Builder empName(String empNme) {
             this.empName = empNme;
             return this;
         }
 
-        public Builder empSurname(String empSurname)
-        {
+        public Builder empSurname(String empSurname) {
             this.empSurname = empSurname;
             return this;
         }
 
-        public Employee build()
-        {
+        public Employee build() {
             return new Employee(this);
         }
     }
 
-    public int getEmpNumb()
-    {
+    public int getEmpNumb() {
         return empNumb;
     }
 
-    public String getEmpName()
-    {
+    public String getEmpName() {
         return empName;
     }
 
-    public String getEmpSurname()
-    {
+    public String getEmpSurname() {
         return empSurname;
     }
 

@@ -4,8 +4,7 @@ import za.ac.cput.vehiclemanagementsystem.Domain.Employee;
 
 public class EmployeeFactory {
 
-    public static Employee getEmployee(int eNo, String fName, String lName)
-    {
+    public static Employee getEmployee(int eNo, String fName, String lName) {
         return new Employee.Builder()
                 .empNumb(eNo)
                 .empName(fName)

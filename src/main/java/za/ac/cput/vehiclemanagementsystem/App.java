@@ -7,14 +7,11 @@ import java.util.TreeSet;
 
 /**
  * Hello world!
- *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
+public class App {
+    public static void main(String[] args) {
 
-       // <<< - - - Types to use - - - >>>
+        // <<< - - - Types to use - - - >>>
 
       /*  private List<Student> studentList;
 

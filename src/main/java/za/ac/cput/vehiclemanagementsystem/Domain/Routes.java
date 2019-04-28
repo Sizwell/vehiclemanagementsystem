@@ -6,44 +6,37 @@ public class Routes {
     private String routeName;
     private String destination;
 
-    public Routes()
-    {
+    public Routes() {
 
     }
 
-    public Routes(Builder builder)
-    {
+    public Routes(Builder builder) {
         this.routeNo = builder.routeNo;
         this.routeName = builder.routeName;
         this.destination = builder.destination;
     }
 
-    public static class Builder
-    {
+    public static class Builder {
         private int routeNo;
         private String routeName;
         private String destination;
 
-        public Builder routeNo(int rNo)
-        {
+        public Builder routeNo(int rNo) {
             this.routeNo = rNo;
             return this;
         }
 
-        public Builder routeName(String rName)
-        {
+        public Builder routeName(String rName) {
             this.routeName = rName;
             return this;
         }
 
-        public Builder destination(String destine)
-        {
+        public Builder destination(String destine) {
             this.destination = destine;
             return this;
         }
 
-        public Routes build()
-        {
+        public Routes build() {
             return new Routes(this);
         }
 

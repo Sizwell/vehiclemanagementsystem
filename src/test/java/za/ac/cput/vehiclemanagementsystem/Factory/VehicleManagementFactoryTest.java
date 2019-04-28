@@ -13,14 +13,12 @@ public class VehicleManagementFactoryTest {
 
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         vm = VehicleManagementFactory.getDetails(details);
     }
 
     @Test
-    public void getDetails()
-    {
+    public void getDetails() {
         Assert.assertNotNull(vm.getVehicleDetails());
         System.out.println(vm.toString());
     }

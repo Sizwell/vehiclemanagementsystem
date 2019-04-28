@@ -13,14 +13,12 @@ public class RouteFactoryTest {
     private Routes routes;
 
     @Before
-    public void setUp() throws Exception
-    {
-        routes = RouteFactory.getDeduction(245 , "Chapman's Peak Pass", "Cape Point");
+    public void setUp() throws Exception {
+        routes = RouteFactory.getDeduction(245, "Chapman's Peak Pass", "Cape Point");
     }
 
     @Test
-    public void getDeduction()
-    {
+    public void getDeduction() {
         Assert.assertNotNull(routes.getRouteName());
     }
 }

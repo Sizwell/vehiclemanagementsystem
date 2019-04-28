@@ -6,44 +6,37 @@ public class Destinations {
     private String destinName;
     private String address;
 
-    public Destinations()
-    {
+    public Destinations() {
 
     }
 
-    public Destinations(Builder builder)
-    {
+    public Destinations(Builder builder) {
         this.destineID = builder.destineID;
         this.destinName = builder.destinName;
         this.address = builder.address;
     }
 
-    public static class Builder
-    {
+    public static class Builder {
         private int destineID;
         private String destinName;
         private String address;
 
-        public Builder destineId(int destID)
-        {
+        public Builder destineId(int destID) {
             this.destineID = destID;
             return this;
         }
 
-        public Builder destineName(String dName)
-        {
+        public Builder destineName(String dName) {
             this.destinName = dName;
             return this;
         }
 
-        public Builder destinAddress(String dAddress)
-        {
+        public Builder destinAddress(String dAddress) {
             this.address = dAddress;
             return this;
         }
 
-        public Destinations build()
-        {
+        public Destinations build() {
             return new Destinations(this);
         }
 

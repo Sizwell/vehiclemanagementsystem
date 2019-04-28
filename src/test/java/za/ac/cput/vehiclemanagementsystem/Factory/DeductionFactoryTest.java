@@ -13,20 +13,17 @@ public class DeductionFactoryTest {
     private Deductions deductions;
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         deductions = DeductionFactory.getDeduction("Vehicle Installment", 5450.29);
     }
 
     @Test
-    public void getDeduction()
-    {
+    public void getDeduction() {
         Assert.assertEquals(deductions.getDeductionAmount(), 5500.20, 0.0);
     }
 
     @Test
-    public void displayDeductions()
-    {
+    public void displayDeductions() {
         System.out.println(deductions.toString());
     }
 }

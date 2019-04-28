@@ -5,36 +5,30 @@ public class RemoveEmployee {
     private int eNo;
     private String eName;
 
-    public RemoveEmployee()
-    {
+    public RemoveEmployee() {
 
     }
 
-    public RemoveEmployee(Builder builder)
-    {
+    public RemoveEmployee(Builder builder) {
         this.eNo = builder.eNo;
         this.eName = builder.eName;
     }
 
-    public static class Builder
-    {
+    public static class Builder {
         private int eNo;
         private String eName;
 
-        public Builder empNo(int no)
-        {
+        public Builder empNo(int no) {
             this.eNo = no;
             return this;
         }
 
-        public Builder empName(String name)
-        {
+        public Builder empName(String name) {
             this.eName = name;
             return this;
         }
 
-        public RemoveEmployee build()
-        {
+        public RemoveEmployee build() {
             return new RemoveEmployee(this);
         }
 

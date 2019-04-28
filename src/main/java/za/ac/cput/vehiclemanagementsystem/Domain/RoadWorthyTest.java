@@ -5,48 +5,40 @@ public class RoadWorthyTest {
     private String vinNo;
     private String model;
 
-    public RoadWorthyTest()
-    {
+    public RoadWorthyTest() {
 
     }
 
-    public RoadWorthyTest(Builder builder)
-    {
+    public RoadWorthyTest(Builder builder) {
         this.vinNo = builder.vinNo;
         this.model = builder.model;
     }
 
 
-    public static class Builder
-    {
+    public static class Builder {
         private String vinNo;
         private String model;
 
-        public Builder vinNo(String vin)
-        {
+        public Builder vinNo(String vin) {
             this.vinNo = vin;
             return this;
         }
 
-        public Builder model(String model)
-        {
+        public Builder model(String model) {
             this.model = model;
             return this;
         }
 
-        public RoadWorthyTest build()
-        {
+        public RoadWorthyTest build() {
             return new RoadWorthyTest(this);
         }
     }
 
-    public String getVinNo()
-    {
+    public String getVinNo() {
         return vinNo;
     }
 
-    public String getModel()
-    {
+    public String getModel() {
         return model;
     }
 
@@ -54,7 +46,7 @@ public class RoadWorthyTest {
     public String toString() {
         return "------ Vehicle Road Worthy Test ------\n" +
                 "VIN No : " + vinNo +
-                "\nModel : '" + model + '\'' ;
+                "\nModel : '" + model + '\'';
 
     }
 }

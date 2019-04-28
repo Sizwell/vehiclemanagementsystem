@@ -13,20 +13,17 @@ public class SprinterFactoryTest {
     private Sprinter sprinter;
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         sprinter = SprinterFactory.getSprinter("YHB559882DVDH", 86521033, 22);
     }
 
     @Test
-    public void getSprinter()
-    {
+    public void getSprinter() {
         Assert.assertNotNull(sprinter.toString());
     }
 
     @Test
-    public void getCapacity()
-    {
+    public void getCapacity() {
         Assert.assertNotNull(sprinter.getCapacity());
     }
 }

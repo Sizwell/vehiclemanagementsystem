@@ -4,48 +4,40 @@ public class Deductions {
     private String deductionType;
     private double deductionAmount;
 
-    public Deductions()
-    {
+    public Deductions() {
 
     }
 
-    public Deductions(Builder builder)
-    {
+    public Deductions(Builder builder) {
         this.deductionType = builder.deductionType;
         this.deductionAmount = builder.deductionAmount;
     }
 
-    public static class Builder
-    {
+    public static class Builder {
         private String deductionType;
         private double deductionAmount;
 
-        public Builder deductType(String deduct)
-        {
+        public Builder deductType(String deduct) {
             this.deductionType = deduct;
             return this;
         }
 
-        public Builder deductAmount(double deductAmount)
-        {
+        public Builder deductAmount(double deductAmount) {
             this.deductionAmount = deductAmount;
             return this;
         }
 
-        public Deductions build()
-        {
+        public Deductions build() {
             return new Deductions(this);
         }
 
     }
 
-    public String getDeductionType()
-    {
+    public String getDeductionType() {
         return deductionType;
     }
 
-    public double getDeductionAmount()
-    {
+    public double getDeductionAmount() {
         return deductionAmount;
     }
 

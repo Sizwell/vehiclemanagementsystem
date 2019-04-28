@@ -5,36 +5,30 @@ public class CheckOut {
     private int eNo;
     private String eName;
 
-    public CheckOut()
-    {
+    public CheckOut() {
 
     }
 
-    public CheckOut(Builder builder)
-    {
+    public CheckOut(Builder builder) {
         this.eNo = builder.eNo;
         this.eName = builder.eName;
     }
 
-    public static class Builder
-    {
+    public static class Builder {
         private int eNo;
         private String eName;
 
-        public Builder empNo(int no)
-        {
+        public Builder empNo(int no) {
             this.eNo = no;
             return this;
         }
 
-        public Builder empName(String name)
-        {
+        public Builder empName(String name) {
             this.eName = name;
             return this;
         }
 
-        public CheckOut build()
-        {
+        public CheckOut build() {
             return new CheckOut(this);
         }
 

@@ -13,15 +13,13 @@ public class ManagerFactoryTest {
     private Manager manager;
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         manager = ManagerFactory.getManager(2368942, "Cwaka", "Ncikana",
                 "Good Office Management Skills");
     }
 
     @Test
-    public void getManager()
-    {
+    public void getManager() {
         Assert.assertNotNull(manager);
         System.out.println(manager.toString());
     }

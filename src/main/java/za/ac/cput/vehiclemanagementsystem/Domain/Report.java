@@ -4,28 +4,23 @@ public class Report {
 
     private String tourDetails;
 
-    public Report()
-    {
+    public Report() {
 
     }
 
-    public Report(Builder builder)
-    {
+    public Report(Builder builder) {
         this.tourDetails = builder.tourDetails;
     }
 
-    public static class Builder
-    {
+    public static class Builder {
         private String tourDetails;
 
-        public Builder tourDetails(String tour)
-        {
+        public Builder tourDetails(String tour) {
             this.tourDetails = tour;
             return this;
         }
 
-        public Report build()
-        {
+        public Report build() {
             return new Report(this);
         }
     }
@@ -35,9 +30,8 @@ public class Report {
     }
 
     @Override
-    public String toString()
-    {
+    public String toString() {
         return "------ Report ------\n" +
-                "Tour Details : '" + tourDetails + '\'' ;
+                "Tour Details : '" + tourDetails + '\'';
     }
 }

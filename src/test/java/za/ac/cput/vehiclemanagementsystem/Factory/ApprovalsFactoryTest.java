@@ -18,14 +18,12 @@ public class ApprovalsFactoryTest {
     Date date = new Date();
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         approvals = ApprovalsFactory.getApproval("XZ908V8YTRC3", date, "Tour Destination....");
     }
 
     @Test
-    public void getApproval()
-    {
+    public void getApproval() {
         Assert.assertNotNull(approvals);
         System.out.println(approvals.getDate());
     }

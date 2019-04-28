@@ -14,27 +14,23 @@ public class CabFactoryTest {
     private Cab cab2;
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         cab = CabFactory.getCab("B69LJKYTC854", "VW vivo Sedan", "Luyanda");
         cab2 = CabFactory.getCab("B69LJKYTC854", "VW vivo Sedan", "Anikue");
     }
 
     @Test
-    public void getCab()
-    {
+    public void getCab() {
         Assert.assertNotEquals(cab, cab2);
     }
 
     @Test
-    public void getCabDriver()
-    {
+    public void getCabDriver() {
         Assert.assertNotSame(cab, cab2);
     }
 
     @Test
-    public void getCabtype()
-    {
+    public void getCabtype() {
         Assert.assertEquals(cab.getVehicleType(), cab2.getVehicleType());
         System.out.println(cab.toString() + "\n");
         System.out.println(cab2.toString());

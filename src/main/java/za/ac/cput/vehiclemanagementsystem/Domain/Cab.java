@@ -6,61 +6,51 @@ public class Cab {
     private String vehicleType;
     private String driverName;
 
-    public Cab()
-    {
+    public Cab() {
 
     }
 
-    public Cab(Builder builder)
-    {
+    public Cab(Builder builder) {
         this.vinNo = builder.vinNo;
         this.vehicleType = builder.vehicleType;
         this.driverName = builder.driverName;
     }
 
 
-    public static class Builder
-    {
+    public static class Builder {
         private String vinNo;
         private String vehicleType;
         private String driverName;
 
-        public Builder vinNumber(String vin)
-        {
+        public Builder vinNumber(String vin) {
             this.vinNo = vin;
             return this;
         }
 
-        public Builder vehicleType(String type)
-        {
+        public Builder vehicleType(String type) {
             this.vehicleType = type;
             return this;
         }
 
-        public Builder driverName(String name)
-        {
+        public Builder driverName(String name) {
             this.driverName = name;
             return this;
         }
 
-        public Cab build()
-        {
+        public Cab build() {
             return new Cab(this);
         }
     }
 
-    public String getVinNo()
-    {
+    public String getVinNo() {
         return vinNo;
     }
 
-    public String getVehicleType()
-    {
+    public String getVehicleType() {
         return vehicleType;
     }
 
-    public String getDriverName()
-    {
+    public String getDriverName() {
         return driverName;
     }
 

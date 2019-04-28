@@ -4,8 +4,7 @@ import za.ac.cput.vehiclemanagementsystem.Domain.CheckOut;
 
 public class CheckOutFactory {
 
-    public static CheckOut getCheckOut(int eNo, String nme)
-    {
+    public static CheckOut getCheckOut(int eNo, String nme) {
         return new CheckOut.Builder()
                 .empNo(eNo)
                 .empName(nme)

@@ -12,20 +12,17 @@ public class TourGuideFactoryTest {
     private TourGuide tourGuide;
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         tourGuide = TourGuideFactory.getTourGuide(31250880, "Andile", "Jali");
     }
 
     @Test
-    public void getTourGuide()
-    {
+    public void getTourGuide() {
         Assert.assertNotNull(tourGuide);
     }
 
     @Test
-    public void getName()
-    {
+    public void getName() {
         Assert.assertEquals(tourGuide.getEmpName(), "Vuyo");
     }
 }

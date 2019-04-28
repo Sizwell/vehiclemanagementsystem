@@ -11,14 +11,12 @@ public class ServiceFactoryTest {
     private Service regVehicle;
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         regVehicle = ServiceFactory.getService("245VR209F3", "Volks Wagen", "2017 Transporter");
     }
 
     @Test
-    public void getService()
-    {
+    public void getService() {
         Assert.assertNotNull(regVehicle.toString());
         System.out.println(regVehicle.toString());
     }

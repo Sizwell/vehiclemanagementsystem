@@ -4,8 +4,7 @@ import za.ac.cput.vehiclemanagementsystem.Domain.RemoveEmployee;
 
 public class RemoveEmployeeFactory {
 
-    public static RemoveEmployee getEmployee(int eNo, String nme)
-    {
+    public static RemoveEmployee getEmployee(int eNo, String nme) {
         return new RemoveEmployee.Builder()
                 .empNo(eNo)
                 .empName(nme)

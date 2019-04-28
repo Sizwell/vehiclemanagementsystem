@@ -8,32 +8,28 @@ import za.ac.cput.vehiclemanagementsystem.Factory.AdminOperationFactory;
 
 public class AdminOperationFactoryTest {
 
-   String name = "Odwa";
+    String name = "Odwa";
     String surname = "Ncikana";
 
-   private AdminOperations adminOps;
+    private AdminOperations adminOps;
 
     @Before
-    public void setUp() throws Exception
-    {
-       adminOps = AdminOperationFactory.getValidation(name, surname);
+    public void setUp() throws Exception {
+        adminOps = AdminOperationFactory.getValidation(name, surname);
     }
 
     @Test
-    public void getName()
-    {
+    public void getName() {
         Assert.assertEquals(adminOps.getName(), name, "Odwa");
     }
 
     @Test
-    public void getSurname()
-    {
+    public void getSurname() {
         Assert.assertEquals(adminOps.getSurname(), surname, "Ncikana");
     }
 
     @Test
-    public void getValidation()
-    {
+    public void getValidation() {
         Assert.assertNotNull(adminOps.getName(), adminOps.getSurname());
     }
 

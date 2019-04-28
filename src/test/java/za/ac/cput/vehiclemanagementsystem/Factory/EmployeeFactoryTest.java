@@ -12,14 +12,12 @@ public class EmployeeFactoryTest {
     private Employee employee;
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         employee = EmployeeFactory.getEmployee(114262, "Sizwe", "Ncikana");
     }
 
     @Test
-    public void getEmployee()
-    {
+    public void getEmployee() {
         Assert.assertEquals(employee.getEmpNumb(), employee.getEmpNumb());
     }
 }

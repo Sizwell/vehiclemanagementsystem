@@ -11,35 +11,30 @@ public class AdminOperationsRepoImplements implements AdminOperationsRepository 
     private static AdminOperationsRepoImplements admin = null;
     private List<AdminOperations> adminList;
 
-    private AdminOperationsRepoImplements()
-    {
+    private AdminOperationsRepoImplements() {
         this.adminList = new ArrayList<>();
     }
 
-    public static AdminOperationsRepository getRepository()
-    {
-        if (admin == null){
+    public static AdminOperationsRepository getRepository() {
+        if (admin == null) {
             admin = new AdminOperationsRepoImplements();
         }
         return admin;
     }
 
     @Override
-    public List<AdminOperations> findAll()
-    {
+    public List<AdminOperations> findAll() {
         return this.adminList;
     }
 
     @Override
-    public AdminOperations create(AdminOperations adminOperations)
-    {
+    public AdminOperations create(AdminOperations adminOperations) {
         this.adminList.add(adminOperations);
         return adminOperations;
     }
 
     @Override
-    public AdminOperations read(String read)
-    {
+    public AdminOperations read(String read) {
         return admin.read(read);
     }
 
@@ -53,6 +48,7 @@ public class AdminOperationsRepoImplements implements AdminOperationsRepository 
     @Override
     public void delete(String delete)
     {
+
         admin.delete(delete);
     }
 }

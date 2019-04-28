@@ -7,62 +7,52 @@ public class Sprinter {
     private int capacity;
 
 
-    public Sprinter()
-    {
+    public Sprinter() {
 
     }
 
 
-    public Sprinter(Builder builder)
-    {
+    public Sprinter(Builder builder) {
         this.vinNo = builder.vinNo;
         this.driverNo = builder.driverNo;
         this.capacity = builder.capacity;
     }
 
-    public static class Builder
-    {
+    public static class Builder {
         private String vinNo;
         private int driverNo;
         private int capacity;
 
-        public Builder vinNo(String vin)
-        {
+        public Builder vinNo(String vin) {
             this.vinNo = vin;
             return this;
         }
 
-        public Builder driverNum(int num)
-        {
+        public Builder driverNum(int num) {
             this.driverNo = num;
             return this;
         }
 
-        public Builder capacity(int cap)
-        {
+        public Builder capacity(int cap) {
             this.capacity = cap;
             return this;
         }
 
-        public Sprinter build()
-        {
+        public Sprinter build() {
             return new Sprinter(this);
         }
 
     }
 
-    public String getVinNo()
-    {
+    public String getVinNo() {
         return vinNo;
     }
 
-    public int getDriverNo()
-    {
+    public int getDriverNo() {
         return driverNo;
     }
 
-    public int getCapacity()
-    {
+    public int getCapacity() {
         return capacity;
     }
 

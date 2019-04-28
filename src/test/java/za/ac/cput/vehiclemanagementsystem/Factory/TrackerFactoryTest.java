@@ -12,15 +12,13 @@ public class TrackerFactoryTest {
     private Tracker updateMyVehicle;
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         tracker = TrackerFactory.vehicleTracker("245VR209F3", "Volks Wagen", "2017 Transporter");
         updateMyVehicle = TrackerFactory.vehicleTracker("245VR209F3", "Volks Wagen", "2019 Transporter R");
     }
 
     @Test
-    public void trackerStatus()
-    {
+    public void trackerStatus() {
         Assert.assertNotSame(tracker, updateMyVehicle);
     }
 }

@@ -6,63 +6,53 @@ public class Driver {
     private String empName;
     private String empSurname;
 
-    public Driver()
-    {
+    public Driver() {
 
     }
 
-    public Driver(Builder builder)
-    {
+    public Driver(Builder builder) {
         this.driverNo = builder.driverNo;
         this.empName = builder.empName;
         this.empSurname = builder.empSurname;
 
     }
 
-    public static class Builder
-    {
+    public static class Builder {
         private int driverNo;
         private String empName;
         private String empSurname;
 
 
-        public Builder driverNo(int empNo)
-        {
+        public Builder driverNo(int empNo) {
             this.driverNo = empNo;
             return this;
         }
 
-        public Builder empName(String empNme)
-        {
+        public Builder empName(String empNme) {
             this.empName = empNme;
             return this;
         }
 
-        public Builder empSurname(String empSurname)
-        {
+        public Builder empSurname(String empSurname) {
             this.empSurname = empSurname;
             return this;
         }
 
 
-        public Driver build()
-        {
+        public Driver build() {
             return new Driver(this);
         }
     }
 
-    public int getEmpNumb()
-    {
+    public int getEmpNumb() {
         return driverNo;
     }
 
-    public String getEmpName()
-    {
+    public String getEmpName() {
         return empName;
     }
 
-    public String getEmpSurname()
-    {
+    public String getEmpSurname() {
         return empSurname;
     }
 

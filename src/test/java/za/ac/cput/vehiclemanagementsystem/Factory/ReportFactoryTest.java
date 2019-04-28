@@ -13,14 +13,12 @@ public class ReportFactoryTest {
     private Report report;
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         report = ReportFactory.getReport("Tour Report");
     }
 
     @Test
-    public void getReport()
-    {
+    public void getReport() {
         Assert.assertNotNull(report);
         System.out.println(report.toString());
     }

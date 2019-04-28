@@ -6,8 +6,7 @@ import java.util.Date;
 
 public class RequestFactory {
 
-    public static Requests getRequests(String details, Date date)
-    {
+    public static Requests getRequests(String details, Date date) {
         return new Requests.Builder()
                 .details(details)
                 .date(date)

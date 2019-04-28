@@ -7,48 +7,40 @@ public class Requests {
     private String details;
     private Date date;
 
-    public Requests()
-    {
+    public Requests() {
 
     }
 
-    public Requests(Builder builder)
-    {
+    public Requests(Builder builder) {
         this.details = builder.details;
         this.date = builder.date;
     }
 
-    public static class Builder
-    {
+    public static class Builder {
         private String details;
         private Date date;
 
 
-        public Builder details(String details)
-        {
+        public Builder details(String details) {
             this.details = details;
             return this;
         }
 
-        public Builder date(Date dte)
-        {
+        public Builder date(Date dte) {
             this.date = dte;
             return this;
         }
 
-        public Requests build()
-        {
+        public Requests build() {
             return new Requests(this);
         }
     }
 
-    public String getDetails()
-    {
+    public String getDetails() {
         return details;
     }
 
-    public Date getDate()
-    {
+    public Date getDate() {
         return date;
     }
 
@@ -56,6 +48,6 @@ public class Requests {
     public String toString() {
         return "------ Requests ------\n" +
                 "\nDetails: '" + details + '\'' +
-                "\nDate: " + date ;
+                "\nDate: " + date;
     }
 }

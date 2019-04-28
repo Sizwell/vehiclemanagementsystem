@@ -12,13 +12,12 @@ public class LoginFactoryTest {
     String error = "Access denied. Please try again or contact your administrator";
 
     @Test
-    public void getLogin()
-    {
+    public void getLogin() {
 
         Login login = LoginFactory.getLogin(username, password);
-       System.out.println(login);
+        System.out.println(login);
         Assert.assertNotNull(login.getUsername(), login.getPassword());
-       // Assert.assertNull(login.getErrorMessage());
-      //  Assert.assertEquals(login.getUsername(), login.getPassword());
+        // Assert.assertNull(login.getErrorMessage());
+        //  Assert.assertEquals(login.getUsername(), login.getPassword());
     }
 }

@@ -8,62 +8,52 @@ public class Minibus {
     private int capacity;
 
 
-    public Minibus()
-    {
+    public Minibus() {
 
     }
 
 
-    public Minibus(Builder builder)
-    {
+    public Minibus(Builder builder) {
         this.vinNo = builder.vinNo;
         this.driverNo = builder.driverNo;
         this.capacity = builder.capacity;
     }
 
-    public static class Builder
-    {
+    public static class Builder {
         private String vinNo;
         private int driverNo;
         private int capacity;
 
-        public Builder vinNo(String vin)
-        {
+        public Builder vinNo(String vin) {
             this.vinNo = vin;
             return this;
         }
 
-        public Builder driverNum(int num)
-        {
+        public Builder driverNum(int num) {
             this.driverNo = num;
             return this;
         }
 
-        public Builder capacity(int cap)
-        {
+        public Builder capacity(int cap) {
             this.capacity = cap;
             return this;
         }
 
-        public Minibus build()
-        {
+        public Minibus build() {
             return new Minibus(this);
         }
 
     }
 
-    public String getVinNo()
-    {
+    public String getVinNo() {
         return vinNo;
     }
 
-    public int getDriverNo()
-    {
+    public int getDriverNo() {
         return driverNo;
     }
 
-    public int getCapacity()
-    {
+    public int getCapacity() {
         return capacity;
     }
 
@@ -74,5 +64,5 @@ public class Minibus {
                 "\nDriver No : " + driverNo +
                 "\nCapacity : " + capacity;
     }
-    
+
 }

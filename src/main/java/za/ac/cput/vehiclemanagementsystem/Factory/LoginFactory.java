@@ -4,8 +4,7 @@ import za.ac.cput.vehiclemanagementsystem.Domain.Login;
 
 public class LoginFactory {
 
-    public static Login getLogin(String username, String password)
-    {
+    public static Login getLogin(String username, String password) {
 
         return new Login.Builder()
                 .username(username)

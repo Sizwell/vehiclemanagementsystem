@@ -7,34 +7,29 @@ public class AdminOperations {
    /* private String designation;
     private String destinationRoute;*/
 
-    private AdminOperations()
-    {
+    private AdminOperations() {
 
     }
 
-    private AdminOperations(Builder builder)
-    {
+    private AdminOperations(Builder builder) {
         this.name = builder.name;
         this.surname = builder.surname;
         /*this.designation = builder.designation;
         this.destinationRoute = builder.destinationRoute;*/
     }
 
-    public static class Builder
-    {
+    public static class Builder {
         private String name;
         private String surname;
         /*private String designation;
         private String destinationRoute;*/
 
-        public Builder name(String fName)
-        {
+        public Builder name(String fName) {
             this.name = fName;
             return this;
         }
 
-        public Builder surname(String lName)
-        {
+        public Builder surname(String lName) {
             this.surname = lName;
             return this;
         }
@@ -52,9 +47,7 @@ public class AdminOperations {
         }*/
 
 
-
-        public AdminOperations build()
-        {
+        public AdminOperations build() {
             return new AdminOperations(this);
         }
 
@@ -76,8 +69,7 @@ public class AdminOperations {
         return destinationRoute;
     }*/
 
-    public String toString()
-    {
+    public String toString() {
         String str;
         str = " Name: " + getName() + " Surname: " + getSurname() +
                 " Designation: " /*+ getDesignation() + " Destination: " + getDestinationRoute()*/;

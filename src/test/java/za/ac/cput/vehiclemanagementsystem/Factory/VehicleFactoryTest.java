@@ -16,28 +16,24 @@ public class VehicleFactoryTest {
     private Vehicle veh;
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         vehicle = VehicleFactory.getVehicles("86CV88512R36Y", " Coach", " 32 Seater, Diesel, Automatic Transmission");
         veh = VehicleFactory.getVehicles("86CV88512R36Y", " Coach", " 32 Seater, Diesel, Automatic Transmission");
 
     }
 
     @Test
-    public void getVehicles()
-    {
+    public void getVehicles() {
         Assert.assertEquals(vehicle, veh);
     }
 
     @Test
-    public void getVin()
-    {
+    public void getVin() {
         Assert.assertNotNull(vehicle.getVinNo(), veh);
     }
 
     @Test
-    public void getDifference()
-    {
+    public void getDifference() {
         Assert.assertNotSame("Are Vehicles the Same?", vehicle, veh);
     }
 }

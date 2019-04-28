@@ -12,27 +12,23 @@ public class CheckInFactoryTest {
     private CheckIn checkInFact;
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         checkInFactory = CheckInFactory.getCheckIn(201302051, "Monde");
         checkInFact = CheckInFactory.getCheckIn(201302051, "Monde");
     }
 
     @Test
-    public void getCheckIn()
-    {
+    public void getCheckIn() {
         Assert.assertNotNull(checkInFactory);
     }
 
     @Test
-    public void checkName()
-    {
+    public void checkName() {
         Assert.assertNotNull(checkInFactory);
     }
 
     @Test
-    public void validateEmpNo()
-    {
+    public void validateEmpNo() {
         Assert.assertNotEquals(checkInFact, checkInFactory);
     }
 }

@@ -17,14 +17,12 @@ public class RequestFactoryTest {
     Date date = new Date();
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         requests = RequestFactory.getRequests("Tour to Devils Peak", date);
     }
 
     @Test
-    public void getRequests()
-    {
+    public void getRequests() {
         Assert.assertEquals(requests.getDetails(), requests.getDate());
     }
 }

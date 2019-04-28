@@ -11,14 +11,12 @@ public class RoadWorthyTestFactoryTest {
     private RoadWorthyTest roadWorthyTest;
 
     @Before
-    public void setUp() throws Exception
-    {
-        roadWorthyTest = RoadWorthyTestFactory.getRoadWorthyTest("245VR209F3",  "2017 Transporter");
+    public void setUp() throws Exception {
+        roadWorthyTest = RoadWorthyTestFactory.getRoadWorthyTest("245VR209F3", "2017 Transporter");
     }
 
     @Test
-    public void getRoadWorthyTest()
-    {
+    public void getRoadWorthyTest() {
         Assert.assertNull(roadWorthyTest);
     }
 }

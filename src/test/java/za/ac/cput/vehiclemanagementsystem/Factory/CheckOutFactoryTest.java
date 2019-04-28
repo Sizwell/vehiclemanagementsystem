@@ -12,21 +12,18 @@ public class CheckOutFactoryTest {
     private CheckOut checkOutEmp;
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         checkOut = CheckOutFactory.getCheckOut(201302051, "Monde");
         checkOutEmp = CheckOutFactory.getCheckOut(201302051, "Mr Monde");
     }
 
     @Test
-    public void getCheckOut()
-    {
+    public void getCheckOut() {
         Assert.assertNotNull(checkOut);
     }
 
     @Test
-    public void getEmpNo()
-    {
+    public void getEmpNo() {
         Assert.assertNotEquals(checkOut, checkOutEmp);
     }
 }

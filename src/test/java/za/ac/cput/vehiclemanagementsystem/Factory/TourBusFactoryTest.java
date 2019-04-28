@@ -11,14 +11,12 @@ public class TourBusFactoryTest {
     private TourBus tb;
 
     @Before
-    public void setUp() throws Exception
-    {
-        tb = TourBusFactory.getTourBus("87CVX197TOA846", " Vito",  "Mercedes-Benze ");
+    public void setUp() throws Exception {
+        tb = TourBusFactory.getTourBus("87CVX197TOA846", " Vito", "Mercedes-Benze ");
     }
 
     @Test
-    public void getTourBus()
-    {
+    public void getTourBus() {
         Assert.assertEquals(tb.getVinNo(), tb.getBusType(), tb.getVehName());
         System.out.println(tb.toString());
     }

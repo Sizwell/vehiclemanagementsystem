@@ -10,60 +10,50 @@ public class Approvals {
     private Date date;
     private String details;
 
-    public Approvals()
-    {
+    public Approvals() {
 
     }
 
-    public Approvals(Builder builder)
-    {
+    public Approvals(Builder builder) {
         this.vinNo = builder.vinNo;
         this.date = builder.date;
         this.details = builder.details;
     }
 
-    public static class Builder
-    {
+    public static class Builder {
         private String vinNo;
         private Date date;
         private String details;
 
-        public Builder vinNo(String vin)
-        {
+        public Builder vinNo(String vin) {
             this.vinNo = vin;
             return this;
         }
 
-        public Builder date(Date date)
-        {
+        public Builder date(Date date) {
             this.date = date;
             return this;
         }
 
-        public Builder details(String details)
-        {
+        public Builder details(String details) {
             this.details = details;
             return this;
         }
 
-        public Approvals build()
-        {
+        public Approvals build() {
             return new Approvals(this);
         }
     }
 
-    public String getVinNo()
-    {
+    public String getVinNo() {
         return vinNo;
     }
 
-    public Date getDate()
-    {
+    public Date getDate() {
         return date;
     }
 
-    public String getDetails()
-    {
+    public String getDetails() {
         return details;
     }
 

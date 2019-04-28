@@ -14,21 +14,18 @@ public class EmployeeManagementFactoryTest {
     private EmployeeManagement empManage;
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         empManagement = EmployeeManagementFactory.manageEmployee(213207834, "Luvuyo", "Administration");
         empManage = EmployeeManagementFactory.manageEmployee(213207834, "Luvuyo", "Tour Guide");
     }
 
     @Test
-    public void manageEmployee()
-    {
+    public void manageEmployee() {
         Assert.assertNotNull(empManagement);
     }
 
     @Test
-    public void checkTask()
-    {
+    public void checkTask() {
         Assert.assertSame(empManagement, empManage);
     }
 }

@@ -4,8 +4,7 @@ import za.ac.cput.vehiclemanagementsystem.Domain.Sprinter;
 
 public class SprinterFactory {
 
-    public static Sprinter getSprinter(String vin, int drNo, int capacity)
-    {
+    public static Sprinter getSprinter(String vin, int drNo, int capacity) {
         return new Sprinter.Builder()
                 .vinNo(vin)
                 .driverNum(drNo)

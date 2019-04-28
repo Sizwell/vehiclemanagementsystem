@@ -16,8 +16,7 @@ public class AdminOperationsRepoImplementsTest {
     private AdminOperationsRepository repository;
 
     @Before
-    public void setUp() throws Exception
-    {
+    public void setUp() throws Exception {
         this.repository = AdminOperationsRepoImplements.getRepository();
     }
 
@@ -26,19 +25,17 @@ public class AdminOperationsRepoImplementsTest {
     }
 
     @Test
-    public void findAll()
-    {
+    public void findAll() {
         /*
         Set<Student> students = this.repository.getAll();
         Assert.assertEquals(1, students.size());
          */
-        List <AdminOperations> adminList = this.repository.findAll();
+        List<AdminOperations> adminList = this.repository.findAll();
         Assert.assertEquals(1, adminList.size());
     }
 
     @Test
-    public void create()
-    {
+    public void create() {
         this.repository.create(null);
         Assert.assertEquals("Odwa", "Odwa");
     }
