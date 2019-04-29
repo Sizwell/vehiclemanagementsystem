@@ -1,6 +1,7 @@
 package za.ac.cput.vehiclemanagementsystem.Domain;
 
 public class Deductions {
+    private int deductionsNo;
     private String deductionType;
     private double deductionAmount;
 
@@ -9,13 +10,21 @@ public class Deductions {
     }
 
     public Deductions(Builder builder) {
+        this.deductionsNo = builder.deductionNo;
         this.deductionType = builder.deductionType;
         this.deductionAmount = builder.deductionAmount;
     }
 
     public static class Builder {
+        private int deductionNo;
         private String deductionType;
         private double deductionAmount;
+
+        public Builder deductionNo(int deductNo)
+        {
+            this.deductionNo = deductNo;
+            return this;
+        }
 
         public Builder deductType(String deduct) {
             this.deductionType = deduct;
@@ -33,6 +42,11 @@ public class Deductions {
 
     }
 
+    public int getDeductionsNo()
+    {
+        return deductionsNo;
+    }
+
     public String getDeductionType() {
         return deductionType;
     }
@@ -44,7 +58,8 @@ public class Deductions {
     @Override
     public String toString() {
         return "------ Deductions ------\n" +
-                "Deduction Type : '" + deductionType + '\'' +
+                "Deduction No: '" + deductionsNo + '\''+
+                "\nDeduction Type : '" + deductionType + '\'' +
                 "\nDeduction Amount = R" + deductionAmount + '\'';
     }
 }

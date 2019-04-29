@@ -2,201 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5222083b-b4c0-4ea0-b701-e93f6fbc0cb7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ApprovalsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/DeductionsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/EmployeeManagementRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/EmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/ApprovalsRepositoryImplements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/DeductionsRepositoryImplements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/EmployeeImplement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/EmployeeManagementImplement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/LoginRepositoryImplement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/PositionRepositoryImplement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/ReportRepositoryImplement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/RequestsRepositoryImplements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/RoadWorthyTestImplements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/RoutesRepositoryImplements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/ServiceRepositoryImplements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/TrackerRepoImplements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/VehicleDetailsRepositoryImplements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/VehicleManagementRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/VehicleRepositoryImplements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/LicenseDiskRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/LoginRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/PositionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ReportRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/RequestsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/RoadWorthyTestRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/RoutesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ServiceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TourBusRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TrackerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleDetailsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleManagementRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/Implements/VehicleManagementRepositoryImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/Implements/ApprovalsRepositoryImplementsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/Implements/DeductionsRepositoryImplementsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/CheckIn$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/CheckIn.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/CheckOut$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/CheckOut.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/RoadWorthyTest$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/RoadWorthyTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Service$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Tracker$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Tracker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/CheckInFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/CheckOutFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/RoadWorthyTestFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/ServiceFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/TrackerFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Repository/AdminOperationsRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Repository/ControlRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Repository/Implements/AdminOperationsRepoImplements.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Repository/Implements/VehicleManagementRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Repository/VehicleManagementRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/AdminOperationFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/ApprovalsFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/CabFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/CheckInFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/CheckOutFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/DeductionFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/DestinationFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/DriverFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/EmployeeFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/EmployeeManagementFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/LoginFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/LuxuryCoachFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/ManagerFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/MinibusFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/QuantumFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/ReportFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/RequestFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/RoadWorthyTestFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/RouteFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/ServiceFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/SprinterFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/TourBusFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/TourGuideFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/TrackerFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/VehicleDetailsFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/VehicleFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Factory/VehicleManagementFactoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/repository/Implements/AdminOperationsRepoImplementsTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/repository/Implements/VehicleManagementRepositoryImplTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeletedStuff/Domain/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/DeletedStuff/Domain/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeletedStuff/Domain/RemoveEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/DeletedStuff/Domain/RemoveEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeletedStuff/Factory/AdminFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/DeletedStuff/Factory/AdminFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeletedStuff/Factory/RemoveEmployeeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/DeletedStuff/Factory/RemoveEmployeeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeletedStuff/Test/AdminFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DeletedStuff/Test/AdminFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeletedStuff/Test/RemoveEmployeeFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DeletedStuff/Test/RemoveEmployeeFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/AdminOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/AdminOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Approvals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Approvals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Cab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Cab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/CheckIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/CheckIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/CheckOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/CheckOut.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Deductions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Deductions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Destinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Destinations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/EmployeeManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/EmployeeManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/LuxuryCoach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/LuxuryCoach.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Minibus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Minibus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Quantum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Quantum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Report.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Requests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Requests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/RoadWorthyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/RoadWorthyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Routes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Sprinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Sprinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/TourBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/TourBus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/TourGuide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/TourGuide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Tracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Tracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/VehicleDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/VehicleDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/VehicleManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/VehicleManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/AdminOperationFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/AdminOperationFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/ApprovalsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/ApprovalsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/CabFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/CabFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/CheckInFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/CheckInFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/CheckOutFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/CheckOutFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/DeductionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/DeductionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/DestinationFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/DestinationFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/EmployeeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/EmployeeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/EmployeeManagementFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/EmployeeManagementFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/LoginFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/LoginFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/LuxuryCoachFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/LuxuryCoachFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/ManagerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/ManagerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/MinibusFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/MinibusFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/QuantumFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/QuantumFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/ReportFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/ReportFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/RequestFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/RequestFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/RoadWorthyTestFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/RoadWorthyTestFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/RouteFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/RouteFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/ServiceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/SprinterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/SprinterFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/TourBusFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/TourBusFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/TourGuideFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/TourGuideFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/TrackerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/TrackerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleDetailsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleDetailsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleManagementFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleManagementFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/AdminOperationsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/AdminOperationsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ControlRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ControlRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/AdminOperationsRepoImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/AdminOperationsRepoImplements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/AdminOperationFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/AdminOperationFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/ApprovalsFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/ApprovalsFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/CabFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/CabFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/CheckInFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/CheckInFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/CheckOutFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/CheckOutFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/DeductionFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/DeductionFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/DestinationFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/DestinationFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/DriverFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/DriverFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/EmployeeFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/EmployeeFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/EmployeeManagementFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/EmployeeManagementFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/LoginFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/LoginFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/ManagerFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/ManagerFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/MinibusFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/MinibusFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/ReportFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/ReportFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/RequestFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/RequestFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/RoadWorthyTestFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/RoadWorthyTestFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/RouteFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/RouteFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/ServiceFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/ServiceFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/SprinterFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/SprinterFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/TourBusFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/TourBusFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/TourGuideFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/TourGuideFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/TrackerFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/TrackerFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleDetailsFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleDetailsFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleManagementFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleManagementFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/Implements/AdminOperationsRepoImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/Implements/AdminOperationsRepoImplementsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/AdminOperations$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/AdminOperations$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/AdminOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/AdminOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Approvals$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Approvals$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Approvals.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Approvals.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Cab$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Cab$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Cab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Cab.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Deductions$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Deductions$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Deductions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Deductions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Destinations$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Destinations$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Destinations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Destinations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Driver$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Driver$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Employee$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Employee$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/EmployeeManagement$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/EmployeeManagement$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/EmployeeManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/EmployeeManagement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Login$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Login$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/LuxuryCoach$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/LuxuryCoach$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/LuxuryCoach.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/LuxuryCoach.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Manager$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Manager$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Manager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Minibus$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Minibus$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Minibus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Minibus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Quantum$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Quantum$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Quantum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Quantum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Report$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Report$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Report.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Report.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Requests$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Requests$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Requests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Requests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Routes$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Routes$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Routes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Routes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Sprinter$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Sprinter$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Sprinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Sprinter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/TourBus$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/TourBus$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/TourBus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/TourBus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/TourGuide$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/TourGuide$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/TourGuide.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/TourGuide.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/VehicleDetails$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/VehicleDetails$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/VehicleDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/VehicleDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/VehicleManagement$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/VehicleManagement$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/VehicleManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/VehicleManagement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/AdminOperationFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/AdminOperationFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/ApprovalsFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/ApprovalsFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/CabFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/CabFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/DeductionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/DeductionFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/DestinationFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/DestinationFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/DriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/DriverFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/EmployeeFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/EmployeeFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/EmployeeManagementFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/EmployeeManagementFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/LoginFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/LoginFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/LuxuryCoachFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/LuxuryCoachFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/ManagerFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/ManagerFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/MinibusFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/MinibusFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/QuantumFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/QuantumFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/ReportFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/ReportFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/RequestFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/RequestFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/RouteFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/RouteFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/SprinterFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/SprinterFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/TourBusFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/TourBusFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/TourGuideFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/TourGuideFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/VehicleDetailsFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/VehicleDetailsFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/VehicleFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/VehicleFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/VehicleManagementFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Factory/VehicleManagementFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/AppTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -208,41 +67,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/Implements/ApprovalsRepositoryImplementsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="50" column="124" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="124" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Deductions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/VehicleRepositoryImplements.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/Implements/DeductionsRepositoryImplementsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+            <state relative-caret-position="260">
+              <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1090#1091#0" expanded="true" />
-                <element signature="e#1117#1118#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/VehicleManagementRepositoryImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#518#519#0" expanded="true" />
-                <element signature="e#567#568#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/TrackerRepoImplements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1187#1188#0" expanded="true" />
+                <element signature="e#1292#1293#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -253,9 +103,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -288,10 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Admin.java" />
-        <option value="$PROJECT_DIR$/DeletedStuff/Domain/Admin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/AdminOperationsRepository.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/AdminOperationsRepoImplementsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/Implements/AdminOperationsRepoImplementsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleManagementRepo.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -339,6 +185,10 @@
         <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/PositionRepositoryImplement.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/ReportRepositoryImplement.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/RequestsRepositoryImplements.java" />
+        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/Implements/ApprovalsRepositoryImplementsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/DeductionFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Deductions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/Implements/DeductionsRepositoryImplementsTest.java" />
       </list>
     </option>
   </component>
@@ -405,6 +255,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Factory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
               <item name="Repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -458,7 +326,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556471763335" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556530262205" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -502,21 +370,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VehicleManagementRepositoryImplTest">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="za.ac.cput.vehiclemanagementsystem.App" />
-      <module name="vehicleManagementSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="za.ac.cput.vehiclemanagementsystem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AdminOperationsRepoImplementsTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ApprovalsRepositoryImplementsTest.update">
+    <configuration name="ApprovalsRepositoryImplementsTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vehicleManagementSystem" />
       <extension name="coverage">
         <pattern>
@@ -525,14 +380,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.Implements" />
-      <option name="MAIN_CLASS_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.Implements.AdminOperationsRepoImplementsTest" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.Implements.ApprovalsRepositoryImplementsTest" />
       <option name="METHOD_NAME" value="create" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdminOperationsRepoImplementsTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApprovalsRepositoryImplementsTest.getApprovals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vehicleManagementSystem" />
       <extension name="coverage">
         <pattern>
@@ -541,8 +396,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.Implements" />
-      <option name="MAIN_CLASS_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.Implements.AdminOperationsRepoImplementsTest" />
-      <option name="METHOD_NAME" value="findAll" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.Implements.ApprovalsRepositoryImplementsTest" />
+      <option name="METHOD_NAME" value="getApprovals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApprovalsRepositoryImplementsTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vehicleManagementSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.vehiclemanagementsystem.repository.Implements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.Implements" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.Implements.ApprovalsRepositoryImplementsTest" />
+      <option name="METHOD_NAME" value="read" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApprovalsRepositoryImplementsTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vehicleManagementSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.vehiclemanagementsystem.repository.Implements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.Implements" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.Implements.ApprovalsRepositoryImplementsTest" />
+      <option name="METHOD_NAME" value="update" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -563,29 +450,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VehicleManagementRepositoryImplTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="vehicleManagementSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="za.ac.cput.vehiclemanagementsystem.repository.Implements.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.Implements" />
-      <option name="MAIN_CLASS_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.Implements.VehicleManagementRepositoryImplTest" />
-      <option name="METHOD_NAME" value="create" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApprovalsRepositoryImplementsTest.update" />
+        <item itemvalue="JUnit.ApprovalsRepositoryImplementsTest.read" />
+        <item itemvalue="JUnit.ApprovalsRepositoryImplementsTest.create" />
+        <item itemvalue="JUnit.ApprovalsRepositoryImplementsTest.getApprovals" />
         <item itemvalue="JUnit.VehicleManagementRepositoryImplTest" />
-        <item itemvalue="JUnit.VehicleManagementRepositoryImplTest.create" />
-        <item itemvalue="JUnit.AdminOperationsRepoImplementsTest.findAll" />
-        <item itemvalue="JUnit.AdminOperationsRepoImplementsTest.create" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -624,7 +495,8 @@
       <workItem from="1556369924987" duration="9534000" />
       <workItem from="1556392057277" duration="4747000" />
       <workItem from="1556458264055" duration="12171000" />
-      <workItem from="1556482439334" duration="2273000" />
+      <workItem from="1556482439334" duration="8466000" />
+      <workItem from="1556530025552" duration="206000" />
     </task>
     <task id="LOCAL-00001" summary="First commit for Vehicle Management System (VMS)">
       <created>1554893283617</created>
@@ -654,25 +526,17 @@
       <option name="project" value="LOCAL" />
       <updated>1556366874895</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated Vehicle Management (VMS) updated">
+      <created>1556490922080</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556490922080</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MinibusFactoryTest_getMyMinibus - 2019.04.24 at 17h 32m 13s.xml">
-      <configuration name="MinibusFactoryTest.getMyMinibus" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MinibusFactoryTest_getDriverNo - 2019.04.24 at 17h 32m 30s.xml">
-      <configuration name="MinibusFactoryTest.getDriverNo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MinibusFactoryTest_getDriverNo - 2019.04.24 at 17h 33m 38s.xml">
-      <configuration name="MinibusFactoryTest.getDriverNo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MinibusFactoryTest_getDriverNo - 2019.04.24 at 17h 34m 40s.xml">
-      <configuration name="MinibusFactoryTest.getDriverNo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AdminOperationsRepoImplementsTest_create - 2019.04.27 at 02h 57m 04s.xml">
-      <configuration name="AdminOperationsRepoImplementsTest.create" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AdminOperationsRepoImplementsTest_findAll - 2019.04.27 at 03h 00m 39s.xml">
       <configuration name="AdminOperationsRepoImplementsTest.findAll" configurationId="JUnit" />
     </history-entry>
@@ -688,15 +552,30 @@
     <history-entry file="VehicleManagementRepositoryImplTest - 2019.04.27 at 21h 10m 29s.xml">
       <configuration name="VehicleManagementRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ApprovalsRepositoryImplementsTest_create - 2019.04.29 at 01h 22m 39s.xml">
+      <configuration name="ApprovalsRepositoryImplementsTest.create" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApprovalsRepositoryImplementsTest_getApprovals - 2019.04.29 at 01h 27m 46s.xml">
+      <configuration name="ApprovalsRepositoryImplementsTest.getApprovals" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApprovalsRepositoryImplementsTest_create - 2019.04.29 at 01h 30m 59s.xml">
+      <configuration name="ApprovalsRepositoryImplementsTest.create" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApprovalsRepositoryImplementsTest_read - 2019.04.29 at 01h 32m 43s.xml">
+      <configuration name="ApprovalsRepositoryImplementsTest.read" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApprovalsRepositoryImplementsTest_update - 2019.04.29 at 01h 34m 26s.xml">
+      <configuration name="ApprovalsRepositoryImplementsTest.update" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121326000" />
+    <option name="totallyTimeSpent" value="127725000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27458397" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24281392" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -715,7 +594,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
@@ -741,37 +620,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Updated Vehicle Management (VMS) updated" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/AdminOperationFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/AdminOperationFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/AdminOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/AdminOperationsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
@@ -1020,30 +868,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/VehicleDetailsImplements.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/VehicleHistoryRepositoryImplements.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/AdminOperationsRepoImplements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
-            <element signature="e#1104#1105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/ApprovalsRepositoryImplements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/RoutesRepositoryImplements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1052,22 +876,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#462#463#0" expanded="true" />
             <element signature="e#510#511#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/DeductionsRepositoryImplements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="77" selection-start-line="10" selection-start-column="77" selection-end-line="10" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
-            <element signature="e#1090#1091#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
-            <element signature="e#1186#1187#0" expanded="true" />
-            <element signature="e#1213#1214#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1196,12 +1004,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/VehicleRepositoryImplements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+        <state relative-caret-position="680">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1090#1091#0" expanded="true" />
             <element signature="e#1117#1118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/AdminOperationsRepoImplements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="e#1104#1105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/ApprovalsRepositoryImplements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/Implements/DeductionsRepositoryImplements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/DeductionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="76" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/Implements/ApprovalsRepositoryImplementsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="50" column="124" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Deductions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/Implements/DeductionsRepositoryImplementsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+          <folding>
+            <element signature="e#1187#1188#0" expanded="true" />
+            <element signature="e#1292#1293#0" expanded="true" />
           </folding>
         </state>
       </provider>
