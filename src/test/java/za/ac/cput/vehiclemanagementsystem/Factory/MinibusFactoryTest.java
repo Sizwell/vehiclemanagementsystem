@@ -3,10 +3,8 @@ package za.ac.cput.vehiclemanagementsystem.Factory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import za.ac.cput.vehiclemanagementsystem.Domain.Minibus;
-import za.ac.cput.vehiclemanagementsystem.Factory.MinibusFactory;
-
-import static org.junit.Assert.*;
+import za.ac.cput.vehiclemanagementsystem.Domain.Vehicle.Vehicles.Minibus;
+import za.ac.cput.vehiclemanagementsystem.Factory.VehiclesFactory.VehiclesFactory.MinibusFactory;
 
 public class MinibusFactoryTest {
 

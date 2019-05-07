@@ -3,10 +3,8 @@ package za.ac.cput.vehiclemanagementsystem.Factory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import za.ac.cput.vehiclemanagementsystem.Domain.TourGuide;
-import za.ac.cput.vehiclemanagementsystem.Factory.TourGuideFactory;
-
-import static org.junit.Assert.*;
+import za.ac.cput.vehiclemanagementsystem.Domain.Employee.TourGuide;
+import za.ac.cput.vehiclemanagementsystem.Factory.EmployeeFactory.EmployeesFactory.TourGuideFactory;
 
 public class TourGuideFactoryTest {
     private TourGuide tourGuide;

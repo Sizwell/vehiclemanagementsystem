@@ -3,8 +3,8 @@ package za.ac.cput.vehiclemanagementsystem.Factory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import za.ac.cput.vehiclemanagementsystem.Domain.Service;
-import za.ac.cput.vehiclemanagementsystem.Factory.ServiceFactory;
+import za.ac.cput.vehiclemanagementsystem.Domain.Service.Service;
+import za.ac.cput.vehiclemanagementsystem.Factory.ServiceFactory.ServiceFactory;
 
 public class ServiceFactoryTest {
 

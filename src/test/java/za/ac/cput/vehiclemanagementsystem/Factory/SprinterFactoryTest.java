@@ -3,10 +3,8 @@ package za.ac.cput.vehiclemanagementsystem.Factory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import za.ac.cput.vehiclemanagementsystem.Domain.Sprinter;
-import za.ac.cput.vehiclemanagementsystem.Factory.SprinterFactory;
-
-import static org.junit.Assert.*;
+import za.ac.cput.vehiclemanagementsystem.Domain.Vehicle.Vehicles.Sprinter;
+import za.ac.cput.vehiclemanagementsystem.Factory.VehiclesFactory.VehiclesFactory.SprinterFactory;
 
 public class SprinterFactoryTest {
 

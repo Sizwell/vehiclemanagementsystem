@@ -2,14 +2,14 @@ package za.ac.cput.vehiclemanagementsystem.Factory;
 
 import org.junit.Assert;
 import org.junit.Test;
-import za.ac.cput.vehiclemanagementsystem.Domain.Login;
-import za.ac.cput.vehiclemanagementsystem.Factory.LoginFactory;
+import za.ac.cput.vehiclemanagementsystem.Domain.Login.Login;
+import za.ac.cput.vehiclemanagementsystem.Factory.LoginFactory.LoginFactory;
 
 public class LoginFactoryTest {
 
-    String username = "Sizwe";
-    String password = "Ncikana";
-    String error = "Access denied. Please try again or contact your administrator";
+    private String username = "Sizwe";
+    private String password = "Ncikana";
+    private String error = "Access denied. Please try again or contact your administrator";
 
     @Test
     public void getLogin() {

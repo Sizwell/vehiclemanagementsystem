@@ -3,10 +3,8 @@ package za.ac.cput.vehiclemanagementsystem.Factory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import za.ac.cput.vehiclemanagementsystem.Domain.Deductions;
-import za.ac.cput.vehiclemanagementsystem.Factory.DeductionFactory;
-
-import static org.junit.Assert.*;
+import za.ac.cput.vehiclemanagementsystem.Domain.Deductions.Deductions;
+import za.ac.cput.vehiclemanagementsystem.Factory.DeductionsFactory.DeductionFactory;
 
 public class DeductionFactoryTest {
 
@@ -14,7 +12,7 @@ public class DeductionFactoryTest {
 
     @Before
     public void setUp() throws Exception {
-        deductions = DeductionFactory.getDeduction("Vehicle Installment", 5450.29);
+        deductions = DeductionFactory.getDeduction(25535, "Vehicle Installment", 5450.29);
     }
 
     @Test

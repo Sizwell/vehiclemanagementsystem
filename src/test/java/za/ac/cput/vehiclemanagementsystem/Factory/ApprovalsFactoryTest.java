@@ -3,13 +3,10 @@ package za.ac.cput.vehiclemanagementsystem.Factory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import za.ac.cput.vehiclemanagementsystem.Domain.Approvals;
-import za.ac.cput.vehiclemanagementsystem.Factory.ApprovalsFactory;
+import za.ac.cput.vehiclemanagementsystem.Domain.Approvals.Approvals;
+import za.ac.cput.vehiclemanagementsystem.Factory.ApprovalsFactory.ApprovalsFactory;
 
-import java.sql.DatabaseMetaData;
 import java.util.Date;
-
-import static org.junit.Assert.*;
 
 public class ApprovalsFactoryTest {
 

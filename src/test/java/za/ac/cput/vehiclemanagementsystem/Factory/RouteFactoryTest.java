@@ -3,10 +3,8 @@ package za.ac.cput.vehiclemanagementsystem.Factory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import za.ac.cput.vehiclemanagementsystem.Domain.Routes;
-import za.ac.cput.vehiclemanagementsystem.Factory.RouteFactory;
-
-import static org.junit.Assert.*;
+import za.ac.cput.vehiclemanagementsystem.Domain.Routes.Routes;
+import za.ac.cput.vehiclemanagementsystem.Factory.RoutesFactory.RouteFactory;
 
 public class RouteFactoryTest {
 

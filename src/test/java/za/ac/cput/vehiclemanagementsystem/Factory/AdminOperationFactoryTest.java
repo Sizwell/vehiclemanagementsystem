@@ -3,13 +3,13 @@ package za.ac.cput.vehiclemanagementsystem.Factory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import za.ac.cput.vehiclemanagementsystem.Domain.AdminOperations;
-import za.ac.cput.vehiclemanagementsystem.Factory.AdminOperationFactory;
+import za.ac.cput.vehiclemanagementsystem.Domain.AdminOperations.AdminOperations;
+import za.ac.cput.vehiclemanagementsystem.Factory.AdminoperationsFactory.AdminOperationFactory;
 
 public class AdminOperationFactoryTest {
 
-    String name = "Odwa";
-    String surname = "Ncikana";
+    private String name = "Odwa";
+    private String surname = "Ncikana";
 
     private AdminOperations adminOps;
 

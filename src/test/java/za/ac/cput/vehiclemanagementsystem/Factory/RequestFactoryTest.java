@@ -3,12 +3,10 @@ package za.ac.cput.vehiclemanagementsystem.Factory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import za.ac.cput.vehiclemanagementsystem.Domain.Requests;
-import za.ac.cput.vehiclemanagementsystem.Factory.RequestFactory;
+import za.ac.cput.vehiclemanagementsystem.Domain.Requests.Requests;
+import za.ac.cput.vehiclemanagementsystem.Factory.RequestFactory.RequestFactory;
 
 import java.util.Date;
-
-import static org.junit.Assert.*;
 
 public class RequestFactoryTest {
 

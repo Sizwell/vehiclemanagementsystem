@@ -3,13 +3,13 @@ package za.ac.cput.vehiclemanagementsystem.Factory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import za.ac.cput.vehiclemanagementsystem.Domain.VehicleManagement;
-import za.ac.cput.vehiclemanagementsystem.Factory.VehicleManagementFactory;
+import za.ac.cput.vehiclemanagementsystem.Domain.VehicleManagement.VehicleManagement;
+import za.ac.cput.vehiclemanagementsystem.Factory.VehicleManagementFactory.VehicleManagementFactory;
 
 public class VehicleManagementFactoryTest {
 
     private VehicleManagement vm;
-    String details = "VW Certified to carry only seated passengers";
+    private String details = "VW Certified to carry only seated passengers";
 
 
     @Before

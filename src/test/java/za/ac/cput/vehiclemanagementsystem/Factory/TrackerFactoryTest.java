@@ -3,8 +3,8 @@ package za.ac.cput.vehiclemanagementsystem.Factory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import za.ac.cput.vehiclemanagementsystem.Domain.Tracker;
-import za.ac.cput.vehiclemanagementsystem.Factory.TrackerFactory;
+import za.ac.cput.vehiclemanagementsystem.Domain.Tracker.Tracker;
+import za.ac.cput.vehiclemanagementsystem.Factory.TrackerFactory.TrackerFactory;
 
 public class TrackerFactoryTest {
 

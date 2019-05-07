@@ -3,12 +3,8 @@ package za.ac.cput.vehiclemanagementsystem.Factory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import za.ac.cput.vehiclemanagementsystem.Domain.Vehicle;
-import za.ac.cput.vehiclemanagementsystem.Factory.VehicleFactory;
-
-import javax.accessibility.AccessibleStateSet;
-
-import static org.junit.Assert.*;
+import za.ac.cput.vehiclemanagementsystem.Domain.Vehicle.Vehicle;
+import za.ac.cput.vehiclemanagementsystem.Factory.VehiclesFactory.VehicleFactory;
 
 public class VehicleFactoryTest {
 

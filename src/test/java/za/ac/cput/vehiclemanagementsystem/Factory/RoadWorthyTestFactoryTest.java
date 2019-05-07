@@ -3,8 +3,8 @@ package za.ac.cput.vehiclemanagementsystem.Factory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import za.ac.cput.vehiclemanagementsystem.Domain.RoadWorthyTest;
-import za.ac.cput.vehiclemanagementsystem.Factory.RoadWorthyTestFactory;
+import za.ac.cput.vehiclemanagementsystem.Domain.RoadWorthyTest.RoadWorthyTest;
+import za.ac.cput.vehiclemanagementsystem.Factory.RoadWorthTestFactory.RoadWorthyTestFactory;
 
 public class RoadWorthyTestFactoryTest {
 
