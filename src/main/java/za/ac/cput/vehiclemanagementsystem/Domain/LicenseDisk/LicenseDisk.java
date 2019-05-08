@@ -1,7 +1,5 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.LicenseDisk;
 
-import za.ac.cput.vehiclemanagementsystem.Domain.Cab;
-
 public class LicenseDisk {
 
     private String regNumber;
