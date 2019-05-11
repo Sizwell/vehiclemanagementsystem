@@ -5,10 +5,13 @@ import za.ac.cput.vehiclemanagementsystem.Repository.LoginRepository.LoginReposi
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class LoginRepositoryImplement implements LoginRepository {
 
     private static LoginRepositoryImplement loginRepo = null;
+
 
     private List <Login> logins;
 
@@ -17,7 +20,15 @@ public class LoginRepositoryImplement implements LoginRepository {
         this.logins = new ArrayList<>();
     }
 
-    public static LoginRepository getCredentials()
+
+    private Login viewCredentials(String username/*, String password*/)
+    {
+        return this.logins.stream().filter(login -> login.getUsername().trim().equals(username))
+                .findAny()
+                .orElse(null);
+    }
+
+    public static LoginRepositoryImplement getCredentials()
     {
         if (loginRepo == null){
             loginRepo = new LoginRepositoryImplement();
@@ -41,19 +52,31 @@ public class LoginRepositoryImplement implements LoginRepository {
     @Override
     public Login read(String loginDetails)
     {
-        return loginRepo.read(loginDetails);
+        Login log = viewCredentials(loginDetails);
+        return log;
     }
 
     @Override
     public Login update(Login login)
     {
-        loginRepo.update(login);
-        return login;
+        Login credToDelete = viewCredentials(login.getUsername());
+        if(credToDelete != null)
+        {
+            this.logins.remove(credToDelete);
+            return create(login);
+        }
+        return null;
+        /*loginRepo.update(login);
+        return login;*/
     }
 
     @Override
     public void delete(String s)
     {
-
+        Login login = viewCredentials(s);
+        if (login != null)
+        {
+            this.logins.remove(login);
+        }
     }
 }

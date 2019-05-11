@@ -1,6 +1,7 @@
 package za.ac.cput.vehiclemanagementsystem.Repository.ApprovalsRepository.Implements;
 
 import za.ac.cput.vehiclemanagementsystem.Domain.Approvals.Approvals;
+import za.ac.cput.vehiclemanagementsystem.Domain.Login.Login;
 import za.ac.cput.vehiclemanagementsystem.Repository.ApprovalsRepository.ApprovalsRepository;
 
 import java.util.HashSet;

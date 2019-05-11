@@ -1,15 +1,13 @@
 package za.ac.cput.vehiclemanagementsystem;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/**
- * Hello world!
- */
-public class App {
+@SpringBootApplication
+public class VehicleManagementApplication {
     public static void main(String[] args) {
+
+        SpringApplication.run(VehicleManagementApplication.class, args);
 
         // <<< - - - Types to use - - - >>>
 
