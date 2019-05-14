@@ -37,6 +37,14 @@ public class Login {
             return this;
         }
 
+        public Builder copyCredentials(Login login)
+        {
+            this.username = login.username;
+            this.password = login.password;
+
+            return this;
+        }
+
         public Login build() {
             return new Login(this);
         }

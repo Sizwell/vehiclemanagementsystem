@@ -2,7 +2,9 @@ package za.ac.cput.vehiclemanagementsystem.repository.LicenseDiskRepository.Impl
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 import za.ac.cput.vehiclemanagementsystem.Domain.LicenseDisk.LicenseDisk;
 import za.ac.cput.vehiclemanagementsystem.Factory.LicenseDisk.LicenseDiskFactory;
 import za.ac.cput.vehiclemanagementsystem.Repository.LicenseDiskRepository.Implements.LicenseDiskRepositoryImplements;
@@ -11,7 +13,7 @@ import za.ac.cput.vehiclemanagementsystem.Repository.LicenseDiskRepository.Licen
 import java.util.Set;
 
 import static org.junit.Assert.*;
-
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class LicenseDiskRepositoryImplementsTest {
 
     private LicenseDiskRepository diskRepository;

@@ -2,7 +2,9 @@ package za.ac.cput.vehiclemanagementsystem.repository.ApprovalsRepository.Implem
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 import za.ac.cput.vehiclemanagementsystem.Domain.Approvals.Approvals;
 import za.ac.cput.vehiclemanagementsystem.Factory.ApprovalsFactory.ApprovalsFactory;
 import za.ac.cput.vehiclemanagementsystem.Repository.ApprovalsRepository.ApprovalsRepository;
@@ -12,6 +14,7 @@ import java.util.Date;
 
 import static org.junit.Assert.*;
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ApprovalsRepositoryImplementsTest {
 
     private ApprovalsRepository approvalsRepository;
@@ -24,6 +27,8 @@ public class ApprovalsRepositoryImplementsTest {
     {
         approvalsRepository = ApprovalsRepositoryImplements.getApprovals();
         approvals = ApprovalsFactory.getApproval("PDOF345FVB90V4C", date, "Vehicle approved for tour");
+
+
     }
 
     @Test

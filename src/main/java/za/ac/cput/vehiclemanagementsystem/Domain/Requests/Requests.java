@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Requests {
 
+    private String reqNo;
     private String details;
     private Date date;
 
@@ -12,14 +13,21 @@ public class Requests {
     }
 
     public Requests(Builder builder) {
+        this.reqNo = builder.reqNo;
         this.details = builder.details;
         this.date = builder.date;
     }
 
     public static class Builder {
+        private String reqNo;
         private String details;
         private Date date;
 
+        public Builder reguestNo(String reqNo)
+        {
+            this.reqNo = reqNo;
+            return this;
+        }
 
         public Builder details(String details) {
             this.details = details;
@@ -31,9 +39,23 @@ public class Requests {
             return this;
         }
 
+        public Builder copyRequests(Requests requests)
+        {
+            this.reqNo = requests.reqNo;
+            this.details = requests.details;
+            this.date = requests.date;
+
+            return this;
+        }
+
         public Requests build() {
             return new Requests(this);
         }
+    }
+
+    public String getReqNo()
+    {
+        return reqNo;
     }
 
     public String getDetails() {
@@ -47,7 +69,8 @@ public class Requests {
     @Override
     public String toString() {
         return "------ Requests ------\n" +
-                "\nDetails: '" + details + '\'' +
-                "\nDate: " + date;
+                "Request No: '"+ getReqNo() + '\'' +
+                "\nDetails: '" + getDetails() + '\'' +
+                "\nDate: " + getDate();
     }
 }

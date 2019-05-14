@@ -2,8 +2,8 @@ package za.ac.cput.vehiclemanagementsystem.Domain.AdminOperations;
 
 public class AdminOperations {
 
-    private String name;
-    private String surname;
+    private String operationID;
+    private String operation;
    /* private String designation;
     private String destinationRoute;*/
 
@@ -12,40 +12,35 @@ public class AdminOperations {
     }
 
     private AdminOperations(Builder builder) {
-        this.name = builder.name;
-        this.surname = builder.surname;
+        this.operationID = builder.operationID;
+        this.operation = builder.operation;
         /*this.designation = builder.designation;
         this.destinationRoute = builder.destinationRoute;*/
     }
 
     public static class Builder {
-        private String name;
-        private String surname;
+        private String operationID;
+        private String operation;
         /*private String designation;
         private String destinationRoute;*/
 
-        public Builder name(String fName) {
-            this.name = fName;
+        public Builder operationID(String operationID) {
+            this.operationID = operationID;
             return this;
         }
 
-        public Builder surname(String lName) {
-            this.surname = lName;
+        public Builder operation(String operation) {
+            this.operation = operation;
             return this;
         }
 
-        /*public Builder designation(String desig)
+        public Builder copy(AdminOperations adminOperations)
         {
-            this.designation = desig;
-            return this;
-        }*/
+            this.operationID = adminOperations.operationID;
+            this.operation = adminOperations.operation;
 
-       /* public Builder destinationRoute(String destine)
-        {
-            this.destinationRoute = destine;
             return this;
-        }*/
-
+        }
 
         public AdminOperations build() {
             return new AdminOperations(this);
@@ -53,26 +48,18 @@ public class AdminOperations {
 
     }
 
-    public String getName() {
-        return name;
+    public String getOperationID() {
+        return operationID;
     }
 
-    public String getSurname() {
-        return surname;
+    public String getOperation() {
+        return operation;
     }
 
-   /* public String getDesignation() {
-        return designation;
-    }
-
-    public String getDestinationRoute() {
-        return destinationRoute;
-    }*/
 
     public String toString() {
         String str;
-        str = " Name: " + getName() + " Surname: " + getSurname() +
-                " Designation: " /*+ getDesignation() + " Destination: " + getDestinationRoute()*/;
+        str = "Operation ID " + getOperationID() + " Operation: " + getOperation();
         return str;
     }
 

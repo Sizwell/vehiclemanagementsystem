@@ -4,10 +4,10 @@ import za.ac.cput.vehiclemanagementsystem.Domain.AdminOperations.AdminOperations
 
 public class AdminOperationFactory {
 
-    public static AdminOperations getValidation(String name, String surname) {
+    public static AdminOperations getOperation(String operationID, String operation) {
         return new AdminOperations.Builder()
-                .name(name)
-                .surname(surname)
+                .operationID(operationID)
+                .operation(operation)
                 .build();
     }
 }

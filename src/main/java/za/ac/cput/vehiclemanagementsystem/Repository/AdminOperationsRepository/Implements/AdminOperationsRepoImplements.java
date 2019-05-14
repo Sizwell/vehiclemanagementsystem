@@ -1,6 +1,7 @@
 package za.ac.cput.vehiclemanagementsystem.Repository.AdminOperationsRepository.Implements;
 
 import za.ac.cput.vehiclemanagementsystem.Domain.AdminOperations.AdminOperations;
+import za.ac.cput.vehiclemanagementsystem.Domain.Employee.Admin;
 import za.ac.cput.vehiclemanagementsystem.Repository.AdminOperationsRepository.AdminOperationsRepository;
 
 import java.util.ArrayList;
@@ -15,7 +16,15 @@ public class AdminOperationsRepoImplements implements AdminOperationsRepository 
         this.adminList = new ArrayList<>();
     }
 
-    public static AdminOperationsRepository getRepository() {
+    public AdminOperations findOperations(String operation)
+    {
+        return this.adminList.stream().filter(adminOperations -> adminOperations.getOperation()
+                .trim().equals(operation))
+                .findAny()
+                .orElse(null);
+   }
+
+    public static AdminOperationsRepoImplements getRepository() {
         if (admin == null) {
             admin = new AdminOperationsRepoImplements();
         }
@@ -35,20 +44,29 @@ public class AdminOperationsRepoImplements implements AdminOperationsRepository 
 
     @Override
     public AdminOperations read(String read) {
-        return admin.read(read);
+        AdminOperations adminOperations = findOperations(read);
+        return adminOperations;
     }
 
     @Override
     public AdminOperations update(AdminOperations adminOperations)
     {
-        admin.update(adminOperations);
-        return adminOperations;
+        AdminOperations toUpdate = findOperations(adminOperations.getOperationID());
+        if(toUpdate != null){
+            this.adminList.remove(toUpdate);
+            return create(adminOperations);
+        }
+        return null;
     }
 
     @Override
     public void delete(String delete)
     {
+        AdminOperations toDelete = findOperations(delete);
+        if (toDelete != null)
+        {
+            this.adminList.remove(toDelete);
+        }
 
-        admin.delete(delete);
     }
 }

@@ -2,7 +2,7 @@ package za.ac.cput.vehiclemanagementsystem.Domain.EmployeeManagement;
 
 public class EmployeeManagement {
 
-    private int empID;
+    private int taskID;
     private String empName;
     private String empTasks;
 
@@ -11,18 +11,18 @@ public class EmployeeManagement {
     }
 
     public EmployeeManagement(Builder builder) {
-        this.empID = builder.empID;
+        this.taskID = builder.taskID;
         this.empName = builder.empName;
         this.empTasks = builder.empTasks;
     }
 
     public static class Builder {
-        private int empID;
+        private int taskID;
         private String empName;
         private String empTasks;
 
-        public Builder empID(int id) {
-            this.empID = id;
+        public Builder taskID(int id) {
+            this.taskID = id;
             return this;
         }
 
@@ -36,14 +36,21 @@ public class EmployeeManagement {
             return this;
         }
 
+        public Builder copyTask(EmployeeManagement management)
+        {
+            this.taskID = management.taskID;
+            this.empTasks = management.empTasks;
+            return this;
+        }
+
         public EmployeeManagement build() {
             return new EmployeeManagement(this);
         }
 
     }
 
-    public int getEmpID() {
-        return empID;
+    public int getTaskID() {
+        return taskID;
     }
 
     public String getEmpName() {
@@ -57,7 +64,7 @@ public class EmployeeManagement {
     @Override
     public String toString() {
         return "------ EmployeeManagement ------\n" +
-                "emp ID : " + empID +
+                "Task ID : " + taskID +
                 "\nEmp Name : '" + empName + '\'' +
                 "\nEmp Tasks : '" + empTasks + '\'';
     }
