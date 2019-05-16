@@ -1,5 +1,9 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.Vehicle.Vehicles;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class LuxuryCoach {
 
     private String vinNo;
@@ -64,4 +68,18 @@ public class LuxuryCoach {
                 "\nCapacity : " + capacity;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof LuxuryCoach)) return false;
+        LuxuryCoach that = (LuxuryCoach) o;
+        return driverNo == that.driverNo &&
+                capacity == that.capacity &&
+                vinNo.equals(that.vinNo);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(vinNo, driverNo, capacity);
+    }
 }

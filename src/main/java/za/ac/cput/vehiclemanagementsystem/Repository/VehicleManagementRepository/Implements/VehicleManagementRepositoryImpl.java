@@ -1,5 +1,6 @@
 package za.ac.cput.vehiclemanagementsystem.Repository.VehicleManagementRepository.Implements;
 
+import za.ac.cput.vehiclemanagementsystem.Domain.Vehicle.Vehicle;
 import za.ac.cput.vehiclemanagementsystem.Domain.VehicleManagement.VehicleManagement;
 import za.ac.cput.vehiclemanagementsystem.Repository.VehicleManagementRepository.VehicleManagementRepo;
 
@@ -18,6 +19,13 @@ public class VehicleManagementRepositoryImpl implements VehicleManagementRepo {
         this.vehicles = new ArrayList<>();
     }
 
+    private VehicleManagement manageVehicles(String id)
+    {
+        return this.vehicles.stream().filter(vehicleManagement -> vehicleManagement.getVehicleId().trim().equals(id))
+                .findAny()
+                .orElse(null);
+    }
+
     public static VehicleManagementRepo getRepository() {
         if (vehicleRepository == null) {
             vehicleRepository = new VehicleManagementRepositoryImpl();
@@ -31,31 +39,37 @@ public class VehicleManagementRepositoryImpl implements VehicleManagementRepo {
     }
 
     @Override
-    public VehicleManagement create(VehicleManagement creating) {
-        /*vehicleRepository.vehicles.add(creating);
-        int a = vehicles.g*/
-        this.vehicles.add(creating);
-        return creating;
+    public VehicleManagement create(VehicleManagement vm)
+    {
+        this.vehicles.add(vm);
+        return vm;
     }
 
     @Override
     public VehicleManagement read(String reader)
     {
-        int i = vehicles.indexOf(reader);
-        return vehicleRepository.vehicles.get(i);
+        VehicleManagement management = manageVehicles(reader);
+        return management;
     }
 
     @Override
     public VehicleManagement update(VehicleManagement updater)
     {
-        vehicles.add(updater);
-        vehicleRepository.update(updater);
-        return updater;
+        VehicleManagement toUpdate = manageVehicles(updater.getVehicleId());
+        if (toUpdate != null)
+        {
+            this.vehicles.remove(toUpdate);
+            return create(updater);
+        }
+        return null;
     }
 
     @Override
     public void delete(String delete)
     {
-        vehicles.remove(delete);
+        VehicleManagement toDelete = manageVehicles(delete);
+        if (toDelete != null){
+            this.vehicles.remove(toDelete);
+        }
     }
 }

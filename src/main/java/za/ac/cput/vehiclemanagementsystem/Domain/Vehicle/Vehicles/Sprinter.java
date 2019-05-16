@@ -1,5 +1,9 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.Vehicle.Vehicles;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class Sprinter {
 
     private String vinNo;
@@ -62,5 +66,20 @@ public class Sprinter {
                 "\nVin No : '" + vinNo + '\'' +
                 "\nDriver No : " + driverNo +
                 "\nCapacity : " + capacity;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Sprinter)) return false;
+        Sprinter sprinter = (Sprinter) o;
+        return driverNo == sprinter.driverNo &&
+                capacity == sprinter.capacity &&
+                vinNo.equals(sprinter.vinNo);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(vinNo, driverNo, capacity);
     }
 }

@@ -1,5 +1,9 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.Service;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class Service {
 
     private String vinNo;
@@ -36,6 +40,13 @@ public class Service {
             return this;
         }
 
+        public Builder copyVin(Service serviceNo)
+        {
+            this.vinNo = serviceNo.vinNo;
+            return this;
+
+        }
+
         public Service build() {
             return new Service(this);
         }
@@ -56,9 +67,24 @@ public class Service {
     @Override
     public String toString() {
         return "------ Register Vehicle ------\n" +
-                "VIN No : " + vinNo +
-                "\nModel : '" + model + '\'' +
-                "\nMake : '" + make + '\'';
+                "VIN No : " + getVinNo() +
+                "\nModel : '" + getModel() + '\'' +
+                "\nMake : '" + getMake() + '\'';
 
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Service)) return false;
+        Service service = (Service) o;
+        return vinNo.equals(service.vinNo) &&
+                Objects.equals(model, service.model) &&
+                Objects.equals(make, service.make);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(vinNo, model, make);
     }
 }

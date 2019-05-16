@@ -1,5 +1,9 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.VehicleManagement;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class VehicleManagement {
 
     private String vehicleID;
@@ -10,7 +14,7 @@ public class VehicleManagement {
     }
 
     public VehicleManagement(Builder builder) {
-        this.vehicleDetails = builder.vehicleID;
+        this.vehicleID = builder.vehicleID;
         this.vehicleDetails = builder.vehicleDetails;
     }
 
@@ -29,9 +33,20 @@ public class VehicleManagement {
             return this;
         }
 
+        public Builder copyVM(VehicleManagement vm)
+        {
+            this.vehicleID = vm.vehicleID;
+            this.vehicleDetails = vm.vehicleDetails;
+            return this;
+        }
+
         public VehicleManagement build() {
             return new VehicleManagement(this);
         }
+    }
+
+    public String getVehicleId() {
+        return vehicleID;
     }
 
     public String getVehicleDetails() {
@@ -42,8 +57,22 @@ public class VehicleManagement {
     @Override
     public String toString() {
         return "------ Vehicle Management ------\n{" +
-                "Vehicle id : '" + vehicleID + "\n" +
-                "Vehicle Details :'" + vehicleDetails + '\'' +
+                "Vehicle id : '" + getVehicleId() + "\n" +
+                "Vehicle Details :'" + getVehicleDetails() + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof VehicleManagement)) return false;
+        VehicleManagement that = (VehicleManagement) o;
+        return vehicleID.equals(that.vehicleID) &&
+                vehicleDetails.equals(that.vehicleDetails);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(vehicleID, vehicleDetails);
     }
 }

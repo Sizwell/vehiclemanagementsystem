@@ -1,10 +1,13 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.Transaction;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
+import java.util.Objects;
+@EntityScan
 public class Transaction {
 
     private boolean checkedIn;
@@ -65,5 +68,19 @@ public class Transaction {
         return "------ Employee Check-in------" +
                 "\nChecked in : " + getCheckedIn() +
                 "\nCheck-in Date : '" + getCheckInDate() + '\'';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Transaction)) return false;
+        Transaction that = (Transaction) o;
+        return checkedIn == that.checkedIn &&
+                Objects.equals(transactionDate, that.transactionDate);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(checkedIn, transactionDate);
     }
 }

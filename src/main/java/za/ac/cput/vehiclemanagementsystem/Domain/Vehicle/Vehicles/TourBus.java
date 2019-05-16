@@ -1,5 +1,9 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.Vehicle.Vehicles;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class TourBus {
 
     private String vinNo;
@@ -61,5 +65,20 @@ public class TourBus {
                 "Vin No :'" + vinNo + '\'' +
                 "\nBus Type : '" + busType + '\'' +
                 "\nVehicle Name : '" + vehName + '\'';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof TourBus)) return false;
+        TourBus tourBus = (TourBus) o;
+        return vinNo.equals(tourBus.vinNo) &&
+                Objects.equals(busType, tourBus.busType) &&
+                Objects.equals(vehName, tourBus.vehName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(vinNo, busType, vehName);
     }
 }

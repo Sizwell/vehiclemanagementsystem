@@ -9,12 +9,10 @@ import za.ac.cput.vehiclemanagementsystem.Factory.VehicleManagementFactory.Vehic
 public class VehicleManagementFactoryTest {
 
     private VehicleManagement vm;
-    private String details = "VW Certified to carry only seated passengers";
-
 
     @Before
     public void setUp() throws Exception {
-        vm = VehicleManagementFactory.getDetails(details);
+        vm = VehicleManagementFactory.getDetails("FV89ER458CV0", "22 - Seater Vw Crafter");
     }
 
     @Test

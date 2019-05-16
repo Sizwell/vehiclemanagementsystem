@@ -1,5 +1,9 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.Vehicle.Vehicles;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class Quantum {
 
     private String vinNo;
@@ -64,4 +68,18 @@ public class Quantum {
                 "\nCapacity : " + capacity;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Quantum)) return false;
+        Quantum quantum = (Quantum) o;
+        return driverNo == quantum.driverNo &&
+                capacity == quantum.capacity &&
+                vinNo.equals(quantum.vinNo);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(vinNo, driverNo, capacity);
+    }
 }

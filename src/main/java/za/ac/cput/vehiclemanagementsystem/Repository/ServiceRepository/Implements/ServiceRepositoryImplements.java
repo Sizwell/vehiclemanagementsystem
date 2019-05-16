@@ -23,7 +23,14 @@ public class ServiceRepositoryImplements implements ServiceRepository {
             serviceRepo = new ServiceRepositoryImplements();
         }
         return serviceRepo;
-    }    
+    }
+
+    private Service findService(String serviceID)
+    {
+        return this.serviceList.stream().filter(service -> service.getVinNo().trim().equals(serviceID))
+                .findAny()
+                .orElse(null);
+    }
     
     @Override
     public List<Service> getAll() 
@@ -39,18 +46,32 @@ public class ServiceRepositoryImplements implements ServiceRepository {
     }
 
     @Override
-    public Service read(String s) {
-        return null;
+    public Service read(String s)
+    {
+        Service service = findService(s);
+
+        return service;
     }
 
     @Override
-    public Service update(Service service) {
+    public Service update(Service service)
+    {
+        Service serviceUpdate = findService(service.getVinNo());
+        if (serviceUpdate != null)
+        {
+            this.serviceList.remove(serviceUpdate);
+            return create(service);
+        }
         return null;
     }
 
     @Override
     public void delete(String s) 
     {
-
+        Service toDelete = findService(s);
+        if (toDelete != null)
+        {
+            this.serviceList.remove(toDelete);
+        }
     }
 }

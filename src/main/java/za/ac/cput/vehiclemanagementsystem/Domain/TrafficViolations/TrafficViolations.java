@@ -1,8 +1,12 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.TrafficViolations;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class TrafficViolations {
 
-    private int violationNo;
+    private String violationNo;
     private String vioDescription;
 
     public TrafficViolations() {
@@ -15,10 +19,10 @@ public class TrafficViolations {
     }
 
     public static class Builder {
-        private int violationNo;
+        private String violationNo;
         private String vioDescription;
 
-        public Builder violationNo(int no) {
+        public Builder violationNo(String no) {
             this.violationNo = no;
             return this;
         }
@@ -28,13 +32,21 @@ public class TrafficViolations {
             return this;
         }
 
+        public Builder copyViolations(TrafficViolations violation)
+        {
+            this.violationNo = violation.violationNo;
+            this.vioDescription = violation.vioDescription;
+            return this;
+
+        }
+
         public TrafficViolations build() {
             return new TrafficViolations(this);
         }
 
     }
 
-    public int getViolationNo() {
+    public String getViolationNo() {
         return violationNo;
     }
 
@@ -45,7 +57,21 @@ public class TrafficViolations {
     @Override
     public String toString() {
         return "------ Employee Check-out------" +
-                "\nViolation No : " + violationNo +
-                "\nViolation Description : '" + vioDescription + '\'';
+                "\nViolation No : " + getViolationNo() +
+                "\nViolation Description : '" + getVioDescription() + '\'';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof TrafficViolations)) return false;
+        TrafficViolations that = (TrafficViolations) o;
+        return violationNo == that.violationNo &&
+                vioDescription.equals(that.vioDescription);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(violationNo, vioDescription);
     }
 }

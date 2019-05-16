@@ -5,6 +5,6 @@ import za.ac.cput.vehiclemanagementsystem.Repository.ControlRepository;
 
 import java.util.List;
 
-public interface VehicleHistoryRepository extends ControlRepository {
+public interface VehicleHistoryRepository extends ControlRepository <VehicleHistory, String>{
     List <VehicleHistory> getHistory();
 }

@@ -1,5 +1,9 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.VehicleDetails;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class VehicleDetails {
     private String vehicleReg;
     private String vehicleType;
@@ -46,5 +50,19 @@ public class VehicleDetails {
         return "------ Vehicle Details ------\n" +
                 "Vehicle Registration : '" + vehicleReg + '\'' +
                 "\nVehicle Type : " + vehicleType + '\'';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof VehicleDetails)) return false;
+        VehicleDetails that = (VehicleDetails) o;
+        return vehicleReg.equals(that.vehicleReg) &&
+                vehicleType.equals(that.vehicleType);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(vehicleReg, vehicleType);
     }
 }

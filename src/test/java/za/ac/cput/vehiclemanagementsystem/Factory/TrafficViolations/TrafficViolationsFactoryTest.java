@@ -13,8 +13,8 @@ public class TrafficViolationsFactoryTest {
 
     @Before
     public void setUp() throws Exception {
-        trafficViolations = TrafficViolationsFactory.getViolation(2352, "Over Speeding");
-        trafficViolationsEmp = TrafficViolationsFactory.getViolation(2012, "Seat belt");
+        trafficViolations = TrafficViolationsFactory.getViolation("2352", "Over Speeding");
+        trafficViolationsEmp = TrafficViolationsFactory.getViolation("2012", "Seat belt");
     }
 
     @Test

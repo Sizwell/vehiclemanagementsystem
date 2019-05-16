@@ -1,5 +1,11 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.Employee;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+
+@EntityScan
+
 public class Admin {
 
     private int empNumb;
@@ -64,5 +70,20 @@ public class Admin {
                 "Emp Number : " + empNumb +
                 "\nEmp Name : '" + empName + '\'' +
                 "\nEmp Surname : '" + empSurname + '\'';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Admin)) return false;
+        Admin admin = (Admin) o;
+        return empNumb == admin.empNumb &&
+                empName.equals(admin.empName) &&
+                empSurname.equals(admin.empSurname);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(empNumb, empName, empSurname);
     }
 }

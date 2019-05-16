@@ -5,16 +5,14 @@ import org.junit.Before;
 import org.junit.Test;
 import za.ac.cput.vehiclemanagementsystem.Domain.VehicleHistory.VehicleHistory;
 
-import static org.junit.Assert.*;
-
-public class VehicelHistoryFactoryTest {
+public class VehicleHistoryFactoryTest {
 
     private VehicleHistory vehicleHistory;
 
     @Before
     public void setUp() throws Exception
     {
-        vehicleHistory = VehicelHistoryFactory.vehicleHistory("B78E45GHY5", "Taxi",
+        vehicleHistory = VehicleHistoryFactory.vehicleHistory("B78E45GHY5", "Taxi",
                 "Took on 3 Tours around the Cape Peninsula");
     }
 

@@ -2,7 +2,7 @@ package za.ac.cput.vehiclemanagementsystem.Factory.VehicleHistoryFactory;
 
 import za.ac.cput.vehiclemanagementsystem.Domain.VehicleHistory.VehicleHistory;
 
-public class VehicelHistoryFactory {
+public class VehicleHistoryFactory {
 
     public static VehicleHistory vehicleHistory(String vNum, String vType, String vHistory)
     {

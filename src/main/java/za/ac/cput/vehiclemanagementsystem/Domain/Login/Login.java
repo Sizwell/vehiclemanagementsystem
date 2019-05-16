@@ -1,6 +1,10 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.Login;
 
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class Login {
     private String username;
     private String password;
@@ -69,7 +73,22 @@ public class Login {
     @Override
     public String toString() {
         return "**** Login ****\n" +
-                "\nUsername: '" + username + '\'' +
-                "\nPassword: '" + password + '\'';
+                "\nUsername: '" + getUsername() + '\'' +
+                "\nPassword: '" + getPassword() + '\'';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Login)) return false;
+        Login login = (Login) o;
+        return username.equals(login.username) &&
+                password.equals(login.password) &&
+                Objects.equals(errorMessage, login.errorMessage);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(username, password, errorMessage);
     }
 }

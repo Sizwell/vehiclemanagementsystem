@@ -1,5 +1,10 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.Tracker;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+
+@EntityScan
 public class Tracker {
 
     private String vinNo;
@@ -36,6 +41,16 @@ public class Tracker {
             return this;
         }
 
+
+        public Builder copyTracker(Tracker trackerID)
+        {
+            this.vinNo = trackerID.vinNo;
+            this.make = trackerID.make;
+            this.model = trackerID.model;
+            return this;
+
+        }
+
         public Tracker build() {
             return new Tracker(this);
         }
@@ -56,10 +71,24 @@ public class Tracker {
     @Override
     public String toString() {
         return "------ Vehicle Tracker ------\n" +
-                "VIN No : " + vinNo +
-                "\nModel : '" + model + '\'' +
-                "\nMake : '" + make + '\'';
+                "VIN No : " + getVinNo() +
+                "\nModel : '" + getModel() + '\'' +
+                "\nMake : '" + getMake() + '\'';
 
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Tracker)) return false;
+        Tracker tracker = (Tracker) o;
+        return vinNo.equals(tracker.vinNo) &&
+                Objects.equals(model, tracker.model) &&
+                Objects.equals(make, tracker.make);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(vinNo, model, make);
+    }
 }

@@ -25,9 +25,18 @@ public class TrackerRepoImplements implements TrackerRepository {
         return trackerRepository;
     }
 
+    private Tracker findTracker(String trackerId)
+    {
+        return this.trackerList.stream()
+                .filter(tracker -> tracker.getVinNo().trim().equals(trackerId))
+                .findAny()
+                .orElse(null);
+    }
+
     @Override
     public List<Tracker> getAll()
     {
+
         return this.trackerList;
     }
 
@@ -39,17 +48,33 @@ public class TrackerRepoImplements implements TrackerRepository {
     }
 
     @Override
-    public Tracker read(String s) {
+    public Tracker read(String s)
+    {
+        Tracker tracker = findTracker(s);
+        return tracker;
+    }
+
+    @Override
+    public Tracker update(Tracker tracker)
+    {
+        Tracker uTracker = findTracker(tracker.getVinNo());
+        if (uTracker != null)
+        {
+            this.trackerList.remove(uTracker);
+            return create(tracker);
+        }
         return null;
     }
 
     @Override
-    public Tracker update(Tracker tracker) {
-        return null;
+    public void delete(String s)
+    {
+        Tracker track = findTracker(s);
+        if (track != null)
+        {
+            this.trackerList.remove(track);
+        }
     }
 
-    @Override
-    public void delete(String s) {
 
-    }
 }

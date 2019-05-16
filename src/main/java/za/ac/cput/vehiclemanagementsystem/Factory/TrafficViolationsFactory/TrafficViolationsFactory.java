@@ -4,7 +4,7 @@ import za.ac.cput.vehiclemanagementsystem.Domain.TrafficViolations.TrafficViolat
 
 public class TrafficViolationsFactory {
 
-    public static TrafficViolations getViolation(int vioNo, String vioDesc) {
+    public static TrafficViolations getViolation(String vioNo, String vioDesc) {
         return new TrafficViolations.Builder()
                 .violationNo(vioNo)
                 .vioDescripton(vioDesc)

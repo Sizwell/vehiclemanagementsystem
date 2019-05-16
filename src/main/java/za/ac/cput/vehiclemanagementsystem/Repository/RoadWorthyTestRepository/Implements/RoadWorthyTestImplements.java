@@ -16,7 +16,15 @@ public class RoadWorthyTestImplements implements RoadWorthyTestRepository {
     {
         this.roadWorthyList = new ArrayList<>();
     }
-    
+
+    public RoadWorthyTest getRoadWorthyTest(String vin)
+    {
+        return this.roadWorthyList.stream()
+                .filter(roadWorthyTest -> roadWorthyTest.getVinNo().trim().equals(vin))
+                .findAny()
+                .orElse(null);
+    }
+
     public static RoadWorthyTestRepository getRepository()
     {
         if (roadWorthyRepository == null)
@@ -42,25 +50,28 @@ public class RoadWorthyTestImplements implements RoadWorthyTestRepository {
 
     @Override
     public RoadWorthyTest read(String s) {
-        return null;
+        RoadWorthyTest test = getRoadWorthyTest(s);
+        return test;
     }
 
     @Override
     public RoadWorthyTest update(RoadWorthyTest roadWorthyTest)
     {
-        String a = roadWorthyTest.getVinNo();
-        int b = Integer.parseInt(a);
-        this.roadWorthyList.get(b);
-
-        this.roadWorthyList.add(roadWorthyTest);
-        return roadWorthyTest;
+       RoadWorthyTest toUpdate = getRoadWorthyTest(roadWorthyTest.getVinNo());
+       if (toUpdate != null)
+       {
+           this.roadWorthyList.remove(toUpdate);
+       }
+       return toUpdate;
     }
 
     @Override
     public void delete(String delete)
     {
-        int a = this.roadWorthyList.size();
-        int b = roadWorthyList.indexOf(a);
-        roadWorthyList.remove(b);
+        RoadWorthyTest toDelete = getRoadWorthyTest(delete);
+        if (toDelete != null)
+        {
+            this.roadWorthyList.remove(toDelete);
+        }
     }
 }

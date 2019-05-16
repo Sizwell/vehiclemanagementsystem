@@ -1,5 +1,9 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.Routes;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class Routes {
 
     private int routeNo;
@@ -60,5 +64,20 @@ public class Routes {
                 "Route No : " + routeNo +
                 "\nRoute Name : '" + routeName + '\'' +
                 "\nDestination : '" + destination + '\'';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Routes)) return false;
+        Routes routes = (Routes) o;
+        return routeNo == routes.routeNo &&
+                routeName.equals(routes.routeName) &&
+                destination.equals(routes.destination);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(routeNo, routeName, destination);
     }
 }

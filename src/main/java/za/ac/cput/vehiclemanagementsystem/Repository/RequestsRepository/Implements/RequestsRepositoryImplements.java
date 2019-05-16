@@ -16,6 +16,14 @@ public class RequestsRepositoryImplements implements RequestsRepository {
         this.requestsList = new ArrayList<>();
     }
 
+    private Requests findRequests(String reqNo)
+    {
+        return this.requestsList.stream()
+                .filter(requests -> requests.getReqNo().trim().equals(reqNo))
+                .findAny()
+                .orElse(null);
+    }
+
     public static RequestsRepository getRequests()
     {
         if(requestRepository == null)
@@ -29,7 +37,7 @@ public class RequestsRepositoryImplements implements RequestsRepository {
     public List<Requests> getAll()
     {
         return this.requestsList;
-    }
+     }
 
     @Override
     public Requests create(Requests requests)
@@ -39,17 +47,30 @@ public class RequestsRepositoryImplements implements RequestsRepository {
     }
 
     @Override
-    public Requests read(String s) {
-        return null;
+    public Requests read(String s)
+    {
+        Requests requests = findRequests(s);
+        return requests;
     }
 
     @Override
-    public Requests update(Requests requests) {
-        return null;
+    public Requests update(Requests requests)
+    {
+        Requests toUpdate = findRequests(requests.getReqNo());
+        if (toUpdate != null)
+        {
+            this.requestsList.remove(toUpdate);
+        }
+        return toUpdate;
     }
 
     @Override
-    public void delete(String s) {
-
+    public void delete(String s)
+    {
+        Requests requests = findRequests(s);
+        if (requests != null)
+        {
+            this.requestsList.remove(requests);
+        }
     }
 }

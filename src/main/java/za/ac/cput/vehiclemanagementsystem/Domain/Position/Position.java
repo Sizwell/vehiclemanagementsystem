@@ -1,5 +1,9 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.Position;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class Position {
 
     private int roleID;
@@ -54,5 +58,19 @@ public class Position {
         return "------ PositionFactory ------\n" +
                 "Role ID: " + getRoleID() +
                 "\nPotion Description: '" + getPositionDescription() + '\'';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Position)) return false;
+        Position position = (Position) o;
+        return roleID == position.roleID &&
+                positionDescription.equals(position.positionDescription);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(roleID, positionDescription);
     }
 }

@@ -4,8 +4,9 @@ import za.ac.cput.vehiclemanagementsystem.Domain.VehicleManagement.VehicleManage
 
 public class VehicleManagementFactory {
 
-    public static VehicleManagement getDetails(String details) {
+    public static VehicleManagement getDetails(String vID,String details) {
         return new VehicleManagement.Builder()
+                .vehicleID(vID)
                 .details(details).build();
     }
 }

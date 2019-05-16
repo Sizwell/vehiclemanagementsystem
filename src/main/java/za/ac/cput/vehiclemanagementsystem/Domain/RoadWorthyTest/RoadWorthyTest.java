@@ -1,5 +1,9 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.RoadWorthyTest;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class RoadWorthyTest {
 
     private String vinNo;
@@ -29,6 +33,14 @@ public class RoadWorthyTest {
             return this;
         }
 
+        public Builder copy(RoadWorthyTest test)
+        {
+            this.vinNo = test.vinNo;
+            this.model = test.model;
+
+            return this;
+        }
+
         public RoadWorthyTest build() {
             return new RoadWorthyTest(this);
         }
@@ -48,5 +60,19 @@ public class RoadWorthyTest {
                 "VIN No : " + vinNo +
                 "\nModel : '" + model + '\'';
 
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof RoadWorthyTest)) return false;
+        RoadWorthyTest that = (RoadWorthyTest) o;
+        return vinNo.equals(that.vinNo) &&
+                model.equals(that.model);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(vinNo, model);
     }
 }

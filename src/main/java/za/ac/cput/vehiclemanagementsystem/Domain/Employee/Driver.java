@@ -1,5 +1,9 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.Employee;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class Driver {
 
     private int driverNo;
@@ -63,5 +67,20 @@ public class Driver {
                 "Emp Number : " + driverNo +
                 "\nEmp Name : '" + empName + '\'' +
                 "\nEmp Surname : '" + empSurname + '\'';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Driver)) return false;
+        Driver driver = (Driver) o;
+        return driverNo == driver.driverNo &&
+                empName.equals(driver.empName) &&
+                empSurname.equals(driver.empSurname);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(driverNo, empName, empSurname);
     }
 }

@@ -1,5 +1,9 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.Vehicle.Vehicles;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class Minibus {
 
 
@@ -65,4 +69,18 @@ public class Minibus {
                 "\nCapacity : " + capacity;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Minibus)) return false;
+        Minibus minibus = (Minibus) o;
+        return driverNo == minibus.driverNo &&
+                capacity == minibus.capacity &&
+                vinNo.equals(minibus.vinNo);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(vinNo, driverNo, capacity);
+    }
 }

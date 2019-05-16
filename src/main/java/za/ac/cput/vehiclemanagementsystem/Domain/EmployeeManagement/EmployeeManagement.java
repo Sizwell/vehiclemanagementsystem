@@ -1,5 +1,9 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.EmployeeManagement;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class EmployeeManagement {
 
     private int taskID;
@@ -67,5 +71,20 @@ public class EmployeeManagement {
                 "Task ID : " + taskID +
                 "\nEmp Name : '" + empName + '\'' +
                 "\nEmp Tasks : '" + empTasks + '\'';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof EmployeeManagement)) return false;
+        EmployeeManagement that = (EmployeeManagement) o;
+        return taskID == that.taskID &&
+                Objects.equals(empName, that.empName) &&
+                Objects.equals(empTasks, that.empTasks);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(taskID, empName, empTasks);
     }
 }

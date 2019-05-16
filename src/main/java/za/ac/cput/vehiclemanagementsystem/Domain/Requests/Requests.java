@@ -1,7 +1,10 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.Requests;
 
-import java.util.Date;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Date;
+import java.util.Objects;
+@EntityScan
 public class Requests {
 
     private String reqNo;
@@ -73,4 +76,21 @@ public class Requests {
                 "\nDetails: '" + getDetails() + '\'' +
                 "\nDate: " + getDate();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Requests)) return false;
+        Requests requests = (Requests) o;
+        return reqNo.equals(requests.reqNo) &&
+                details.equals(requests.details) &&
+                date.equals(requests.date);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(reqNo, details, date);
+    }
+
+
 }

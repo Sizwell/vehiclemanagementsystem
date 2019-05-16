@@ -1,7 +1,11 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.Approvals;
 
-import java.util.Date;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Date;
+import java.util.Objects;
+
+@EntityScan
 public class Approvals {
 
     private String vinNo;
@@ -61,5 +65,20 @@ public class Approvals {
                 "VIN No : '" + vinNo + '\'' +
                 "\nDate date : " + date +
                 "\nDetails : '" + details + '\'';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Approvals)) return false;
+        Approvals approvals = (Approvals) o;
+        return vinNo.equals(approvals.vinNo) &&
+                date.equals(approvals.date) &&
+                Objects.equals(details, approvals.details);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(vinNo, date, details);
     }
 }

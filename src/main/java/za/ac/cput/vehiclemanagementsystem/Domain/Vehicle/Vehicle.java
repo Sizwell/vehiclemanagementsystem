@@ -1,6 +1,8 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.Vehicle;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+@EntityScan
 public class Vehicle {
 
     private String vinNo;

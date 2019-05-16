@@ -1,5 +1,9 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.Tour;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class Tour {
 
     private int tourID;
@@ -60,5 +64,20 @@ public class Tour {
                 "\nTour ID : '" + tourID + '\'' +
                 "\nTour Destination : '" + tourDestination + '\'' +
                 "\nTour Duration : '" + tourDuration + '\'';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Tour)) return false;
+        Tour tour = (Tour) o;
+        return tourID == tour.tourID &&
+                tourDuration == tour.tourDuration &&
+                tourDestination.equals(tour.tourDestination);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(tourID, tourDestination, tourDuration);
     }
 }

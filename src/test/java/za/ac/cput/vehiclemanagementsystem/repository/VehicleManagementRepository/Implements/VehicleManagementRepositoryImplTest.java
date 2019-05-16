@@ -1,60 +1,87 @@
 package za.ac.cput.vehiclemanagementsystem.repository.VehicleManagementRepository.Implements;
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
+import org.junit.runners.MethodSorters;
+import za.ac.cput.vehiclemanagementsystem.Domain.Vehicle.Vehicle;
 import za.ac.cput.vehiclemanagementsystem.Domain.VehicleManagement.VehicleManagement;
 import za.ac.cput.vehiclemanagementsystem.Factory.VehicleManagementFactory.VehicleManagementFactory;
 import za.ac.cput.vehiclemanagementsystem.Repository.VehicleManagementRepository.Implements.VehicleManagementRepositoryImpl;
 import za.ac.cput.vehiclemanagementsystem.Repository.VehicleManagementRepository.VehicleManagementRepo;
 
-import static org.junit.Assert.*;
+import java.util.List;
 
+import static org.junit.Assert.*;
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class VehicleManagementRepositoryImplTest {
+
     private VehicleManagementRepo repository;
     private VehicleManagement vm;
+
+    private VehicleManagement getManagement()
+    {
+        List <VehicleManagement> vehicleManagementList = this.repository.getAll();
+        return vehicleManagementList.listIterator().next();
+    }
 
     @Before
     public void setUp() throws Exception
     {
         this.repository = VehicleManagementRepositoryImpl.getRepository();
-        this.vm = VehicleManagementFactory.getDetails("32-seater coach");
+        this.vm = VehicleManagementFactory.getDetails("CA-783-607", "22 Seater Mercedese benze Crafter");
     }
 
-    @Test
-    public void getRepository()
-    {
-        Assert.assertEquals(repository.getAll(), repository.getAll());
-    }
 
     @Test
     public void getAll()
     {
-        Assert.assertEquals(repository.getAll(), repository.getAll());
+        List <VehicleManagement> all = this.repository.getAll();
+        System.out.println("....All Management....\n" + all);
     }
 
     @Test
     public void create()
     {
-        this.repository.create(vm);
-        Assert.assertEquals( repository.create(vm), repository.update(vm));
+        VehicleManagement vehicleManagement = this.repository.create(this.vm);
+        System.out.println("Managing Vehicles...\n" + vehicleManagement);
+
+        getAll();
+        Assert.assertSame(vehicleManagement, this.vm);
     }
 
     @Test
     public void read()
     {
-        Assert.assertEquals(repository.getAll(), repository.read("514"));
+        VehicleManagement management = getManagement();
+        System.out.println("Getting Vehicle Management...\n" + management.getVehicleId());
+
+        VehicleManagement read = this.repository.read(management.getVehicleId());
+        System.out.println("Reading Vehicle Managements");
+
+        getAll();
+        Assert.assertEquals(management, read);
     }
 
     @Test
     public void update()
     {
-        Assert.assertEquals(repository.getAll(), repository.update(vm));
+        String details = "22 - Seater VW Crafter";
+
+        VehicleManagement vehicleManagement = new VehicleManagement.Builder().copyVM(getManagement()).details(details)
+                .build();
+        System.out.println("Vehicle Details have been Updated...\n" + vehicleManagement);
+
+        VehicleManagement update = this.repository.update(vehicleManagement);
+        System.out.println("Updated Vehicle Details...\n" + update);
+
+        Assert.assertSame(details, update.getVehicleDetails());
     }
 
+    @Ignore
     @Test
     public void delete()
     {
-        repository.delete(vm.getVehicleDetails());
+        VehicleManagement toDelete = getManagement();
+        this.repository.delete(toDelete.getVehicleId());
+        getAll();
     }
 }

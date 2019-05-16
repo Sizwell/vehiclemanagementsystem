@@ -1,5 +1,8 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.AdminOperations;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
 public class AdminOperations {
 
     private String operationID;

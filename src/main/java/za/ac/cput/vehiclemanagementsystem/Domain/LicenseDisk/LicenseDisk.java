@@ -1,5 +1,9 @@
 package za.ac.cput.vehiclemanagementsystem.Domain.LicenseDisk;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class LicenseDisk {
 
     private String regNumber;
@@ -52,5 +56,19 @@ public class LicenseDisk {
         return "------ LicenseDisk ------\n" +
                 "Registration Number: '" + regNumber + '\'' +
                 "\nVehicle Model: '" + vehicleModel + '\'';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof LicenseDisk)) return false;
+        LicenseDisk that = (LicenseDisk) o;
+        return regNumber.equals(that.regNumber) &&
+                Objects.equals(vehicleModel, that.vehicleModel);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(regNumber, vehicleModel);
     }
 }
