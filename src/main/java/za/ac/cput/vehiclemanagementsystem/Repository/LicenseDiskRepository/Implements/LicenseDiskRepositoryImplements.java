@@ -1,25 +1,26 @@
 package za.ac.cput.vehiclemanagementsystem.Repository.LicenseDiskRepository.Implements;
 
+import org.springframework.stereotype.Repository;
 import za.ac.cput.vehiclemanagementsystem.Domain.LicenseDisk.LicenseDisk;
 import za.ac.cput.vehiclemanagementsystem.Repository.LicenseDiskRepository.LicenseDiskRepository;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
+@Repository
 public class LicenseDiskRepositoryImplements implements LicenseDiskRepository
 {
 
     private static LicenseDiskRepositoryImplements licenseRepository = null;
-    private LicenseDiskRepository repository;
+   // private LicenseDiskRepository repository;
 
-    private Set <LicenseDisk> licenseDiskSet;
+    private Map<String, LicenseDisk> licenseDiskSet;
 
     private LicenseDiskRepositoryImplements()
     {
-        this.licenseDiskSet = new HashSet<>();
+        this.licenseDiskSet = new HashMap<>();
     }
 
-    public static LicenseDiskRepository getRepository()
+    public static LicenseDiskRepositoryImplements getRepository()
     {
         if(licenseRepository == null)
         {
@@ -29,30 +30,35 @@ public class LicenseDiskRepositoryImplements implements LicenseDiskRepository
     }
 
     @Override
-    public Set<LicenseDisk> getAll() {
-        return this.licenseDiskSet;
+    public Set<LicenseDisk> getAll()
+    {
+        Collection<LicenseDisk> licenseDiskCollection = this.licenseDiskSet.values();
+        Set<LicenseDisk> licenseDisks = new HashSet<>();
+        licenseDisks.addAll(licenseDiskCollection);
+        return licenseDisks;
     }
 
     @Override
     public LicenseDisk create(LicenseDisk licenseDisk)
     {
-        this.licenseDiskSet.add(licenseDisk);
+        this.licenseDiskSet.put(licenseDisk.getRegNumber(), licenseDisk);
         return licenseDisk;
     }
 
     @Override
     public LicenseDisk read(String s) {
-        return this.repository.read(s);
+        return this.licenseDiskSet.get(s);
     }
 
     @Override
     public LicenseDisk update(LicenseDisk licenseDisk) {
-        return this.repository.update(licenseDisk);
+        this.licenseDiskSet.replace(licenseDisk.getRegNumber(), licenseDisk);
+        return this.licenseDiskSet.get(licenseDisk.getRegNumber());
     }
 
     @Override
     public void delete(String d)
     {
-        this.repository.delete(d);
+        this.licenseDiskSet.remove(d);
     }
 }

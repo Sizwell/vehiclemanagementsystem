@@ -31,8 +31,8 @@ public class EmployeeManagementRepoImplementTest {
     @Before
     public void setUp() throws Exception
     {
-        this.repository = EmployeeManagementRepoImplement.getEmployees();
-        this.employeeManagement = EmployeeManagementFactory.manageEmployee(5379, "John",
+        this.repository = EmployeeManagementRepoImplement.getEmployeesRepository();
+        this.employeeManagement = EmployeeManagementFactory.manageEmployee("5379", "John",
                 "Ensure that employees are doing their Job");
     }
 

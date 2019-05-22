@@ -4,10 +4,10 @@ import za.ac.cput.vehiclemanagementsystem.Domain.VehicleHistory.VehicleHistory;
 
 public class VehicleHistoryFactory {
 
-    public static VehicleHistory vehicleHistory(String vNum, String vType, String vHistory)
+    public static VehicleHistory vehicleHistory(String histNum, String vType, String vHistory)
     {
         return new VehicleHistory.Builder()
-                .vehNo(vNum)
+                .historyNo(histNum)
                 .vehType(vType)
                 .vehHistory(vHistory)
                 .build();

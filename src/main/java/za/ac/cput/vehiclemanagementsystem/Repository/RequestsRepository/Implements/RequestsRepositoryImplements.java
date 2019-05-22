@@ -1,11 +1,13 @@
 package za.ac.cput.vehiclemanagementsystem.Repository.RequestsRepository.Implements;
 
+import org.springframework.stereotype.Repository;
 import za.ac.cput.vehiclemanagementsystem.Domain.Requests.Requests;
 import za.ac.cput.vehiclemanagementsystem.Repository.RequestsRepository.RequestsRepository;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class RequestsRepositoryImplements implements RequestsRepository {
 
     private static RequestsRepositoryImplements requestRepository = null;
@@ -24,7 +26,7 @@ public class RequestsRepositoryImplements implements RequestsRepository {
                 .orElse(null);
     }
 
-    public static RequestsRepository getRequests()
+    public static RequestsRepositoryImplements getRequests()
     {
         if(requestRepository == null)
         {

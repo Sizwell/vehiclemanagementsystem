@@ -10,7 +10,7 @@ import za.ac.cput.vehiclemanagementsystem.Service.Login.Implements.LoginServiceI
 import java.util.List;
 
 @RestController
-@RequestMapping("/vehiclemanagementsystem/login")
+@RequestMapping("//domain/controller/login")
 public class LoginController {
 
     @Autowired

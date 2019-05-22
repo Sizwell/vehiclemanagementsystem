@@ -12,7 +12,7 @@ public class ReportFactoryTest {
 
     @Before
     public void setUp() throws Exception {
-        report = ReportFactory.getReport("Tour Report");
+        report = ReportFactory.getReport("TX808","Tour Report Chapman's peak");
     }
 
     @Test

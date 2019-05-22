@@ -14,7 +14,7 @@ public class Position {
 
     }
 
-    private Position(Builder builder)
+    public Position(Builder builder)
     {
         this.roleID = builder.roleID;
         this.positionDescription = builder.positionDescription;
@@ -34,6 +34,14 @@ public class Position {
         public Builder positionDesc(String desc)
         {
             this.positionDescription = desc;
+            return this;
+        }
+
+        public Builder copyPosition(Position position)
+        {
+            this.roleID = position.roleID;
+            this.positionDescription = position.positionDescription;
+
             return this;
         }
         

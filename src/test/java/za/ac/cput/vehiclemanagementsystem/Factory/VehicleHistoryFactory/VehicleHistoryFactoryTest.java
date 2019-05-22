@@ -25,7 +25,7 @@ public class VehicleHistoryFactoryTest {
     @Test
     public void getVehicleNumber()
     {
-        Assert.assertNotNull(vehicleHistory.getVehicleNo());
+        Assert.assertNotNull(vehicleHistory.getHistoryNo());
     }
 
     @Test

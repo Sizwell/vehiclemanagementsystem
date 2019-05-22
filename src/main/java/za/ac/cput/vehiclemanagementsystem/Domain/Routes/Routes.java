@@ -40,6 +40,15 @@ public class Routes {
             return this;
         }
 
+        public Builder copyRoutes(Routes routes)
+        {
+            this.routeNo = routes.routeNo;
+            this.routeName = routes.routeName;
+            this.destination = routes.destination;
+
+            return this;
+        }
+
         public Routes build() {
             return new Routes(this);
         }

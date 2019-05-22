@@ -31,6 +31,13 @@ public class VehicleDetails {
             return this;
         }
 
+        public Builder copyVDetails(VehicleDetails details)
+        {
+            this.vehicleReg = details.vehicleReg;
+            this.vehicleType = details.vehicleType;
+            return this;
+        }
+
         public VehicleDetails build() {
             return new VehicleDetails(this);
         }

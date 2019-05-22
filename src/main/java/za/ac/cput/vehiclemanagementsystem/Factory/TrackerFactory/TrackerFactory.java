@@ -4,11 +4,11 @@ import za.ac.cput.vehiclemanagementsystem.Domain.Tracker.Tracker;
 
 public class TrackerFactory {
 
-    public static Tracker vehicleTracker(String vin, String make, String model) {
+    public static Tracker vehicleTracker(String trackerNo, String type, String make) {
         return new Tracker.Builder()
-                .vinNo(vin)
+                .trackerNo(trackerNo)
+                .trackerType(type)
                 .make(make)
-                .model(model)
                 .build();
     }
 }

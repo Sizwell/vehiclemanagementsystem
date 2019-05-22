@@ -1,19 +1,21 @@
 package za.ac.cput.vehiclemanagementsystem.Repository.VehicleDetailsRepository.Implements;
 
+import org.springframework.stereotype.Repository;
 import za.ac.cput.vehiclemanagementsystem.Domain.VehicleDetails.VehicleDetails;
 import za.ac.cput.vehiclemanagementsystem.Repository.VehicleDetailsRepository.VehicleDetailsRepository;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
+
+@Repository
 
 public class VehicleDetailsRepositoryImplements implements VehicleDetailsRepository {
 
     private static VehicleDetailsRepositoryImplements vehicleDetailsRepo = null;
-    private Set<VehicleDetails> vehicleDetailsSet;
+    private Map<String, VehicleDetails> vehicleDetailsMap;
 
     private VehicleDetailsRepositoryImplements()
     {
-       this.vehicleDetailsSet = new HashSet<>();
+       this.vehicleDetailsMap = new HashMap<>();
     }
 
     public static VehicleDetailsRepository getVehicleDetails()
@@ -28,28 +30,35 @@ public class VehicleDetailsRepositoryImplements implements VehicleDetailsReposit
     @Override
     public Set<VehicleDetails> getAll()
     {
-        return this.vehicleDetailsSet;
+        Collection <VehicleDetails> vehicleDetailsCollection = this.vehicleDetailsMap.values();
+        Set<VehicleDetails> vehicleDetailsSet = new HashSet<>();
+        vehicleDetailsSet.addAll(vehicleDetailsCollection);
+        return vehicleDetailsSet;
     }
 
     @Override
     public VehicleDetails create(VehicleDetails vehicleDetails)
     {
-        this.vehicleDetailsSet.add(vehicleDetails);
+        this.vehicleDetailsMap.put(vehicleDetails.getVehicleReg(), vehicleDetails);
         return vehicleDetails;
     }
 
     @Override
-    public VehicleDetails read(String s) {
-        return null;
+    public VehicleDetails read(String s)
+    {
+        return this.vehicleDetailsMap.get(s);
     }
 
     @Override
-    public VehicleDetails update(VehicleDetails vehicleDetails) {
-        return null;
+    public VehicleDetails update(VehicleDetails vehicleDetails)
+    {
+        this.vehicleDetailsMap.replace(vehicleDetails.getVehicleReg(), vehicleDetails);
+        return this.vehicleDetailsMap.get(vehicleDetails.getVehicleReg());
     }
 
     @Override
-    public void delete(String s) {
-
+    public void delete(String s)
+    {
+        this.vehicleDetailsMap.remove(s);
     }
 }

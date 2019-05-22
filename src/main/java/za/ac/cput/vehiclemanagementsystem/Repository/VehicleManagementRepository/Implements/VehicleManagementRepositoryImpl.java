@@ -1,5 +1,6 @@
 package za.ac.cput.vehiclemanagementsystem.Repository.VehicleManagementRepository.Implements;
 
+import org.springframework.stereotype.Repository;
 import za.ac.cput.vehiclemanagementsystem.Domain.Vehicle.Vehicle;
 import za.ac.cput.vehiclemanagementsystem.Domain.VehicleManagement.VehicleManagement;
 import za.ac.cput.vehiclemanagementsystem.Repository.VehicleManagementRepository.VehicleManagementRepo;
@@ -7,6 +8,8 @@ import za.ac.cput.vehiclemanagementsystem.Repository.VehicleManagementRepository
 import java.util.ArrayList;
 import java.util.List;
 
+
+@Repository
 
 public class VehicleManagementRepositoryImpl implements VehicleManagementRepo {
 
@@ -26,7 +29,7 @@ public class VehicleManagementRepositoryImpl implements VehicleManagementRepo {
                 .orElse(null);
     }
 
-    public static VehicleManagementRepo getRepository() {
+    public static VehicleManagementRepositoryImpl getRepository() {
         if (vehicleRepository == null) {
             vehicleRepository = new VehicleManagementRepositoryImpl();
         }

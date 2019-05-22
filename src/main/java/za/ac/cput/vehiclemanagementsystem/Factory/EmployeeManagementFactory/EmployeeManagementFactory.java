@@ -4,7 +4,7 @@ import za.ac.cput.vehiclemanagementsystem.Domain.EmployeeManagement.EmployeeMana
 
 public class EmployeeManagementFactory {
 
-    public static EmployeeManagement manageEmployee(int no, String name, String task) {
+    public static EmployeeManagement manageEmployee(String no, String name, String task) {
         return new EmployeeManagement.Builder()
                 .taskID(no)
                 .empName(name)

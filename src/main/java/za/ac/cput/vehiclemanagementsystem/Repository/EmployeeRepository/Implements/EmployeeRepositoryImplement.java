@@ -1,22 +1,31 @@
 package za.ac.cput.vehiclemanagementsystem.Repository.EmployeeRepository.Implements;
 
+import org.springframework.stereotype.Repository;
 import za.ac.cput.vehiclemanagementsystem.Domain.Employee.Employee;
 import za.ac.cput.vehiclemanagementsystem.Repository.EmployeeRepository.EmployeeRepository;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
+@Repository
 public class EmployeeRepositoryImplement implements EmployeeRepository {
 
     private static EmployeeRepositoryImplement employeeRepo = null;
-    private Set<Employee> employeeSet;
+    private Map<Integer, Employee> employeeMap;
 
     private EmployeeRepositoryImplement()
     {
-        this.employeeSet = new HashSet<>();
+        this.employeeMap = new HashMap<>();
     }
 
-    public EmployeeRepository getEmployee()
+    private Employee findEmployee(String empName)
+    {
+        //return this.employeeMap.entrySet().parallelStream().filter(empNo).findAny().orElse(null);
+        return this.employeeMap.values().stream().filter(employee -> employee.getEmpName().trim().equals(empName))
+                .findAny()
+                .orElse(null);
+    }
+
+    public static EmployeeRepositoryImplement getEmployee()
     {
         if(employeeRepo == null)
         {
@@ -25,31 +34,35 @@ public class EmployeeRepositoryImplement implements EmployeeRepository {
         return employeeRepo;
     }
 
+
     @Override
-    public Set<Employee> getAll()
-    {
-        return this.employeeSet;
+    public Set<Employee> getAll() {
+        Collection <Employee> employeeCollection = this.employeeMap.values();
+        Set <Employee> employeeSet = new HashSet<>();
+        employeeSet.addAll(employeeCollection);
+        return employeeSet;
     }
 
     @Override
-    public Employee create(Employee employee)
-    {
-        this.employeeSet.add(employee);
+    public Employee create(Employee employee) {
+        this.employeeMap.put(employee.getEmpNumb(), employee);
         return employee;
     }
 
     @Override
     public Employee read(Integer integer) {
-        return null;
+        return this.employeeMap.get(integer);
     }
 
     @Override
     public Employee update(Employee employee) {
-        return null;
+        this.employeeMap.replace(employee.getEmpNumb(), employee);
+        return this.employeeMap.get(employee.getEmpNumb());
     }
 
     @Override
     public void delete(Integer integer) {
-
+        this.employeeMap.remove(integer);
     }
+
 }

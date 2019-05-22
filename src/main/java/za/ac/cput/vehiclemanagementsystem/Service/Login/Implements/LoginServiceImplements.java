@@ -1,5 +1,7 @@
 package za.ac.cput.vehiclemanagementsystem.Service.Login.Implements;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import za.ac.cput.vehiclemanagementsystem.Domain.Login.Login;
 import za.ac.cput.vehiclemanagementsystem.Repository.LoginRepository.Implements.LoginRepositoryImplement;
@@ -11,6 +13,9 @@ import java.util.List;
 @Service 
 
 public class LoginServiceImplements implements LoginService {
+
+    @Autowired
+    @Qualifier("InMemory")
     
     private static LoginServiceImplements loginService = null;
     private LoginRepository loginRepository;

@@ -7,8 +7,8 @@ import java.util.Objects;
 @EntityScan
 public class Tracker {
 
-    private String vinNo;
-    private String model;
+    private String trackerNo;
+    private String trackerType;
     private String make;
 
     public Tracker() {
@@ -16,18 +16,18 @@ public class Tracker {
     }
 
     public Tracker(Builder builder) {
-        this.vinNo = builder.vinNo;
-        this.model = builder.model;
+        this.trackerNo = builder.trackerNo;
+        this.trackerType = builder.trackerType;
         this.make = builder.make;
     }
 
     public static class Builder {
-        private String vinNo;
-        private String model;
+        private String trackerNo;
+        private String trackerType;
         private String make;
 
-        public Builder vinNo(String vin) {
-            this.vinNo = vin;
+        public Builder trackerNo(String vin) {
+            this.trackerNo = vin;
             return this;
         }
 
@@ -36,17 +36,17 @@ public class Tracker {
             return this;
         }
 
-        public Builder model(String model) {
-            this.model = model;
+        public Builder trackerType(String trackerType) {
+            this.trackerType = trackerType;
             return this;
         }
 
 
         public Builder copyTracker(Tracker trackerID)
         {
-            this.vinNo = trackerID.vinNo;
+            this.trackerNo = trackerID.trackerNo;
             this.make = trackerID.make;
-            this.model = trackerID.model;
+            this.trackerType = trackerID.trackerType;
             return this;
 
         }
@@ -56,12 +56,12 @@ public class Tracker {
         }
     }
 
-    public String getVinNo() {
-        return vinNo;
+    public String getTrackerNo() {
+        return trackerNo;
     }
 
-    public String getModel() {
-        return model;
+    public String getTrackerType() {
+        return trackerType;
     }
 
     public String getMake() {
@@ -71,8 +71,8 @@ public class Tracker {
     @Override
     public String toString() {
         return "------ Vehicle Tracker ------\n" +
-                "VIN No : " + getVinNo() +
-                "\nModel : '" + getModel() + '\'' +
+                "VIN No : " + getTrackerNo() +
+                "\nType : '" + getTrackerType() + '\'' +
                 "\nMake : '" + getMake() + '\'';
 
     }
@@ -82,13 +82,13 @@ public class Tracker {
         if (this == o) return true;
         if (!(o instanceof Tracker)) return false;
         Tracker tracker = (Tracker) o;
-        return vinNo.equals(tracker.vinNo) &&
-                Objects.equals(model, tracker.model) &&
+        return trackerNo.equals(tracker.trackerNo) &&
+                Objects.equals(trackerType, tracker.trackerType) &&
                 Objects.equals(make, tracker.make);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(vinNo, model, make);
+        return Objects.hash(trackerNo, trackerType, make);
     }
 }

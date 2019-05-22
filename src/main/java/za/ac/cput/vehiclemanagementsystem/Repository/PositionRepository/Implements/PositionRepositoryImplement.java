@@ -1,22 +1,23 @@
 package za.ac.cput.vehiclemanagementsystem.Repository.PositionRepository.Implements;
 
+import org.springframework.stereotype.Repository;
+import za.ac.cput.vehiclemanagementsystem.Domain.Position.Position;
 import za.ac.cput.vehiclemanagementsystem.Repository.PositionRepository.PositionRepository;
 
-import javax.swing.text.Position;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
+@Repository
 public class PositionRepositoryImplement implements PositionRepository {
 
     private static PositionRepositoryImplement positionRepo = null;
-    private Set<Position> positionSet;
+    private Map<Integer, Position> positionMap;
 
     private PositionRepositoryImplement()
     {
-        this.positionSet = new HashSet<>();
+        this.positionMap = new HashMap<>();
     }
 
-    public static PositionRepository getposition()
+    public static PositionRepositoryImplement getPosition()
     {
         if(positionRepo == null)
         {
@@ -28,28 +29,37 @@ public class PositionRepositoryImplement implements PositionRepository {
     @Override
     public Set<Position> getAll()
     {
-        return this.positionSet;
+        Collection<Position> positionCollection = this.positionMap.values();
+        Set<Position> positionMap = new HashSet<>();
+        positionMap.addAll(positionCollection);
+        return positionMap;
     }
 
     @Override
     public Position create(Position position)
     {
-        this.positionSet.add(position);
+        this.positionMap.put(position.getRoleID(), position);
         return position;
+
+        /*this.licenseDiskSet.put(licenseDisk.getRegNumber(), licenseDisk);
+        return licenseDisk;*/
+
     }
 
     @Override
     public Position read(Integer integer) {
-        return null;
+        return this.positionMap.get(integer);
     }
 
     @Override
     public Position update(Position position) {
-        return null;
+        this.positionMap.replace(position.getRoleID(), position);
+        return position;
     }
 
     @Override
-    public void delete(Integer integer) {
-
+    public void delete(Integer integer) 
+    {
+        this.positionMap.remove(integer);
     }
 }

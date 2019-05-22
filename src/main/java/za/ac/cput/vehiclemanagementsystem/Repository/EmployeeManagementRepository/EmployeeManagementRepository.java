@@ -5,7 +5,7 @@ import za.ac.cput.vehiclemanagementsystem.Repository.ControlRepository;
 
 import java.util.List;
 
-public interface EmployeeManagementRepository extends ControlRepository<EmployeeManagement, Integer>
+public interface EmployeeManagementRepository extends ControlRepository<EmployeeManagement, String>
 {
     List<EmployeeManagement> getAll();
 }

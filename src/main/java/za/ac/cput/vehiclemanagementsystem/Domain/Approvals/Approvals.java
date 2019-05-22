@@ -8,7 +8,7 @@ import java.util.Objects;
 @EntityScan
 public class Approvals {
 
-    private String vinNo;
+    private String approvalNo;
     private Date date;
     private String details;
 
@@ -17,18 +17,18 @@ public class Approvals {
     }
 
     public Approvals(Builder builder) {
-        this.vinNo = builder.vinNo;
+        this.approvalNo = builder.approvalNo;
         this.date = builder.date;
         this.details = builder.details;
     }
 
     public static class Builder {
-        private String vinNo;
+        private String approvalNo;
         private Date date;
         private String details;
 
-        public Builder vinNo(String vin) {
-            this.vinNo = vin;
+        public Builder approvalNo(String vin) {
+            this.approvalNo = vin;
             return this;
         }
 
@@ -42,13 +42,22 @@ public class Approvals {
             return this;
         }
 
+        public Builder copyApprovals(Approvals approvals)
+        {
+            this.approvalNo = approvals.approvalNo;
+            this.details = approvals.details;
+            this.date = approvals.date;
+
+            return this;
+        }
+
         public Approvals build() {
             return new Approvals(this);
         }
     }
 
-    public String getVinNo() {
-        return vinNo;
+    public String getApprovalNo() {
+        return approvalNo;
     }
 
     public Date getDate() {
@@ -62,9 +71,9 @@ public class Approvals {
     @Override
     public String toString() {
         return "------ Approvals ------\n" +
-                "VIN No : '" + vinNo + '\'' +
-                "\nDate date : " + date +
-                "\nDetails : '" + details + '\'';
+                "Approval No : '" + getApprovalNo() + '\'' +
+                "\nDate date : " + getDate() +
+                "\nDetails : '" + getDetails() + '\'';
     }
 
     @Override
@@ -72,13 +81,13 @@ public class Approvals {
         if (this == o) return true;
         if (!(o instanceof Approvals)) return false;
         Approvals approvals = (Approvals) o;
-        return vinNo.equals(approvals.vinNo) &&
+        return approvalNo.equals(approvals.approvalNo) &&
                 date.equals(approvals.date) &&
                 Objects.equals(details, approvals.details);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(vinNo, date, details);
+        return Objects.hash(approvalNo, date, details);
     }
 }

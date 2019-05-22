@@ -1,5 +1,6 @@
 package za.ac.cput.vehiclemanagementsystem.Repository.TrafficViolationsRepository.Implements;
 
+import org.springframework.stereotype.Repository;
 import za.ac.cput.vehiclemanagementsystem.Domain.Tracker.Tracker;
 import za.ac.cput.vehiclemanagementsystem.Domain.TrafficViolations.TrafficViolations;
 import za.ac.cput.vehiclemanagementsystem.Factory.TrafficViolationsFactory.TrafficViolationsFactory;
@@ -7,6 +8,8 @@ import za.ac.cput.vehiclemanagementsystem.Repository.TrafficViolationsRepository
 
 import java.util.ArrayList;
 import java.util.List;
+
+@Repository
 
 public class TrafficViolationsRepositoryImplements implements TrafficViolationsRepository {
 

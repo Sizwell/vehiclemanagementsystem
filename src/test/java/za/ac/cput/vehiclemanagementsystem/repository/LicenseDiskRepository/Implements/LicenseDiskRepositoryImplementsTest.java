@@ -63,12 +63,22 @@ public class LicenseDiskRepositoryImplementsTest {
     @Test
     public void update()
     {
+        String model = "Toyota Quantum GL";
 
+        LicenseDisk licenseDisk = new LicenseDisk.Builder().copyLicenseDisk(getLicenseDisk()).model(model).build();
+        System.out.println("Updating Vehicle Model...\n" + licenseDisk);
+
+        LicenseDisk updated = this.diskRepository.update(licenseDisk);
+        System.out.println("Vehicle Model has been Updated...\n" + updated);
+
+        Assert.assertSame(model, updated.getVehicleModel());
+        getAll();
     }
 
     @Test
     public void delete()
     {
-
+        Set<LicenseDisk> licenseDiskSet = this.diskRepository.getAll();
+        System.out.println("Getting all License disk Data...\n" + licenseDiskSet);
     }
 }

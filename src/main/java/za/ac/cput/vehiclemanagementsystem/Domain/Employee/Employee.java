@@ -40,6 +40,15 @@ public class Employee {
             return this;
         }
 
+        public Builder copyEmployee(Employee employee)
+        {
+            this.empNumb = employee.empNumb;
+            this.empName = employee.empName;
+            this.empSurname = employee.empSurname;
+
+            return this;
+        }
+
         public Employee build() {
             return new Employee(this);
         }

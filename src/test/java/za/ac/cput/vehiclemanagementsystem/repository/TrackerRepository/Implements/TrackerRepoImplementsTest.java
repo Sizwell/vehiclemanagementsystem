@@ -44,7 +44,7 @@ public class TrackerRepoImplementsTest {
         Tracker trackerRead = getSavedTracker();
         System.out.println("Attempting Read Tracker...\n");
 
-        Tracker read = this.repository.read(trackerRead.getVinNo());
+        Tracker read = this.repository.read(trackerRead.getTrackerNo());
         System.out.println("Tracker has been read...\n");
 
         getAll();
@@ -71,7 +71,7 @@ public class TrackerRepoImplementsTest {
     public void delete()
     {
         Tracker toDelete = getSavedTracker();
-        this.repository.delete(toDelete.getVinNo());
+        this.repository.delete(toDelete.getTrackerNo());
 
         getAll();
     }

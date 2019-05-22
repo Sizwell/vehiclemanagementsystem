@@ -1,5 +1,6 @@
 package za.ac.cput.vehiclemanagementsystem.Repository.LoginRepository.Implements;
 
+import org.springframework.stereotype.Repository;
 import za.ac.cput.vehiclemanagementsystem.Domain.Login.Login;
 import za.ac.cput.vehiclemanagementsystem.Repository.LoginRepository.LoginRepository;
 
@@ -8,6 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+@Repository
 public class LoginRepositoryImplement implements LoginRepository {
 
     private static LoginRepositoryImplement loginRepo = null;

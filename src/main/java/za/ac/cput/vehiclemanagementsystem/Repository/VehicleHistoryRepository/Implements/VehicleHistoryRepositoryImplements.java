@@ -1,5 +1,6 @@
 package za.ac.cput.vehiclemanagementsystem.Repository.VehicleHistoryRepository.Implements;
 
+import org.springframework.stereotype.Repository;
 import za.ac.cput.vehiclemanagementsystem.Domain.TrafficViolations.TrafficViolations;
 import za.ac.cput.vehiclemanagementsystem.Domain.Vehicle.Vehicle;
 import za.ac.cput.vehiclemanagementsystem.Domain.VehicleHistory.VehicleHistory;
@@ -7,6 +8,8 @@ import za.ac.cput.vehiclemanagementsystem.Repository.VehicleHistoryRepository.Ve
 
 import java.util.ArrayList;
 import java.util.List;
+
+@Repository
 
 public class VehicleHistoryRepositoryImplements implements VehicleHistoryRepository {
 
@@ -20,7 +23,7 @@ public class VehicleHistoryRepositoryImplements implements VehicleHistoryReposit
 
     private VehicleHistory findVehicleHistory(String vHistory)
     {
-        return this.vehicleHistoryList.stream().filter(vehicleHistory -> vehicleHistory.getVehicleNo()
+        return this.vehicleHistoryList.stream().filter(vehicleHistory -> vehicleHistory.getHistoryNo()
         .trim().equals(vHistory))
                 .findAny()
                 .orElse(null);
@@ -58,7 +61,7 @@ public class VehicleHistoryRepositoryImplements implements VehicleHistoryReposit
     @Override
     public VehicleHistory update(VehicleHistory vehicleHistory)
     {
-        VehicleHistory toUpdate = findVehicleHistory(vehicleHistory.getVehicleNo());
+        VehicleHistory toUpdate = findVehicleHistory(vehicleHistory.getHistoryNo());
         if (toUpdate != null)
         {
             this.vehicleHistoryList.remove(toUpdate);

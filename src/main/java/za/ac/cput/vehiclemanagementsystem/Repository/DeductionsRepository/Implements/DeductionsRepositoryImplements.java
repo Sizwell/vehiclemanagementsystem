@@ -1,23 +1,24 @@
 package za.ac.cput.vehiclemanagementsystem.Repository.DeductionsRepository.Implements;
 
+import org.springframework.stereotype.Repository;
 import za.ac.cput.vehiclemanagementsystem.Domain.Deductions.Deductions;
 import za.ac.cput.vehiclemanagementsystem.Repository.DeductionsRepository.DeductionsRepository;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
+@Repository
 public class DeductionsRepositoryImplements implements DeductionsRepository {
 
     private static DeductionsRepositoryImplements deductionsRepository = null;
     private DeductionsRepository repository;
-    private Set<Deductions> deductionsSet;
+    private Map<String, Deductions> deductionsMap;
 
     private DeductionsRepositoryImplements()
     {
-        this.deductionsSet = new HashSet<>();
+        this.deductionsMap = new HashMap<>();
     }
 
-    public static DeductionsRepository getDeductions()
+    public static DeductionsRepositoryImplements getDeductions()
     {
         if(deductionsRepository == null)
         {
@@ -29,7 +30,10 @@ public class DeductionsRepositoryImplements implements DeductionsRepository {
     @Override
     public Set<Deductions> getAll()
     {
-        return this.deductionsSet;
+        Collection<Deductions> deductionsCollection = this.deductionsMap.values();
+        Set<Deductions> set = new HashSet<>();
+        set.addAll(deductionsCollection);
+        return set;
     }
 
     @Override

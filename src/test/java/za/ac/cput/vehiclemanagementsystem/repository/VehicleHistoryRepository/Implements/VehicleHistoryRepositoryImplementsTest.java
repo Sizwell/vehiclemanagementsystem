@@ -48,7 +48,7 @@ public class VehicleHistoryRepositoryImplementsTest {
         VehicleHistory history = getSavedHistory();
         System.out.println(" Reading Vehicle History...\n" + history);
 
-        VehicleHistory read = this.repository.read(history.getVehicleNo());
+        VehicleHistory read = this.repository.read(history.getHistoryNo());
         System.out.println("Vehicle Saved History....\n" + read);
 
         getSavedHistory();
@@ -75,7 +75,7 @@ public class VehicleHistoryRepositoryImplementsTest {
     public void delete()
     {
         VehicleHistory vh = getSavedHistory();
-        this.repository.delete(vh.getVehicleNo());
+        this.repository.delete(vh.getHistoryNo());
         getSavedHistory();
     }
 }

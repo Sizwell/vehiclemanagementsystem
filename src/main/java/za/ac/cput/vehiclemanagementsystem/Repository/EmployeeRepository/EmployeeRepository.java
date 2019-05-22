@@ -7,5 +7,5 @@ import java.util.Set;
 
 public interface EmployeeRepository extends ControlRepository<Employee, Integer>
 {
-    Set <Employee> getAll();
+    Set<Employee> getAll();
 }

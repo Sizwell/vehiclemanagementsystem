@@ -2,59 +2,124 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5222083b-b4c0-4ea0-b701-e93f6fbc0cb7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Controller/IController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/Approvals/ApprovalsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/Approvals/Implements/ApprovalsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/DeductionsService/Deductions/DeductionsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/DeductionsService/DeductionsServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/EmployeeManagement/EmployeeManagementService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/EmployeeManagement/Implements/EmployeeManagementServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/EmployeeService/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/EmployeeService/Implements/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/LicenseDiskService/Implements/LicenseDiskServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/LicenseDiskService/LicenseDiskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/PositionService/Implements/PositionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/PositionService/PositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/ReportService/Implements/ReportServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/ReportService/ReportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/RequestsService/Implements/RequestsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/RequestsService/RequestsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/RoadWorthyTestService/Implements/RoadWorthyTestServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/RoadWorthyTestService/RoadWorthyTestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/RoutesService/Implements/RoutesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/RoutesService/RoutesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/TourService/TourService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/TrackerService/Implements/TackerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/TrackerService/TrackerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/TrafficViolationsService/Implements/TrafficViolationsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/TrafficViolationsService/TrafficViolationsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/VehicleHistoryService/Implements/VehicleHistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/VehicleHistoryService/VehicleHistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/VehicleManagementService/Implements/VehicleManagementServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/VehicleManagementService/VehicleManagementService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/VehicleService/Implements/VehicleServicesImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/VehicleService/VehicleServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/EmployeeManagement/Implements/EmployeeManagementVehicleServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/RequestsService/Implements/RequestsVehicleServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/RoadWorthyTestService/Implements/RoadWorthyTestVehicleServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/RoutesService/Implements/RoutesServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/TrackerService/Implements/TackerServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/TrafficViolationsService/Implements/TrafficViolationsServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/VehicleHistoryService/Implements/VehicleHistoryServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/VehicleManagementService/Implements/VehicleManagementServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/VehicleService/Implements/VehicleServicesImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/AdminOperations/AdminOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/AdminOperations/AdminOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Controller/AdminOperationsController/AdminOperationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Controller/AdminOperationsController/AdminOperationsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Controller/LoginController/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Controller/LoginController/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Approvals/Approvals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Approvals/Approvals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Deductions/Deductions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Deductions/Deductions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Destinations/Destinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Destinations/Destinations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/TourGuide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/TourGuide.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/EmployeeManagement/EmployeeManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/EmployeeManagement/EmployeeManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/LicenseDisk/LicenseDisk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/LicenseDisk/LicenseDisk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Login/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Position/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Position/Position.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Report/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Report/Report.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Requests/Requests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Requests/Requests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/RoadWorthyTest/RoadWorthyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/RoadWorthyTest/RoadWorthyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Routes/Routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Routes/Routes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/VehicleService/VehicleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Tour/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Tour/Tour.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Tracker/Tracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Tracker/Tracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/TrafficViolations/TrafficViolations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/TrafficViolations/TrafficViolations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Transaction/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Transaction/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/LuxuryCoach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/LuxuryCoach.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/Minibus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/Minibus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/Quantum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/Quantum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/Sprinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/Sprinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/TourBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/TourBus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/VehicleDetails/VehicleDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/VehicleDetails/VehicleDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/VehicleHistory/VehicleHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/VehicleHistory/VehicleHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/VehicleManagement/VehicleManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/VehicleManagement/VehicleManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/TrafficViolationsFactory/TrafficViolationsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/TrafficViolationsFactory/TrafficViolationsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleHistoryFactory/VehicelHistoryFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleHistoryFactory/VehicleHistoryFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleManagementFactory/VehicleManagementFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleManagementFactory/VehicleManagementFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/ApprovalsFactory/ApprovalsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/ApprovalsFactory/ApprovalsFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/DeductionsFactory/DeductionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/DeductionsFactory/DeductionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/EmployeeManagementFactory/EmployeeManagementFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/EmployeeManagementFactory/EmployeeManagementFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/ReportFactory/ReportFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/ReportFactory/ReportFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/RoadWorthTestFactory/RoadWorthyTestFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/RoadWorthTestFactory/RoadWorthyTestFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/ServiceFactory/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleServiceFactory/VehicleServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/TrackerFactory/TrackerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/TrackerFactory/TrackerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleHistoryFactory/VehicleHistoryFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleHistoryFactory/VehicleHistoryFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/AdminOperationsRepository/Implements/AdminOperationsRepoImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/AdminOperationsRepository/Implements/AdminOperationsRepoImplements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ApprovalsRepository/Implements/ApprovalsRepositoryImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ApprovalsRepository/Implements/ApprovalsRepositoryImplements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/DeductionsRepository/Implements/DeductionsRepositoryImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/DeductionsRepository/Implements/DeductionsRepositoryImplements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/EmployeeManagementRepository/EmployeeManagementRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/EmployeeManagementRepository/EmployeeManagementRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/EmployeeManagementRepository/Implements/EmployeeManagementRepoImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/EmployeeManagementRepository/Implements/EmployeeManagementRepoImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/EmployeeRepository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/EmployeeRepository/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/EmployeeRepository/Implements/EmployeeRepositoryImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/EmployeeRepository/Implements/EmployeeRepositoryImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/LicenseDiskRepository/Implements/LicenseDiskRepositoryImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/LicenseDiskRepository/Implements/LicenseDiskRepositoryImplements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/LoginRepository/Implements/LoginRepositoryImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/LoginRepository/Implements/LoginRepositoryImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/PositionRepository/Implements/PositionRepositoryImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/PositionRepository/Implements/PositionRepositoryImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/PositionRepository/PositionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/PositionRepository/PositionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ReportRepository/Implements/ReportRepositoryImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ReportRepository/Implements/ReportRepositoryImplement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/RequestsRepository/Implements/RequestsRepositoryImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/RequestsRepository/Implements/RequestsRepositoryImplements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/RoadWorthyTestRepository/Implements/RoadWorthyTestImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/RoadWorthyTestRepository/Implements/RoadWorthyTestImplements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ServiceRepository/Implements/ServiceRepositoryImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ServiceRepository/Implements/ServiceRepositoryImplements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/RoadWorthyTestRepository/Implements/RoadWorthyTestImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/RoadWorthyTestRepository/Implements/RoadWorthyTestRepositoryImplements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/RoutesRepository/Implements/RoutesRepositoryImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/RoutesRepository/Implements/RoutesRepositoryImplements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ServiceRepository/Implements/ServiceRepositoryImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleServiceRepository/Implements/VehicleServiceRepositoryImplements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ServiceRepository/ServiceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleServiceRepository/VehicleServiceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TourRepository/Implements/TourRepositoryImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TourRepository/Implements/TourRepositoryImplements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TrackerRepository/Implements/TrackerRepoImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TrackerRepository/Implements/TrackerRepoImplements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TrafficViolationsRepository/Implements/TrafficViolationsImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TrafficViolationsRepository/Implements/TrafficViolationsRepositoryImplements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleHistoryRepository/Implements/VehicleHistoryImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleHistoryRepository/Implements/VehicleHistoryRepositoryImplements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleHistoryRepository/VehicleHistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleHistoryRepository/VehicleHistoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TrafficViolationsRepository/Implements/TrafficViolationsRepositoryImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TrafficViolationsRepository/Implements/TrafficViolationsRepositoryImplements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleDetailsRepository/Implements/VehicleDetailsRepositoryImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleDetailsRepository/Implements/VehicleDetailsRepositoryImplements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleHistoryRepository/Implements/VehicleHistoryRepositoryImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleHistoryRepository/Implements/VehicleHistoryRepositoryImplements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleManagementRepository/Implements/VehicleManagementRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleManagementRepository/Implements/VehicleManagementRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/TrafficViolations/TrafficViolationsFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/TrafficViolations/TrafficViolationsFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleHistoryFactory/VehicelHistoryFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleHistoryFactory/VehicleHistoryFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleManagement/VehicleManagementFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleManagement/VehicleManagementFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/RequestsRepository/Implements/RequestsRepositoryImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/RequestsRepository/Implements/RequestsRepositoryImplementsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/RoadWorthyTestRepository/Implements/RoadWorthyTestImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/RoadWorthyTestRepository/Implements/RoadWorthyTestImplementsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/ServiceRepository/Implements/ServiceRepositoryImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/ServiceRepository/Implements/ServiceRepositoryImplementsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehiclesRepository/Implements/VehicleRepositoryImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehiclesRepository/Implements/VehicleRepositoryImplements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/Implements/AdminOperationsServiceImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/Implements/AdminOperationsServiceImplements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/Login/Implements/LoginServiceImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/Login/Implements/LoginServiceImplements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/VehicleManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/VehicleManagementApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/Deductions/DeductionFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/Deductions/DeductionFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/EmployeeManagement/EmployeeManagementFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/EmployeeManagement/EmployeeManagementFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/Report/ReportFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/Report/ReportFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/RoadWorthy/RoadWorthyTestFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/RoadWorthy/RoadWorthyTestFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/Service/ServiceFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleService/VehicleVehicleServiceFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleHistoryFactory/VehicleHistoryFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleHistoryFactory/VehicleHistoryFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/Implements/AdminOperationsServiceImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/Implements/AdminOperationsVehicleServiceImplementsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/Login/Implements/LoginServiceImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/Login/Implements/LoginVehicleServiceImplementsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/AdminOperationsRepository/Implements/AdminOperationsRepoImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/AdminOperationsRepository/Implements/AdminOperationsRepoImplementsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/ApprovalsRepository/Implements/ApprovalsRepositoryImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/ApprovalsRepository/Implements/ApprovalsRepositoryImplementsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/DeductionsRepository/Implements/DeductionsRepositoryImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/DeductionsRepository/Implements/DeductionsRepositoryImplementsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/EmployeeManagementRepository/Implements/EmployeeManagementRepoImplementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/EmployeeManagementRepository/Implements/EmployeeManagementRepoImplementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/LicenseDiskRepository/Implements/LicenseDiskRepositoryImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/LicenseDiskRepository/Implements/LicenseDiskRepositoryImplementsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/LoginRepository/Implements/LoginRepositoryImplementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/LoginRepository/Implements/LoginRepositoryImplementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/PositionRepository/Implements/PositionRepositoryImplementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/PositionRepository/Implements/PositionRepositoryImplementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/ReportRepository/Implements/ReportRepositoryImplementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/ReportRepository/Implements/ReportRepositoryImplementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/RoadWorthyTestRepository/Implements/RoadWorthyTestImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/RoadWorthyTestRepository/Implements/RoadWorthyTestImplementsTestRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/RoutesRepository/Implements/RoutesRepositoryImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/RoutesRepository/Implements/RoutesRepositoryImplementsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/ServiceRepository/Implements/ServiceRepositoryImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/VehicleServiceRepository/Implements/VehicleVehicleServiceRepositoryImplementsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/TourRepository/Implements/TourRepositoryImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/TourRepository/Implements/TourRepositoryImplementsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/TrackerRepository/Implements/TrackerRepoImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/TrackerRepository/Implements/TrackerRepoImplementsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/TrafficViolationsRepository/Implements/TrafficViolationsImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/TrafficViolationsRepository/Implements/TrafficViolationsRepositoryImplementsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/VehicleHistoryRepository/Implements/VehicleHistoryImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/VehicleHistoryRepository/Implements/VehicleHistoryRepositoryImplementsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/VehicleManagementRepository/Implements/VehicleManagementRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/VehicleManagementRepository/Implements/VehicleManagementRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/VehicleDetailsRepository/Implements/VehicleDetailsRepositoryImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/VehicleDetailsRepository/Implements/VehicleDetailsRepositoryImplementsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/VehicleHistoryRepository/Implements/VehicleHistoryRepositoryImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/VehicleHistoryRepository/Implements/VehicleHistoryRepositoryImplementsTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -70,46 +135,76 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleManagementRepository/Implements/VehicleManagementRepositoryImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/RoutesService/Implements/RoutesServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="102">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding>
-                <element signature="e#592#593#0" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-                <element signature="e#923#924#0" expanded="true" />
-                <element signature="e#959#960#0" expanded="true" />
+                <element signature="e#610#611#0" expanded="true" />
+                <element signature="e#675#676#0" expanded="true" />
+                <element signature="e#1012#1013#0" expanded="true" />
+                <element signature="e#1076#1077#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/TourService/TourService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/TourService/Implements/TourServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#556#557#0" expanded="true" />
+                <element signature="e#626#627#0" expanded="true" />
+                <element signature="e#389#390#0" expanded="true" />
+                <element signature="e#416#417#0" expanded="true" />
+                <element signature="e#467#468#0" expanded="true" />
+                <element signature="e#494#495#0" expanded="true" />
+                <element signature="e#542#543#0" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#1359#1360#0" expanded="true" />
+                <element signature="e#1406#1407#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/VehicleManagementRepository/Implements/VehicleManagementRepositoryImplTest.java">
+        <entry file="file://$PROJECT_DIR$/../src/test/java/za/ac/cput/vehiclemanagementsystem/Service/TourService/Implements/TourServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleManagement/VehicleManagementFactoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="14" column="84" lean-forward="true" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Approvals/Approvals.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-340">
-              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+            <state relative-caret-position="714">
+              <caret line="50" column="9" selection-start-line="50" selection-start-column="7" selection-end-line="54" selection-end-column="42" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
+                <element signature="e#650#651#0" expanded="true" />
+                <element signature="e#902#903#0" expanded="true" />
+                <element signature="e#963#964#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TourRepository/Implements/TourRepositoryImplements.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -127,58 +222,68 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>empNumb</find>
-      <find>Sprinter</find>
-      <find>Minibus</find>
-      <find>employeeFactory</find>
-      <find>employeeFact</find>
-      <find>updateEmp</find>
-      <find>roadWorthySet</find>
-      <find>serviceSet</find>
-      <find>licenseDiskList</find>
-      <find>R</find>
-      <find>transactionNo</find>
-      <find>transactionSuccess</find>
-      <find>eNo</find>
-      <find>eName</find>
-      <find>vinNo</find>
-      <find>vehicleType</find>
-      <find>driverName</find>
-      <find>cab2</find>
-      <find>psotionDescription</find>
-      <find>loginServiceRepository</find>
-      <find>surname</find>
-      <find>operationID</find>
-      <find>name</find>
-      <find>empID</find>
-      <find>veihcleType</find>
+      <find>positionSet</find>
+      <find>positionmap</find>
+      <find>routesSet</find>
+      <find>routesmap</find>
+      <find>vehicleDetailsSet</find>
+      <find>approvalsRepository</find>
+      <find>operation</find>
+      <find>admin</find>
+      <find>adminOperationsRepoImplements</find>
+      <find>savedRepot</find>
+      <find>EmployeeServiceImpl</find>
+      <find>EmployeeRepository</find>
+      <find>getEmployee</find>
+      <find>employee</find>
+      <find>Employee</find>
+      <find>LicenseDiskServiceImpl</find>
+      <find>LicenseDiskRepository</find>
+      <find>disk</find>
+      <find>newModel</find>
+      <find>PositionServiceImpl</find>
+      <find>Position</find>
+      <find>desc</find>
+      <find>ReportRepository</find>
+      <find>Report</find>
+      <find>position</find>
+      <find>report</find>
+      <find>RoutesRepository</find>
+      <find>RoutesRepositoryImplements</find>
+      <find>routes</find>
+      <find>toursSet</find>
     </findStrings>
     <replaceStrings>
-      <replace>driverNo</replace>
-      <replace>Minibus</replace>
-      <replace>Quantum</replace>
-      <replace>LuxuryCoach</replace>
-      <replace>checkInFactory</replace>
-      <replace>checkInFact</replace>
-      <replace>checkOutEmp</replace>
-      <replace>roadWorthyList</replace>
-      <replace>serviceList</replace>
-      <replace>licenseDiskSet</replace>
-      <replace>transactionDate</replace>
-      <replace>transactionSuccess</replace>
-      <replace>checkedIn</replace>
-      <replace>violationNo</replace>
-      <replace>vioDescription</replace>
-      <replace>tourID</replace>
-      <replace>tourDestination</replace>
-      <replace>tourDuration</replace>
-      <replace>tour2</replace>
-      <replace>positionDescription</replace>
-      <replace>loginRepository</replace>
-      <replace>operation</replace>
-      <replace>operationID</replace>
-      <replace>taskID</replace>
-      <replace>vehicleType</replace>
+      <replace>approvalsMap</replace>
+      <replace>approval</replace>
+      <replace>approvalNo</replace>
+      <replace>deductionsMap</replace>
+      <replace>positionmap</replace>
+      <replace>positionMap</replace>
+      <replace>routesmap</replace>
+      <replace>routesMap</replace>
+      <replace>vehicleDetailsMap</replace>
+      <replace>repository</replace>
+      <replace>savedReport</replace>
+      <replace>LicenseDiskServiceImpl</replace>
+      <replace>LicenseDiskRepository</replace>
+      <replace>getLicenseDisk</replace>
+      <replace>disk</replace>
+      <replace>PositionServiceImpl</replace>
+      <replace>PositionRepository</replace>
+      <replace>position</replace>
+      <replace>desc</replace>
+      <replace>ReportServiceImpl</replace>
+      <replace>Report</replace>
+      <replace>report</replace>
+      <replace>RoutesServiceImpl</replace>
+      <replace>RoutesRepository</replace>
+      <replace>Routes</replace>
+      <replace>routes</replace>
+      <replace>newDestination</replace>
+      <replace>TourRepository</replace>
+      <replace>TourRepositoryImplements</replace>
+      <replace>tours</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -187,57 +292,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/RequestsRepository/Implements/RequestsRepositoryImplements.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/RequestsRepository/Implements/RequestsRepositoryImplementsTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ServiceRepository/Implements/ServiceRepositoryImplements.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/ServiceRepository/Implements/ServiceRepositoryImplementsTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Tracker/Tracker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/AdminOperations/AdminOperations.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Approvals/Approvals.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Deductions/Deductions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/Admin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/Driver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/Employee.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/Manager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/TourGuide.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Destinations/Destinations.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/EmployeeManagement/EmployeeManagement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/LicenseDisk/LicenseDisk.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Login/Login.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Position/Position.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Report/Report.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Requests/Requests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/RoadWorthyTest/RoadWorthyTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Routes/Routes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Service/Service.java" />
+        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/EmployeeManagement/Implements/EmployeeManagementVehicleServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/LicenseDiskRepository/Implements/LicenseDiskRepositoryImplementsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/DeductionsService/DeductionsServices.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/VehicleManagementApplication.java" />
+        <option value="$PROJECT_DIR$/src/resources/application.properties.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Controller/IController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Controller/AdminOperationsController/AdminOperationsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Controller/LoginController/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/AdminOperationsRepository/Implements/AdminOperationsRepoImplementsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ApprovalsRepository/Implements/ApprovalsRepositoryImplements.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/AdminOperationsRepository/Implements/AdminOperationsRepoImplements.java" />
+        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/PositionRepository/Implements/PositionRepositoryImplementTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/LoginRepository/Implements/LoginRepositoryImplementTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/ReportRepository/Implements/ReportRepositoryImplementTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/RoutesRepository/Implements/RoutesRepositoryImplementsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Tour/Tour.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Transaction/Transaction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/LuxuryCoach.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/Minibus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/Quantum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/Sprinter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/TourBus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicle.java" />
+        <option value="$PROJECT_DIR$/../src/test/java/za/ac/cput/vehiclemanagementsystem/Repository/TourRepository/Implements/TourRepositoryImplementsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/TourRepository/Implements/TourRepositoryImplementsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleDetailsRepository/VehicleDetailsRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/VehicleDetails/VehicleDetails.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TrackerRepository/Implements/TrackerRepoImplements.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/TrackerRepository/Implements/TrackerRepoImplementsTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/TrafficViolationsRepository/Implements/TrafficViolationsImplementsTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TrafficViolationsRepository/Implements/TrafficViolationsImplements.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/TrafficViolations/TrafficViolations.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/TrafficViolationsFactory/TrafficViolationsFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/TrafficViolations/TrafficViolationsFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TrafficViolationsRepository/Implements/TrafficViolationsRepositoryImplements.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/TrafficViolationsRepository/Implements/TrafficViolationsRepositoryImplementsTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleHistoryRepository/Implements/VehicleHistoryImplements.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleHistoryRepository/VehicleHistoryRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/VehicleHistory/VehicleHistory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleHistoryRepository/Implements/VehicleHistoryRepositoryImplements.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/VehicleHistoryRepository/Implements/VehicleHistoryRepositoryImplementsTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleManagementFactory/VehicleManagementFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/VehicleManagement/VehicleManagement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleManagementRepository/Implements/VehicleManagementRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/VehicleManagementRepository/Implements/VehicleManagementRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleManagement/VehicleManagementFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/VehicleDetailsRepository/Implements/VehicleDetailsRepositoryImplementsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/Implements/AdminOperationsServiceImplements.java" />
+        <option value="$PROJECT_DIR$/../src/test/java/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/Implements/AdminOperationsServiceImplementsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/Implements/AdminOperationsVehicleServiceImplementsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/EmployeeService/EmployeeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/EmployeeRepository/Implements/EmployeeRepositoryImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/EmployeeService/Implements/EmployeeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/Employee.java" />
+        <option value="$PROJECT_DIR$/../src/test/java/za/ac/cput/vehiclemanagementsystem/Service/EmployeeService/Implements/EmployeeServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/LicenseDiskService/LicenseDiskService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/LicenseDiskService/Implements/LicenseDiskServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../src/test/java/za/ac/cput/vehiclemanagementsystem/Service/LicenseDiskService/Implements/LicenseDiskServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/PositionService/PositionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/PositionRepository/PositionRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/PositionService/Implements/PositionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/PositionRepository/Implements/PositionRepositoryImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/ReportService/ReportService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/ReportService/Implements/ReportServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ReportRepository/Implements/ReportRepositoryImplement.java" />
+        <option value="$PROJECT_DIR$/../src/test/java/za/ac/cput/vehiclemanagementsystem/Service/PositionService/Implements/PositionServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/RoutesService/RoutesService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/RoutesService/Implements/RoutesServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/RoutesRepository/Implements/RoutesRepositoryImplements.java" />
+        <option value="$PROJECT_DIR$/../src/test/java/za/ac/cput/vehiclemanagementsystem/Service/ReportService/Implements/ReportServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Routes/Routes.java" />
+        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/RoutesService/Implements/RoutesServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/TourService/TourService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/TourService/Implements/TourServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TourRepository/Implements/TourRepositoryImplements.java" />
+        <option value="$PROJECT_DIR$/../src/test/java/za/ac/cput/vehiclemanagementsystem/Service/TourService/Implements/TourServiceImplTest.java" />
       </list>
     </option>
   </component>
@@ -247,6 +352,17 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="vehicleManagementSystem" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
@@ -259,80 +375,61 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
+            </path>
+            <path>
+              <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
               <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
               <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
               <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
               <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
-              <item name="Domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
               <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
-              <item name="Domain" type="462c0819:PsiDirectoryNode" />
-              <item name="VehicleManagement" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
               <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
-              <item name="Factory" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
-              <item name="Factory" type="462c0819:PsiDirectoryNode" />
-              <item name="VehicleManagementFactory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
               <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -342,36 +439,157 @@
             </path>
             <path>
               <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
               <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
               <item name="Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="VehicleManagementRepository" type="462c0819:PsiDirectoryNode" />
+              <item name="ReportRepository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
               <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
               <item name="Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="VehicleManagementRepository" type="462c0819:PsiDirectoryNode" />
+              <item name="ReportRepository" type="462c0819:PsiDirectoryNode" />
               <item name="Implements" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+              <item name="RoutesRepository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+              <item name="RoutesRepository" type="462c0819:PsiDirectoryNode" />
+              <item name="Implements" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+              <item name="TourRepository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+              <item name="TourRepository" type="462c0819:PsiDirectoryNode" />
+              <item name="Implements" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+              <item name="VehicleDetailsRepository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
+              <item name="TourService" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
+              <item name="TourService" type="462c0819:PsiDirectoryNode" />
+              <item name="Implements" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
               <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vehicleManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADP Year Project" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="ADP Year Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vehiclemanagementsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -385,9 +603,11 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557185190779" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/DVD Rentals/DVD/DVD/DVDRentalClient" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/../src/test/java/za/ac/cput/vehiclemanagementsystem/Service" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/DVDRentals" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -396,15 +616,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="za.ac.cput.vehiclemanagementsystem.Repository.PositionRepository.Implements" />
-      <recent name="za.ac.cput.vehiclemanagementsystem.Factory.AdminoperationsFactory" />
-      <recent name="za.ac.cput.vehiclemanagementsystem.Service.AdminOperations.Implements" />
-      <recent name="za.ac.cput.vehiclemanagementsystem.Repository.AdminOperationsRepository.Implements" />
-      <recent name="za.ac.cput.vehiclemanagementsystem.Service.Admin.Implements" />
+      <recent name="za.ac.cput.vehiclemanagementsystem.Service.TourService.Implements" />
+      <recent name="za.ac.cput.vehiclemanagementsystem.Service.RoutesService.Implements" />
+      <recent name="za.ac.cput.vehiclemanagementsystem.Service.ReportService.Implements" />
+      <recent name="za.ac.cput.vehiclemanagementsystem.Service.PositionService.Implements" />
+      <recent name="za.ac.cput.vehiclemanagementsystem.Service.LicenseDiskService.Implements" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="za.ac.cput.vehiclemanagementsystem.Factory" />
       <recent name="za.ac.cput.vehiclemanagementsystem" />
+      <recent name="za.ac.cput.vehiclemanagementsystem.Factory" />
       <recent name="za.ac.cput.vehiclemanagementsystem.Domain" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -430,77 +650,77 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VehicleManagementRepositoryImplTest">
-    <configuration name="ServiceRepositoryImplementsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TourServiceImplTest">
+    <configuration name="LicenseDiskServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ADP Year Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="za.ac.cput.vehiclemanagementsystem.repository.ServiceRepository.Implements.*" />
+          <option name="PATTERN" value="za.ac.cput.vehiclemanagementsystem.Service.LicenseDiskService.Implements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.ServiceRepository.Implements" />
-      <option name="MAIN_CLASS_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.ServiceRepository.Implements.ServiceRepositoryImplementsTest" />
+      <option name="PACKAGE_NAME" value="za.ac.cput.vehiclemanagementsystem.Service.LicenseDiskService.Implements" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.vehiclemanagementsystem.Service.LicenseDiskService.Implements.LicenseDiskServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrackerRepoImplementsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PositionServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ADP Year Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="za.ac.cput.vehiclemanagementsystem.repository.TrackerRepository.Implements.*" />
+          <option name="PATTERN" value="za.ac.cput.vehiclemanagementsystem.Service.PositionService.Implements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.TrackerRepository.Implements" />
-      <option name="MAIN_CLASS_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.TrackerRepository.Implements.TrackerRepoImplementsTest" />
+      <option name="PACKAGE_NAME" value="za.ac.cput.vehiclemanagementsystem.Service.PositionService.Implements" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.vehiclemanagementsystem.Service.PositionService.Implements.PositionServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrafficViolationsRepositoryImplementsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReportServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ADP Year Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="za.ac.cput.vehiclemanagementsystem.repository.TrafficViolationsRepository.Implements.*" />
+          <option name="PATTERN" value="za.ac.cput.vehiclemanagementsystem.Service.ReportService.Implements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.TrafficViolationsRepository.Implements" />
-      <option name="MAIN_CLASS_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.TrafficViolationsRepository.Implements.TrafficViolationsRepositoryImplementsTest" />
+      <option name="PACKAGE_NAME" value="za.ac.cput.vehiclemanagementsystem.Service.ReportService.Implements" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.vehiclemanagementsystem.Service.ReportService.Implements.ReportServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VehicleHistoryRepositoryImplementsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoutesServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ADP Year Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="za.ac.cput.vehiclemanagementsystem.repository.VehicleHistoryRepository.Implements.*" />
+          <option name="PATTERN" value="za.ac.cput.vehiclemanagementsystem.Service.RoutesService.Implements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.VehicleHistoryRepository.Implements" />
-      <option name="MAIN_CLASS_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.VehicleHistoryRepository.Implements.VehicleHistoryRepositoryImplementsTest" />
+      <option name="PACKAGE_NAME" value="za.ac.cput.vehiclemanagementsystem.Service.RoutesService.Implements" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.vehiclemanagementsystem.Service.RoutesService.Implements.RoutesServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VehicleManagementRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TourServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ADP Year Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="za.ac.cput.vehiclemanagementsystem.repository.VehicleManagementRepository.Implements.*" />
+          <option name="PATTERN" value="za.ac.cput.vehiclemanagementsystem.Service.TourService.Implements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.VehicleManagementRepository.Implements" />
-      <option name="MAIN_CLASS_NAME" value="za.ac.cput.vehiclemanagementsystem.repository.VehicleManagementRepository.Implements.VehicleManagementRepositoryImplTest" />
+      <option name="PACKAGE_NAME" value="za.ac.cput.vehiclemanagementsystem.Service.TourService.Implements" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.vehiclemanagementsystem.Service.TourService.Implements.TourServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -508,11 +728,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VehicleManagementRepositoryImplTest" />
-        <item itemvalue="JUnit.VehicleHistoryRepositoryImplementsTest" />
-        <item itemvalue="JUnit.TrafficViolationsRepositoryImplementsTest" />
-        <item itemvalue="JUnit.TrackerRepoImplementsTest" />
-        <item itemvalue="JUnit.ServiceRepositoryImplementsTest" />
+        <item itemvalue="JUnit.TourServiceImplTest" />
+        <item itemvalue="JUnit.RoutesServiceImplTest" />
+        <item itemvalue="JUnit.ReportServiceImplTest" />
+        <item itemvalue="JUnit.PositionServiceImplTest" />
+        <item itemvalue="JUnit.LicenseDiskServiceImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -566,7 +786,14 @@
       <workItem from="1557746276856" duration="414000" />
       <workItem from="1557754530312" duration="25515000" />
       <workItem from="1557852086160" duration="15210000" />
-      <workItem from="1557914122028" duration="26918000" />
+      <workItem from="1557914122028" duration="27644000" />
+      <workItem from="1558113299904" duration="970000" />
+      <workItem from="1558134114300" duration="4319000" />
+      <workItem from="1558175957491" duration="24764000" />
+      <workItem from="1558354488352" duration="8340000" />
+      <workItem from="1558389650130" duration="12303000" />
+      <workItem from="1558431576305" duration="24614000" />
+      <workItem from="1558474542429" duration="32377000" />
     </task>
     <task id="LOCAL-00001" summary="First commit for Vehicle Management System (VMS)">
       <created>1554893283617</created>
@@ -638,49 +865,56 @@
       <option name="project" value="LOCAL" />
       <updated>1557872772850</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Updated Vehicle Management (VMS) updates...&#10;Updated Vehicle Management (VMS) Updated Repository and Test Packages...&#10;Added Position Domain&#10;Completed First Service (Login Service) with tests...&#10;Completed Repository Tests">
+      <created>1557965396686</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1557965396686</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ServiceRepositoryImplementsTest_delete - 2019.05.15 at 22h 44m 25s.xml">
-      <configuration name="ServiceRepositoryImplementsTest.delete" configurationId="JUnit" />
+    <history-entry file="PositionServiceImplTest - 2019.05.22 at 07h 09m 57s.xml">
+      <configuration name="PositionServiceImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceRepositoryImplementsTest - 2019.05.15 at 22h 44m 47s.xml">
-      <configuration name="ServiceRepositoryImplementsTest" configurationId="JUnit" />
+    <history-entry file="ReportServiceImplTest - 2019.05.22 at 07h 50m 16s.xml">
+      <configuration name="ReportServiceImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceRepositoryImplementsTest - 2019.05.15 at 22h 45m 08s.xml">
-      <configuration name="ServiceRepositoryImplementsTest" configurationId="JUnit" />
+    <history-entry file="ReportServiceImplTest - 2019.05.22 at 07h 50m 59s.xml">
+      <configuration name="ReportServiceImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TrackerRepoImplementsTest - 2019.05.15 at 23h 24m 51s.xml">
-      <configuration name="TrackerRepoImplementsTest" configurationId="JUnit" />
+    <history-entry file="ReportServiceImplTest - 2019.05.22 at 07h 52m 51s.xml">
+      <configuration name="ReportServiceImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TrackerRepoImplementsTest - 2019.05.15 at 23h 25m 20s.xml">
-      <configuration name="TrackerRepoImplementsTest" configurationId="JUnit" />
+    <history-entry file="ReportServiceImplTest - 2019.05.22 at 07h 54m 05s.xml">
+      <configuration name="ReportServiceImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TrafficViolationsRepositoryImplementsTest - 2019.05.16 at 00h 26m 48s.xml">
-      <configuration name="TrafficViolationsRepositoryImplementsTest" configurationId="JUnit" />
+    <history-entry file="ReportServiceImplTest - 2019.05.22 at 07h 55m 05s.xml">
+      <configuration name="ReportServiceImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VehicleHistoryRepositoryImplementsTest - 2019.05.16 at 01h 22m 50s.xml">
-      <configuration name="VehicleHistoryRepositoryImplementsTest" configurationId="JUnit" />
+    <history-entry file="ReportServiceImplTest - 2019.05.22 at 07h 55m 32s.xml">
+      <configuration name="ReportServiceImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VehicleHistoryRepositoryImplementsTest - 2019.05.16 at 01h 23m 34s.xml">
-      <configuration name="VehicleHistoryRepositoryImplementsTest" configurationId="JUnit" />
+    <history-entry file="RoutesServiceImplTest - 2019.05.22 at 08h 42m 15s.xml">
+      <configuration name="RoutesServiceImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VehicleHistoryRepositoryImplementsTest - 2019.05.16 at 01h 25m 00s.xml">
-      <configuration name="VehicleHistoryRepositoryImplementsTest" configurationId="JUnit" />
+    <history-entry file="RoutesServiceImplTest - 2019.05.22 at 08h 42m 57s.xml">
+      <configuration name="RoutesServiceImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VehicleManagementRepositoryImplTest - 2019.05.16 at 02h 06m 28s.xml">
-      <configuration name="VehicleManagementRepositoryImplTest" configurationId="JUnit" />
+    <history-entry file="RoutesServiceImplTest - 2019.05.22 at 08h 43m 35s.xml">
+      <configuration name="RoutesServiceImplTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260934000" />
+    <option name="totallyTimeSpent" value="369347000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21104388" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -691,7 +925,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4140753" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32405892" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -709,9 +943,9 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven" order="8" weight="0.32980332" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.32980332" />
     </layout>
   </component>
@@ -728,369 +962,275 @@
     <MESSAGE value="Updated Vehicle Management (VMS) updates...&#10;Updated Vehicle Management (VMS) Updated Repository and Test Packages...&#10;Added Position Domain&#10;Completed First Service (Login Service) with tests..." />
     <MESSAGE value="Updated Vehicle Management (VMS) updates...&#10;                                                     Updated Vehicle Management (VMS) Updated Repository and Test Packages...&#10;                                                     Added Position Domain&#10;                                                     Completed First Service (Login Service) with tests..." />
     <MESSAGE value="Updated Vehicle Management (VMS) updates...&#10;Updated Vehicle Management (VMS) Updated Repository and Test Packages...&#10;Added Position Domain&#10;Completed First Service (Login Service) with tests...&#10;Completed Repository Tests up until 'Requests'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Vehicle Management (VMS) updates...&#10;Updated Vehicle Management (VMS) Updated Repository and Test Packages...&#10;Added Position Domain&#10;Completed First Service (Login Service) with tests...&#10;Completed Repository Tests up until 'Requests'" />
+    <MESSAGE value="Updated Vehicle Management (VMS) updates...&#10;Updated Vehicle Management (VMS) Updated Repository and Test Packages...&#10;Added Position Domain&#10;Completed First Service (Login Service) with tests...&#10;Completed Repository Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Vehicle Management (VMS) updates...&#10;Updated Vehicle Management (VMS) Updated Repository and Test Packages...&#10;Added Position Domain&#10;Completed First Service (Login Service) with tests...&#10;Completed Repository Tests" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TourRepository/Implements/TourRepositoryImplements.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/Implements/AdminOperationsVehicleServiceImplementsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="273">
+          <caret line="64" column="79" selection-start-line="64" selection-start-column="79" selection-end-line="64" selection-end-column="79" />
+          <folding>
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/AdminOperations/AdminOperations.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/Implements/AdminOperationsServiceImplements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#1327#1328#0" expanded="true" />
+            <element signature="e#1375#1376#0" expanded="true" />
+            <element signature="e#1459#1460#0" expanded="true" />
+            <element signature="e#1521#1522#0" expanded="true" />
+            <element signature="e#1580#1581#0" expanded="true" />
+            <element signature="e#1626#1627#0" expanded="true" />
+            <element signature="e#1710#1711#0" expanded="true" />
+            <element signature="e#1772#1773#0" expanded="true" />
+            <element signature="e#1826#1827#0" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Deductions/Deductions.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/EmployeeManagement/Implements/EmployeeManagementVehicleServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="51" column="19" lean-forward="true" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/AdminOperationsService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2050#2051#0" expanded="true" />
-            <element signature="e#2131#2132#0" expanded="true" />
-          </folding>
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/VehicleManagementService/VehicleManagementService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/Approvals/ApprovalsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/Approvals/Implements/ApprovalsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/EmployeeRepository/EmployeeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="76" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/Admin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="102">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/TrafficViolationsService/Implements/TrafficViolationsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1784#1785#0" expanded="true" />
-            <element signature="e#1849#1850#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/Driver.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/EmployeeRepository/Implements/EmployeeRepositoryImplement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="340">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1804#1805#0" expanded="true" />
-            <element signature="e#1870#1871#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#1333#1334#0" expanded="true" />
+            <element signature="e#1385#1386#0" expanded="true" />
+            <element signature="e#1638#1639#0" expanded="true" />
+            <element signature="e#1686#1687#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="323">
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/EmployeeService/EmployeeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1816#1817#0" expanded="true" />
-            <element signature="e#1881#1882#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/Manager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/LicenseDiskRepository/LicenseDiskRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2246#2247#0" expanded="true" />
-            <element signature="e#2324#2325#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="7" column="66" lean-forward="true" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="85" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Employee/TourGuide.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/EmployeeService/Implements/EmployeeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="425">
+          <caret line="52" column="39" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1849#1850#0" expanded="true" />
-            <element signature="e#1914#1915#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Destinations/Destinations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1891#1892#0" expanded="true" />
-            <element signature="e#1958#1959#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/EmployeeManagement/EmployeeManagement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2062#2063#0" expanded="true" />
-            <element signature="e#2124#2125#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#1485#1486#0" expanded="true" />
+            <element signature="e#1504#1505#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/LicenseDisk/LicenseDisk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="272">
+          <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../src/test/java/za/ac/cput/vehiclemanagementsystem/Service/EmployeeService/Implements/EmployeeServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="32" column="30" lean-forward="true" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1575#1576#0" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#1031#1032#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Login/Login.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/LoginRepository/LoginRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1958#1959#0" expanded="true" />
-            <element signature="e#2027#2028#0" expanded="true" />
-          </folding>
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Position/Position.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/LicenseDiskService/LicenseDiskService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="119">
+          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
-            <element signature="e#1646#1647#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Report/Report.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/PositionRepository/PositionRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="153">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-            <element signature="e#1091#1092#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Requests/Requests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/LicenseDiskService/Implements/LicenseDiskServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#1587#1588#0" expanded="true" />
+            <element signature="e#1633#1634#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/PositionRepository/Implements/PositionRepositoryImplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../src/test/java/za/ac/cput/vehiclemanagementsystem/Service/LicenseDiskService/Implements/LicenseDiskServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="72" column="66" lean-forward="true" selection-start-line="69" selection-start-column="7" selection-end-line="72" selection-end-column="66" />
+          <folding>
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#1114#1115#0" expanded="true" />
+            <element signature="e#1186#1187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/RequestsRepository/RequestsRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1994#1995#0" expanded="true" />
-            <element signature="e#2051#2052#0" expanded="true" />
-          </folding>
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/RoadWorthyTest/RoadWorthyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Routes/Routes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1810#1811#0" expanded="true" />
-            <element signature="e#1878#1879#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Service/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Tour/Tour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1856#1857#0" expanded="true" />
-            <element signature="e#1930#1931#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/LuxuryCoach.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1754#1755#0" expanded="true" />
-            <element signature="e#1816#1817#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/Minibus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1730#1731#0" expanded="true" />
-            <element signature="e#1792#1793#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/Quantum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="e#1729#1730#0" expanded="true" />
-            <element signature="e#1791#1792#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/Sprinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1742#1743#0" expanded="true" />
-            <element signature="e#1804#1805#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicles/TourBus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1777#1778#0" expanded="true" />
-            <element signature="e#1837#1838#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Vehicle/Vehicle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/VehicleDetails/VehicleDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1555#1556#0" expanded="true" />
-            <element signature="e#1615#1616#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Transaction/Transaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding>
-            <element signature="e#2032#2033#0" expanded="true" />
-            <element signature="e#2095#2096#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/TrackerRepository/Implements/TrackerRepoImplementsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="62" column="49" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Tracker/Tracker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="51" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TrackerRepository/Implements/TrackerRepoImplements.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/RoadWorthyTestRepository/RoadWorthyTestRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/TrafficViolations/TrafficViolationsFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ControlRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/TrafficViolationsFactory/TrafficViolationsFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TrackerRepository/TrackerRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/TrafficViolations/TrafficViolations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#997#998#0" expanded="true" />
-            <element signature="e#1038#1039#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1666#1667#0" expanded="true" />
-            <element signature="e#1730#1731#0" expanded="true" />
-          </folding>
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1101,151 +1241,255 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TrafficViolationsRepository/Implements/TrafficViolationsRepositoryImplements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding>
-            <element signature="e#797#798#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1482#1483#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/TrafficViolationsRepository/Implements/TrafficViolationsRepositoryImplementsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleDetailsRepository/Implements/VehicleDetailsRepositoryImplements.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleDetailsRepository/VehicleDetailsRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehiclesRepository/Implements/VehicleRepositoryImplements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/VehicleHistory/VehicleHistory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="80" column="46" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1408#1409#0" expanded="true" />
-            <element signature="e#1463#1464#0" expanded="true" />
-            <element signature="e#1505#1506#0" expanded="true" />
-            <element signature="e#1537#1538#0" expanded="true" />
-            <element signature="e#1575#1576#0" expanded="true" />
-            <element signature="e#1609#1610#0" expanded="true" />
-            <element signature="e#1643#1644#0" expanded="true" />
-            <element signature="e#1673#1674#0" expanded="true" />
-            <element signature="e#2360#2361#0" expanded="true" />
-            <element signature="e#2428#2429#0" expanded="true" />
-          </folding>
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleHistoryRepository/VehicleHistoryRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="36" />
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleHistoryRepository/Implements/VehicleHistoryRepositoryImplements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-          <folding>
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#1443#1444#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/TrackerFactory/TrackerFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleManagementRepository/VehicleManagementRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/VehicleHistoryRepository/Implements/VehicleHistoryRepositoryImplementsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleServiceRepository/VehicleServiceRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="48" column="68" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleHistoryFactory/VehicleHistoryFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/PositionService/PositionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Approvals/Approvals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        <state relative-caret-position="119">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleManagementFactory/VehicleManagementFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/PositionService/Implements/PositionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="53" column="8" lean-forward="true" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ReportRepository/ReportRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/ReportRepository/Implements/ReportRepositoryImplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../src/test/java/za/ac/cput/vehiclemanagementsystem/Service/PositionService/Implements/PositionServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="45" selection-start-line="45" selection-end-line="74" selection-end-column="5" />
+          <folding>
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/RoutesRepository/RoutesRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <caret line="11" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/VehicleManagementRepository/Implements/VehicleManagementRepositoryImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/ReportService/ReportService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/VehicleManagement/VehicleManagement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+        <state relative-caret-position="153">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Factory/VehicleManagement/VehicleManagementFactoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/ReportService/Implements/ReportServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="14" column="84" lean-forward="true" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
+        <state relative-caret-position="869">
+          <caret line="53" column="34" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#1415#1416#0" expanded="true" />
+            <element signature="e#1461#1462#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/VehicleManagementRepository/Implements/VehicleManagementRepositoryImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/RoutesRepository/Implements/RoutesRepositoryImplements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        <state relative-caret-position="204">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../src/test/java/za/ac/cput/vehiclemanagementsystem/Service/ReportService/Implements/ReportServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="74" column="5" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="74" selection-end-column="5" />
+          <folding>
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/Routes/Routes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/RoutesService/RoutesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TourRepository/TourRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/RequestsService/RequestsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/TourService/TourService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/RoutesService/Implements/RoutesServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="53" column="40" lean-forward="true" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1261#1262#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
+            <element signature="e#1480#1481#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/TourService/Implements/TourServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#1359#1360#0" expanded="true" />
+            <element signature="e#1406#1407#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/RoutesService/Implements/RoutesServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/TourRepository/Implements/TourRepositoryImplements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../src/test/java/za/ac/cput/vehiclemanagementsystem/Service/TourService/Implements/TourServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="50" column="9" selection-start-line="50" selection-start-column="7" selection-end-line="54" selection-end-column="42" />
+          <folding>
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

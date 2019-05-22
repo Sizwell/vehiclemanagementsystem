@@ -41,6 +41,15 @@ public class Tour {
             return this;
         }
 
+        public Builder copyTour(Tour tour)
+        {
+            this.tourID = tour.tourID;
+            this.tourDuration = tour.tourDuration;
+            this.tourDestination = tour.tourDestination;
+
+            return this;
+        }
+
         public Tour build() {
             return new Tour(this);
         }

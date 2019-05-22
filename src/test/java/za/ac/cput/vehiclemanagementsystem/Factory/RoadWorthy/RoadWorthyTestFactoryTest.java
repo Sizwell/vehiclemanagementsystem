@@ -12,7 +12,7 @@ public class RoadWorthyTestFactoryTest {
 
     @Before
     public void setUp() throws Exception {
-        roadWorthyTest = RoadWorthyTestFactory.getRoadWorthyTest("245VR209F3", "2017 Transporter");
+        roadWorthyTest = RoadWorthyTestFactory.getRoadWorthyTest("245VR209F3", "2017 Transporter", "Test passed");
     }
 
     @Test

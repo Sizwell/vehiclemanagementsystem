@@ -6,7 +6,7 @@ import java.util.Objects;
 @EntityScan
 public class EmployeeManagement {
 
-    private int taskID;
+    private String taskID;
     private String empName;
     private String empTasks;
 
@@ -21,11 +21,11 @@ public class EmployeeManagement {
     }
 
     public static class Builder {
-        private int taskID;
+        private String taskID;
         private String empName;
         private String empTasks;
 
-        public Builder taskID(int id) {
+        public Builder taskID(String id) {
             this.taskID = id;
             return this;
         }
@@ -53,7 +53,7 @@ public class EmployeeManagement {
 
     }
 
-    public int getTaskID() {
+    public String getTaskID() {
         return taskID;
     }
 

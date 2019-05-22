@@ -6,7 +6,7 @@ import java.util.Objects;
 
 @EntityScan
 public class Deductions {
-    private int deductionsNo;
+    private String deductionsNo;
     private String deductionType;
     private double deductionAmount;
 
@@ -21,11 +21,11 @@ public class Deductions {
     }
 
     public static class Builder {
-        private int deductionNo;
+        private String deductionNo;
         private String deductionType;
         private double deductionAmount;
 
-        public Builder deductionNo(int deductNo)
+        public Builder deductionNo(String deductNo)
         {
             this.deductionNo = deductNo;
             return this;
@@ -41,13 +41,21 @@ public class Deductions {
             return this;
         }
 
+        public Builder deductionsCopy(Deductions deductions)
+        {
+            this.deductionNo = deductions.deductionsNo;
+            this.deductionAmount = deductions.deductionAmount;
+
+            return this;
+        }
+
         public Deductions build() {
             return new Deductions(this);
         }
 
     }
 
-    public int getDeductionsNo()
+    public String getDeductionsNo()
     {
         return deductionsNo;
     }

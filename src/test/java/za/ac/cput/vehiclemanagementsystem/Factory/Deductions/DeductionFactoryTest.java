@@ -12,7 +12,7 @@ public class DeductionFactoryTest {
 
     @Before
     public void setUp() throws Exception {
-        deductions = DeductionFactory.getDeduction(25535, "Vehicle Installment", 5450.29);
+        deductions = DeductionFactory.getDeduction("25535", "Vehicle Installment", 5450.29);
     }
 
     @Test

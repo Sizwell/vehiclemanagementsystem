@@ -1,10 +1,13 @@
 package za.ac.cput.vehiclemanagementsystem.Repository.TrackerRepository.Implements;
 
+import org.springframework.stereotype.Repository;
 import za.ac.cput.vehiclemanagementsystem.Domain.Tracker.Tracker;
 import za.ac.cput.vehiclemanagementsystem.Repository.TrackerRepository.TrackerRepository;
 
 import java.util.ArrayList;
 import java.util.List;
+
+@Repository
 
 public class TrackerRepoImplements implements TrackerRepository {
 
@@ -16,7 +19,7 @@ public class TrackerRepoImplements implements TrackerRepository {
         this.trackerList = new ArrayList<>();
     }
 
-    public static TrackerRepository getTracker()
+    public static TrackerRepoImplements getTracker()
     {
         if(trackerRepository == null)
         {
@@ -28,7 +31,7 @@ public class TrackerRepoImplements implements TrackerRepository {
     private Tracker findTracker(String trackerId)
     {
         return this.trackerList.stream()
-                .filter(tracker -> tracker.getVinNo().trim().equals(trackerId))
+                .filter(tracker -> tracker.getTrackerNo().trim().equals(trackerId))
                 .findAny()
                 .orElse(null);
     }
@@ -57,7 +60,7 @@ public class TrackerRepoImplements implements TrackerRepository {
     @Override
     public Tracker update(Tracker tracker)
     {
-        Tracker uTracker = findTracker(tracker.getVinNo());
+        Tracker uTracker = findTracker(tracker.getTrackerNo());
         if (uTracker != null)
         {
             this.trackerList.remove(uTracker);

@@ -1,10 +1,13 @@
 package za.ac.cput.vehiclemanagementsystem.Repository.VehiclesRepository.Implements;
 
+import org.springframework.stereotype.Repository;
 import za.ac.cput.vehiclemanagementsystem.Domain.Vehicle.Vehicle;
 import za.ac.cput.vehiclemanagementsystem.Repository.VehiclesRepository.VehicleRepository;
 
 import java.util.HashSet;
 import java.util.Set;
+
+@Repository
 
 public class VehicleRepositoryImplements  implements VehicleRepository {
 
@@ -16,7 +19,7 @@ public class VehicleRepositoryImplements  implements VehicleRepository {
         this.vehicleSet = new HashSet<>();
     }
 
-    public static VehicleRepository getVehicle()
+    public static VehicleRepositoryImplements getVehicle()
     {
         if(vehiclesRepo == null)
         {

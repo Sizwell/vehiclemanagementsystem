@@ -37,6 +37,14 @@ public class LicenseDisk {
             return this;
         }
 
+        public Builder copyLicenseDisk(LicenseDisk licenseDisk)
+        {
+            this.regNumber = licenseDisk.regNumber;
+            this.vehicleModel = licenseDisk.vehicleModel;
+
+            return this;
+        }
+
         public LicenseDisk build()
         {
             return new LicenseDisk(this);
@@ -54,8 +62,8 @@ public class LicenseDisk {
     @Override
     public String toString() {
         return "------ LicenseDisk ------\n" +
-                "Registration Number: '" + regNumber + '\'' +
-                "\nVehicle Model: '" + vehicleModel + '\'';
+                "Registration Number: '" + getRegNumber() + '\'' +
+                "\nVehicle Model: '" + getVehicleModel() + '\'';
     }
 
     @Override

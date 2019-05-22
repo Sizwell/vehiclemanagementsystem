@@ -6,6 +6,7 @@ import java.util.Objects;
 @EntityScan
 public class Report {
 
+    private String reportID;
     private String tourDetails;
 
     public Report() {
@@ -13,14 +14,30 @@ public class Report {
     }
 
     public Report(Builder builder) {
+        this.reportID = builder.reportID;
         this.tourDetails = builder.tourDetails;
     }
 
     public static class Builder {
+
+        private String reportID;
         private String tourDetails;
+
+        public Builder reportID(String id)
+        {
+            this.reportID = id;
+            return this;
+        }
 
         public Builder tourDetails(String tour) {
             this.tourDetails = tour;
+            return this;
+        }
+
+        public Builder copyReport(Report report)
+        {
+            this.reportID = report.reportID;
+            this.tourDetails = report.tourDetails;
             return this;
         }
 
@@ -29,6 +46,11 @@ public class Report {
         }
     }
 
+        public String getReportID()
+        {
+            return reportID;
+        }
+
     public String getTourDetails() {
         return tourDetails;
     }
@@ -36,7 +58,8 @@ public class Report {
     @Override
     public String toString() {
         return "------ Report ------\n" +
-                "Tour Details : '" + tourDetails + '\'';
+                "Report ID: '" + getReportID() + '\'' +
+                "\nTour Details: '" + getTourDetails() + '\'';
     }
 
     @Override

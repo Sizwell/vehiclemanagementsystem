@@ -23,7 +23,12 @@ public class LoginRepositoryImplementTest {
     private Login getCredentials()
     {
         List <Login> credentials = this.repository.getAll();
-        Iterator credListIterator = credentials.listIterator();
+        return credentials.listIterator().next();
+       // Iterator credListIterator = credentials.listIterator();
+
+        /*
+        return savedTasks.iterator().next();
+         */
 
      /*   while (credListIterator.hasNext())
         {
@@ -31,7 +36,7 @@ public class LoginRepositoryImplementTest {
             break;
         }
 */
-        return credentials.listIterator().next();
+
     }
 
 

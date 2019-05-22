@@ -1,23 +1,24 @@
 package za.ac.cput.vehiclemanagementsystem.Repository.ApprovalsRepository.Implements;
 
+import org.springframework.stereotype.Repository;
 import za.ac.cput.vehiclemanagementsystem.Domain.Approvals.Approvals;
 import za.ac.cput.vehiclemanagementsystem.Domain.Login.Login;
 import za.ac.cput.vehiclemanagementsystem.Repository.ApprovalsRepository.ApprovalsRepository;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
+@Repository
 public class ApprovalsRepositoryImplements implements ApprovalsRepository {
 
     private static ApprovalsRepositoryImplements approvalsRepository = null;
-    private Set<Approvals> approvalsSet;
+    private Map<String, Approvals> approvalsMap;
 
     private ApprovalsRepositoryImplements()
     {
-        this.approvalsSet = new HashSet<>();
+        this.approvalsMap = new HashMap<>();
     }
 
-    public static ApprovalsRepository getApprovals()
+    public static ApprovalsRepositoryImplements getApprovals()
     {
         if(approvalsRepository == null)
         {
@@ -29,28 +30,34 @@ public class ApprovalsRepositoryImplements implements ApprovalsRepository {
     @Override
     public Set<Approvals> getAll()
     {
-        return this.approvalsSet;
+        Collection<Approvals> approvalsCollection = this.approvalsMap.values();
+        Set<Approvals> set = new HashSet<>();
+        set.addAll(approvalsCollection);
+        return set;
+        //return this.approvalsMap;
     }
 
     @Override
     public Approvals create(Approvals approvals)
     {
-        this.approvalsSet.add(approvals);
+        this.approvalsMap.put(approvals.getApprovalNo(), approvals);
         return approvals;
     }
 
     @Override
     public Approvals read(String s) {
-        return null;
+        return this.approvalsMap.get(s);
     }
 
     @Override
     public Approvals update(Approvals approvals) {
-        return null;
+        this.approvalsMap.replace(approvals.getApprovalNo(), approvals);
+        return this.approvalsMap.get(approvals.getApprovalNo());
     }
 
     @Override
-    public void delete(String s) {
-
+    public void delete(String s)
+    {
+        this.approvalsMap.remove(s);
     }
 }

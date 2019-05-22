@@ -7,7 +7,7 @@ import java.util.Objects;
 @EntityScan
 public class VehicleHistory {
 
-    private String vehicleNo;
+    private String historyNo;
     private String vehicleType;
     private String history;
 
@@ -18,20 +18,20 @@ public class VehicleHistory {
 
     public VehicleHistory(Builder builder)
     {
-       this.vehicleNo = builder.vehicleNo;
+       this.historyNo = builder.historyNo;
        this.vehicleType = builder.vehicleType;
        this.history = builder.history;
     }
 
     public static class Builder
     {
-        private String vehicleNo;
+        private String historyNo;
         private String vehicleType;
         private String history;
 
-        public Builder vehNo(String num)
+        public Builder historyNo(String num)
         {
-            this.vehicleNo = num;
+            this.historyNo = num;
             return this;
         }
 
@@ -49,7 +49,7 @@ public class VehicleHistory {
         
         public Builder copyVH(VehicleHistory vehicleHistory)
         {
-            this.vehicleNo = vehicleHistory.vehicleNo;
+            this.historyNo = vehicleHistory.historyNo;
             this.vehicleType = vehicleHistory.vehicleType;
             this.history = vehicleHistory.history;
 
@@ -62,11 +62,11 @@ public class VehicleHistory {
         }
     }
 
-    public String getVehicleNo() {
-        return vehicleNo;
+    public String getHistoryNo() {
+        return historyNo;
     }
 
-    public String getVeihcleType() {
+    public String getVehicleType() {
         return vehicleType;
     }
 
@@ -77,8 +77,8 @@ public class VehicleHistory {
     @Override
     public String toString() {
         return "------ Vehicle History ------\n" +
-                "Vehicle No: '" + getVehicleNo() + '\'' +
-                "\nVehicle Type: '" + getVeihcleType() + '\'' +
+                "Vehicle No: '" + getHistoryNo() + '\'' +
+                "\nVehicle Type: '" + getVehicleType() + '\'' +
                 "\nHistory: '" + getHistory() + '\'';
     }
 
@@ -87,13 +87,13 @@ public class VehicleHistory {
         if (this == o) return true;
         if (!(o instanceof VehicleHistory)) return false;
         VehicleHistory that = (VehicleHistory) o;
-        return vehicleNo.equals(that.vehicleNo) &&
+        return historyNo.equals(that.historyNo) &&
                 Objects.equals(vehicleType, that.vehicleType) &&
                 history.equals(that.history);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(vehicleNo, vehicleType, history);
+        return Objects.hash(historyNo, vehicleType, history);
     }
 }

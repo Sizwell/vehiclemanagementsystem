@@ -1,5 +1,6 @@
 package za.ac.cput.vehiclemanagementsystem.Repository.AdminOperationsRepository.Implements;
 
+import org.springframework.stereotype.Repository;
 import za.ac.cput.vehiclemanagementsystem.Domain.AdminOperations.AdminOperations;
 import za.ac.cput.vehiclemanagementsystem.Domain.Employee.Admin;
 import za.ac.cput.vehiclemanagementsystem.Repository.AdminOperationsRepository.AdminOperationsRepository;
@@ -7,54 +8,106 @@ import za.ac.cput.vehiclemanagementsystem.Repository.AdminOperationsRepository.A
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository()
 public class AdminOperationsRepoImplements implements AdminOperationsRepository {
 
-    private static AdminOperationsRepoImplements admin = null;
-    private List<AdminOperations> adminList;
+    private static AdminOperationsRepoImplements repository = null;
+    private List<AdminOperations> repositoryList;
 
-    private AdminOperationsRepoImplements() {
-        this.adminList = new ArrayList<>();
+
+    private AdminOperations findOperations(String operationNo)
+    {
+        return this.repositoryList.stream().filter(repositoryOperations -> repositoryOperations.getOperation()
+                .trim().equals(operationNo))
+                .findAny()
+                .orElse(null);
     }
 
-    public AdminOperations findOperations(String operation)
+    private AdminOperationsRepoImplements() {
+        this.repositoryList = new ArrayList<>();
+    }
+
+    public static AdminOperationsRepoImplements getRepository() {
+        if (repository == null) {
+            repository = new AdminOperationsRepoImplements();
+        }
+        return repository;
+    }
+
+    @Override
+    public List<AdminOperations> findAll() {
+        return null;
+    }
+
+
+    @Override
+    public AdminOperations create(AdminOperations adminOperations) {
+        return null;
+    }
+
+    @Override
+    public AdminOperations read(String s) {
+        return null;
+    }
+
+    @Override
+    public AdminOperations update(AdminOperations adminOperations) {
+        return null;
+    }
+
+    @Override
+    public void delete(String s) {
+
+    }
+
+
+
+/*    private static AdminOperationsRepoImplements repository = null;
+    private List<AdminOperations> repositoryList;
+
+    private AdminOperationsRepoImplements() {
+        this.repositoryList = new ArrayList<>();
+    }
+
+    public AdminOperations findOperations(String operationNo)
     {
-        return this.adminList.stream().filter(adminOperations -> adminOperations.getOperation()
-                .trim().equals(operation))
+        return this.repositoryList.stream().filter(repositoryOperations -> repositoryOperations.getOperation()
+                .trim().equals(operationNo))
                 .findAny()
                 .orElse(null);
    }
 
     public static AdminOperationsRepoImplements getRepository() {
-        if (admin == null) {
-            admin = new AdminOperationsRepoImplements();
+        if (repository == null) {
+            repository = new AdminOperationsRepoImplements();
         }
-        return admin;
+        return repository;
     }
 
     @Override
     public List<AdminOperations> findAll() {
-        return this.adminList;
+        return this.repositoryList;
     }
 
     @Override
-    public AdminOperations create(AdminOperations adminOperations) {
-        this.adminList.add(adminOperations);
-        return adminOperations;
+    public AdminOperations create(AdminOperations repositoryOperations) {
+        this.repositoryList.add(repositoryOperations);
+        return repositoryOperations;
     }
 
     @Override
     public AdminOperations read(String read) {
-        AdminOperations adminOperations = findOperations(read);
-        return adminOperations;
+        AdminOperations repositoryOperations = findOperations(read);
+        return repositoryOperations;
     }
 
     @Override
-    public AdminOperations update(AdminOperations adminOperations)
+    public AdminOperations update(AdminOperations repositoryOperations)
     {
-        AdminOperations toUpdate = findOperations(adminOperations.getOperationID());
+        AdminOperations toUpdate = findOperations(repositoryOperations.getOperationID());
         if(toUpdate != null){
-            this.adminList.remove(toUpdate);
-            return create(adminOperations);
+            this.repositoryList.remove(toUpdate);
+            return create(repositoryOperations);
         }
         return null;
     }
@@ -65,8 +118,8 @@ public class AdminOperationsRepoImplements implements AdminOperationsRepository 
         AdminOperations toDelete = findOperations(delete);
         if (toDelete != null)
         {
-            this.adminList.remove(toDelete);
+            this.repositoryList.remove(toDelete);
         }
 
-    }
+    }*/
 }

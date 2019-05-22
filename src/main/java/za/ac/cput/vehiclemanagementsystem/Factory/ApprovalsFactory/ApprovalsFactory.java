@@ -6,9 +6,9 @@ import java.util.Date;
 
 public class ApprovalsFactory {
 
-    public static Approvals getApproval(String vin, Date date, String details) {
+    public static Approvals getApproval(String approval, Date date, String details) {
         return new Approvals.Builder()
-                .vinNo(vin)
+                .approvalNo(approval)
                 .date(date)
                 .details(details)
                 .build();

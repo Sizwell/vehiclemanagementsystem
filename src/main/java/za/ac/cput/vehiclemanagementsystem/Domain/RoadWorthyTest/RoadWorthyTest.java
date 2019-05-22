@@ -8,6 +8,7 @@ public class RoadWorthyTest {
 
     private String vinNo;
     private String model;
+    private String testResults;
 
     public RoadWorthyTest() {
 
@@ -16,12 +17,14 @@ public class RoadWorthyTest {
     public RoadWorthyTest(Builder builder) {
         this.vinNo = builder.vinNo;
         this.model = builder.model;
+        this.testResults = builder.testResults;
     }
 
 
     public static class Builder {
         private String vinNo;
         private String model;
+        private String testResults;
 
         public Builder vinNo(String vin) {
             this.vinNo = vin;
@@ -30,6 +33,12 @@ public class RoadWorthyTest {
 
         public Builder model(String model) {
             this.model = model;
+            return this;
+        }
+
+        public Builder testResults(String results)
+        {
+            this.testResults = results;
             return this;
         }
 
@@ -54,13 +63,20 @@ public class RoadWorthyTest {
         return model;
     }
 
+    public String getTestResults()
+    {
+        return this.testResults;
+    }
+
     @Override
     public String toString() {
         return "------ Vehicle Road Worthy Test ------\n" +
-                "VIN No : " + vinNo +
-                "\nModel : '" + model + '\'';
-
+                "Vin No: '" + getVinNo() + '\'' +
+                "\nModel: '" + getModel() + '\'' +
+                "\nTest Results: '" + getTestResults() + '\'';
     }
+
+
 
     @Override
     public boolean equals(Object o) {

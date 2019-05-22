@@ -1,22 +1,23 @@
 package za.ac.cput.vehiclemanagementsystem.Repository.RoutesRepository.Implements;
 
+import org.springframework.stereotype.Repository;
 import za.ac.cput.vehiclemanagementsystem.Domain.Routes.Routes;
 import za.ac.cput.vehiclemanagementsystem.Repository.RoutesRepository.RoutesRepository;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
+@Repository
 public class RoutesRepositoryImplements implements RoutesRepository {
 
     private static RoutesRepositoryImplements routesRepo = null;
-    private Set<Routes> routesSet;
+    private Map<Integer, Routes> routesMap;
 
     private RoutesRepositoryImplements()
     {
-        this.routesSet = new HashSet<>();
+        this.routesMap = new HashMap<>();
     }
 
-    public static RoutesRepository getRoutes()
+    public static RoutesRepositoryImplements getRoutes()
     {
         if(routesRepo == null)
         {
@@ -28,28 +29,33 @@ public class RoutesRepositoryImplements implements RoutesRepository {
     @Override
     public Set<Routes> getAll()
     {
-        return this.routesSet;
+        Collection <Routes> routesCollection = this.routesMap.values();
+        Set <Routes> routesSet = new HashSet<>();
+        routesSet.addAll(routesCollection);
+        return routesSet;
     }
 
     @Override
     public Routes create(Routes routes)
     {
-        this.routesSet.add(routes);
+        this.routesMap.put(routes.getRouteNo(), routes);
         return routes;
     }
 
     @Override
     public Routes read(Integer integer) {
-        return null;
+        return this.routesMap.get(integer);
     }
 
     @Override
     public Routes update(Routes routes) {
-        return null;
+        this.routesMap.replace(routes.getRouteNo(), routes);
+        return this.routesMap.get(routes.getRouteNo());
     }
 
     @Override
-    public void delete(Integer integer) {
-
+    public void delete(Integer integer)
+    {
+        this.routesMap.remove(integer);
     }
 }

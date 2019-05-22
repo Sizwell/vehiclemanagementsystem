@@ -13,8 +13,8 @@ public class EmployeeManagementFactoryTest {
 
     @Before
     public void setUp() throws Exception {
-        empManagement = EmployeeManagementFactory.manageEmployee(213207834, "Luvuyo", "Administration");
-        empManage = EmployeeManagementFactory.manageEmployee(213207834, "Luvuyo", "Tour Guide");
+        empManagement = EmployeeManagementFactory.manageEmployee("213207834", "Luvuyo", "Administration");
+        empManage = EmployeeManagementFactory.manageEmployee("213207834", "Luvuyo", "Tour Guide");
     }
 
     @Test

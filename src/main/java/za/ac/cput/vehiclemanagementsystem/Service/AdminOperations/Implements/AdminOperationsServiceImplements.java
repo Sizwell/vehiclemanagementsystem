@@ -1,5 +1,7 @@
 package za.ac.cput.vehiclemanagementsystem.Service.AdminOperations.Implements;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import za.ac.cput.vehiclemanagementsystem.Domain.AdminOperations.AdminOperations;
 import za.ac.cput.vehiclemanagementsystem.Repository.AdminOperationsRepository.AdminOperationsRepository;
@@ -10,7 +12,9 @@ import java.util.List;
 @Service
 public class AdminOperationsServiceImplements implements AdminOperationsService
 {
+//@Autowired
 
+//@Qualifier("InMemory")
     private static AdminOperationsServiceImplements service = null;
     private AdminOperationsRepository repository;
 
@@ -19,7 +23,7 @@ public class AdminOperationsServiceImplements implements AdminOperationsService
         this.repository = AdminOperationsRepoImplements.getRepository();
     }
 
-    public static AdminOperationsServiceImplements getAdminOperations()
+    public static AdminOperationsServiceImplements getService()
     {
         if (service == null)
         {
