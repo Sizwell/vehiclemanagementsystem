@@ -14,9 +14,9 @@ import java.util.List;
 public class TackerServiceImpl implements TrackerService {
 
     @Autowired
-    @Qualifier("InMemory")
+  //  @Qualifier("InMemory")
 
-    private static TackerServiceImpl service = null;
+    private TackerServiceImpl service = null;
     private TrackerRepository repository;
 
     private TackerServiceImpl()
@@ -29,7 +29,7 @@ public class TackerServiceImpl implements TrackerService {
         return this.repository.getAll();
     }
 
-    public static TackerServiceImpl getService()
+    public TackerServiceImpl getService()
     {
         if (service == null)
         {

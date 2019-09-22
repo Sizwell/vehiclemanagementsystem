@@ -15,9 +15,9 @@ public class EmployeeManagementServiceImpl implements EmployeeManagementService 
 
 
     @Autowired
-    @Qualifier("InMemory")
+  //  @Qualifier("InMemory")
 
-    private static EmployeeManagementServiceImpl service = null;
+    private EmployeeManagementServiceImpl service = null;
     private EmployeeManagementRepository repository;
 
     private EmployeeManagementServiceImpl()
@@ -25,7 +25,7 @@ public class EmployeeManagementServiceImpl implements EmployeeManagementService 
         this.repository = EmployeeManagementRepoImplement.getEmployeesRepository();
     }
 
-    private static EmployeeManagementServiceImpl getService()
+    private EmployeeManagementServiceImpl getService()
     {
         if (service == null)
         {

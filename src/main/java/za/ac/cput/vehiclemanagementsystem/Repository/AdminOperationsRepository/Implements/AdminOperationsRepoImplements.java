@@ -8,7 +8,7 @@ import za.ac.cput.vehiclemanagementsystem.Repository.AdminOperationsRepository.A
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository()
+@Repository
 public class AdminOperationsRepoImplements implements AdminOperationsRepository {
 
     private static AdminOperationsRepoImplements repository = null;

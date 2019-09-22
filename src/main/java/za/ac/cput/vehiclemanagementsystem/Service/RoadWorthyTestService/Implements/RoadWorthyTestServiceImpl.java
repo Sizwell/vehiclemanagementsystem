@@ -14,9 +14,9 @@ import java.util.List;
 public class RoadWorthyTestServiceImpl implements RoadWorthyTestService {
 
     @Autowired
-    @Qualifier("InMemory")
+    //@Qualifier("InMemory")
 
-    private static RoadWorthyTestServiceImpl service = null;
+    private RoadWorthyTestServiceImpl service = null;
     private RoadWorthyTestRepository repository;
 
     private RoadWorthyTestServiceImpl()
@@ -24,7 +24,7 @@ public class RoadWorthyTestServiceImpl implements RoadWorthyTestService {
         this.repository = RoadWorthyTestRepositoryImplements.getRepository();
     }
 
-    public static RoadWorthyTestServiceImpl getService()
+    public RoadWorthyTestServiceImpl getService()
     {
         if (service == null)
         {

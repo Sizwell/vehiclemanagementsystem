@@ -14,9 +14,9 @@ import java.util.List;
 public class VehicleServicesImpl implements VehicleServices {
 
     @Autowired
-    @Qualifier("InMemory")
+   // @Qualifier("InMemory")
 
-    private static VehicleServicesImpl services = null;
+    private VehicleServicesImpl services = null;
     private VehicleServiceRepository repository;
 
     private VehicleServicesImpl()
@@ -30,7 +30,7 @@ public class VehicleServicesImpl implements VehicleServices {
         return this.repository.getAll();
     }
 
-    public static VehicleServicesImpl getServices()
+    public VehicleServicesImpl getServices()
     {
         if (services == null)
         {

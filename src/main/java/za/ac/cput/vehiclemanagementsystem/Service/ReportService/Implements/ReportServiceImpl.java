@@ -11,7 +11,7 @@ import java.util.Set;
 @Service
 public class ReportServiceImpl implements ReportService {
 
-    private static ReportServiceImpl service = null;
+    private ReportServiceImpl service = null;
     private ReportRepository repository;
 
     private ReportServiceImpl()
@@ -19,7 +19,7 @@ public class ReportServiceImpl implements ReportService {
         this.repository = ReportRepositoryImplement.getRepository();
     }
 
-    public static ReportServiceImpl getService()
+    public ReportServiceImpl getService()
     {
         if (service == null)
         {

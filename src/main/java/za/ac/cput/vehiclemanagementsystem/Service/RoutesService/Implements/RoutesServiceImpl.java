@@ -12,7 +12,7 @@ import java.util.Set;
 public class RoutesServiceImpl implements RoutesService {
 
 
-    private static RoutesServiceImpl service = null;
+    private RoutesServiceImpl service = null;
     private RoutesRepository repository;
 
     private RoutesServiceImpl()
@@ -20,7 +20,7 @@ public class RoutesServiceImpl implements RoutesService {
         this.repository = RoutesRepositoryImplements.getRoutes();
     }
 
-    public static RoutesServiceImpl getService()
+    public RoutesServiceImpl getService()
     {
         if (service == null)
         {

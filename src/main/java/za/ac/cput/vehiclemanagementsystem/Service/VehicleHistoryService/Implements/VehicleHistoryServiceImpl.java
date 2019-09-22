@@ -14,12 +14,12 @@ import java.util.List;
 public class VehicleHistoryServiceImpl implements VehicleHistoryService {
 
     @Autowired
-    @Qualifier("InMemory")
+    //@Qualifier("InMemory")
 
-    private static VehicleHistoryServiceImpl service = null;
+    private VehicleHistoryServiceImpl service = null;
     private VehicleHistoryRepository repository;
 
-    public static VehicleHistoryServiceImpl getService()
+    public VehicleHistoryServiceImpl getService()
     {
         if (service == null)
         {

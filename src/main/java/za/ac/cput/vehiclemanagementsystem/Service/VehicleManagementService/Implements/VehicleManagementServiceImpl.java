@@ -14,9 +14,9 @@ import java.util.List;
 public class VehicleManagementServiceImpl implements VehicleManagementService {
 
     @Autowired
-    @Qualifier("InMemory")
+   //@Qualifier("InMemory")
 
-    private static VehicleManagementServiceImpl service = null;
+    private VehicleManagementServiceImpl service = null;
     private VehicleManagementRepo repo;
 
     private VehicleManagementServiceImpl()

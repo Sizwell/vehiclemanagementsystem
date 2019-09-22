@@ -12,7 +12,7 @@ import java.util.Set;
 public class TourServiceImpl implements TourService {
 
 
-    private static TourServiceImpl service = null;
+    private TourServiceImpl service = null;
     private TourRepository repository;
 
     private TourServiceImpl()
@@ -20,7 +20,7 @@ public class TourServiceImpl implements TourService {
         this.repository = TourRepositoryImplements.getRepository();
     }
 
-    public static TourServiceImpl getService()
+    public TourServiceImpl getService()
     {
         if (service == null)
         {

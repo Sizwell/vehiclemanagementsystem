@@ -10,7 +10,7 @@ import java.util.Set;
 @Service
 public class LicenseDiskServiceImpl implements LicenseDiskService {
 
-    private static LicenseDiskServiceImpl service = null;
+    private LicenseDiskServiceImpl service = null;
     private LicenseDiskRepository repository;
 
     private LicenseDiskServiceImpl()
@@ -18,7 +18,7 @@ public class LicenseDiskServiceImpl implements LicenseDiskService {
         this.repository = LicenseDiskRepositoryImplements.getRepository();
     }
 
-    public static LicenseDiskServiceImpl getService()
+    public LicenseDiskServiceImpl getService()
     {
         if (service == null)
         {

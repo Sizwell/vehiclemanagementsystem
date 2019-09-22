@@ -10,7 +10,7 @@ import java.util.Set;
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
-    private static EmployeeServiceImpl service = null;
+    private EmployeeServiceImpl service = null;
     private EmployeeRepository repository;
 
     private EmployeeServiceImpl()
@@ -18,7 +18,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         this.repository = EmployeeRepositoryImplement.getEmployee();
     }
 
-    public static EmployeeServiceImpl getService()
+    public EmployeeServiceImpl getService()
     {
         if (service == null)
         {

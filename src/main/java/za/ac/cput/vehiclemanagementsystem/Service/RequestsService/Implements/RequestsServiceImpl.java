@@ -15,9 +15,9 @@ import java.util.List;
 @Service
 public class RequestsServiceImpl implements RequestsService {
     @Autowired
-    @Qualifier("InMemory")
+  //  @Qualifier("InMemory")
 
-    private static RequestsServiceImpl service = null;
+    private RequestsServiceImpl service = null;
     private RequestsRepository repository;
 
     private RequestsServiceImpl()
@@ -25,7 +25,7 @@ public class RequestsServiceImpl implements RequestsService {
         this.repository = RequestsRepositoryImplements.getRequests();
     }
 
-    public static RequestsServiceImpl getService()
+    public RequestsServiceImpl getService()
     {
         if (service == null)
         {

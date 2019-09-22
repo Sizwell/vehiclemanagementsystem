@@ -15,9 +15,9 @@ import java.util.List;
 public class LoginServiceImplements implements LoginService {
 
     @Autowired
-    @Qualifier("InMemory")
+   // @Qualifier("InMemory")
     
-    private static LoginServiceImplements loginService = null;
+    private LoginServiceImplements loginService = null;
     private LoginRepository loginRepository;
     
     private LoginServiceImplements()
@@ -25,7 +25,7 @@ public class LoginServiceImplements implements LoginService {
         this.loginRepository = LoginRepositoryImplement.getCredentials();
     }
     
-    public static LoginServiceImplements getLoginService()
+    public LoginServiceImplements getLoginService()
     {
         if(loginService == null)
         {

@@ -11,7 +11,7 @@ import java.util.Set;
 @Service
 public class PositionServiceImpl implements PositionService {
 
-    private static PositionServiceImpl service = null;
+    private PositionServiceImpl service = null;
     private PositionRepository repository;
 
     private PositionServiceImpl()
@@ -19,7 +19,7 @@ public class PositionServiceImpl implements PositionService {
         this.repository = PositionRepositoryImplement.getPosition();
     }
 
-    public static PositionServiceImpl getService()
+    public PositionServiceImpl getService()
     {
         if (service == null)
         {

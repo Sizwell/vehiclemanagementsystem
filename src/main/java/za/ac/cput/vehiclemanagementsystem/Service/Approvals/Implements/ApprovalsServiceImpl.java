@@ -14,9 +14,9 @@ import java.util.List;
 public class ApprovalsServiceImpl implements ApprovalsService {
 
     @Autowired
-    @Qualifier("InMemory")
+  //  @Qualifier("InMemory")
 
-    private static ApprovalsServiceImpl service = null;
+    private ApprovalsServiceImpl service = null;
     private ApprovalsRepository repository;
 
     private ApprovalsServiceImpl()
@@ -24,7 +24,7 @@ public class ApprovalsServiceImpl implements ApprovalsService {
         this.repository = ApprovalsRepositoryImplements.getApprovals();
     }
 
-    public static ApprovalsServiceImpl getService()
+    public ApprovalsServiceImpl getService()
     {
         if(service == null)
         {

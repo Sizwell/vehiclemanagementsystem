@@ -14,9 +14,9 @@ import java.util.List;
 public class TrafficViolationsServiceImpl implements TrafficViolationsService {
 
     @Autowired
-    @Qualifier("InMemory")
+   // @Qualifier("InMemory")
 
-    private static TrafficViolationsServiceImpl service = null;
+    private TrafficViolationsServiceImpl service = null;
     private TrafficViolationsRepository repository;
 
     private TrafficViolationsServiceImpl()
@@ -24,7 +24,7 @@ public class TrafficViolationsServiceImpl implements TrafficViolationsService {
         this.repository = TrafficViolationsRepositoryImplements.getViolation();
     }
 
-    public static TrafficViolationsServiceImpl getService()
+    public TrafficViolationsServiceImpl getService()
     {
         if (service == null)
         {

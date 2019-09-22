@@ -10,12 +10,13 @@ import za.ac.cput.vehiclemanagementsystem.Service.AdminOperations.AdminOperation
 
 import java.util.List;
 @Service
+
 public class AdminOperationsServiceImplements implements AdminOperationsService
 {
-//@Autowired
+@Autowired
 
 //@Qualifier("InMemory")
-    private static AdminOperationsServiceImplements service = null;
+    private AdminOperationsServiceImplements service = null;
     private AdminOperationsRepository repository;
 
     private AdminOperationsServiceImplements()
@@ -23,7 +24,7 @@ public class AdminOperationsServiceImplements implements AdminOperationsService
         this.repository = AdminOperationsRepoImplements.getRepository();
     }
 
-    public static AdminOperationsServiceImplements getService()
+    public  AdminOperationsServiceImplements getService()
     {
         if (service == null)
         {
