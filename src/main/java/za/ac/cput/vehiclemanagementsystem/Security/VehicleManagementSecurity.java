@@ -23,7 +23,7 @@ public class VehicleManagementSecurity extends WebSecurityConfigurerAdapter
     {
         auth
                 .inMemoryAuthentication()
-                .withUser("user1")
+                .withUser("user")
                 .password(encoder().encode("password"))
                 .roles(USER_ROLE)
                 .and()

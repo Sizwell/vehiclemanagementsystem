@@ -3,28 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5222083b-b4c0-4ea0-b701-e93f6fbc0cb7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Controller/AdminOperationsController/AdminOperationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Controller/AdminOperationsController/AdminOperationsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Controller/IController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Controller/IController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/AdminOperations/AdminOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Domain/AdminOperations/AdminOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/AdminOperationsRepository/AdminOperationsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/AdminOperationsRepository/AdminOperationsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/AdminOperationsRepository/Implements/AdminOperationsRepoImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Repository/AdminOperationsRepository/Implements/AdminOperationsRepoImplements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Security/VehicleManagementSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Security/VehicleManagementSecurity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/AdminOperationsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/AdminOperationsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/Implements/AdminOperationsServiceImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/Implements/AdminOperationsServiceImplements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Controller/AdminOperationsController/AdminOperationsControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Controller/AdminOperationsController/AdminOperationsControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/Implements/AdminOperationsVehicleServiceImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/Implements/AdminOperationsVehicleServiceImplementsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/AdminOperationsRepository/Implements/AdminOperationsRepoImplementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/vehiclemanagementsystem/repository/AdminOperationsRepository/Implements/AdminOperationsRepoImplementsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Controller/AdminOperationsController/AdminOperationsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Controller/AdminOperationsController/AdminOperationsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Controller/IController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Controller/IController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/AdminOperations/AdminOperations$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/AdminOperations/AdminOperations$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/AdminOperations/AdminOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Domain/AdminOperations/AdminOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Repository/AdminOperationsRepository/AdminOperationsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Repository/AdminOperationsRepository/AdminOperationsRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Repository/AdminOperationsRepository/Implements/AdminOperationsRepoImplements.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/AdminOperationsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/AdminOperationsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/Implements/AdminOperationsServiceImplements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/Implements/AdminOperationsServiceImplements.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/Implements/AdminOperationsVehicleServiceImplementsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/za/ac/cput/vehiclemanagementsystem/Service/AdminOperations/Implements/AdminOperationsVehicleServiceImplementsTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -361,6 +339,7 @@
       <workItem from="1572909623152" duration="1559000" />
       <workItem from="1572949394473" duration="1269000" />
       <workItem from="1574326845677" duration="450000" />
+      <workItem from="1576674313660" duration="1013000" />
     </task>
     <task id="LOCAL-00001" summary="First commit for Vehicle Management System (VMS)">
       <created>1554893283617</created>
@@ -467,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569112609006</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Updated Vehicle Management (VMS) updates...&#10;Updated Vehicle Management (VMS) Updated Repository and Test Packages...&#10;Added Position Domain&#10;Completed First Service (Login Service) with tests...&#10;Completed Repository Tests&#10;Completed Service, with their tests... but not ready for Presentation and Submission!!!&#10;Completed Security and Resolved error that occurred when running by removing @GetMapping">
+      <created>1576674610121</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1576674610121</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
