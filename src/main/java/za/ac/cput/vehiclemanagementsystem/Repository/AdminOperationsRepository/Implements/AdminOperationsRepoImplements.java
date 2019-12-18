@@ -7,7 +7,7 @@ import za.ac.cput.vehiclemanagementsystem.Repository.AdminOperationsRepository.A
 
 import java.util.ArrayList;
 import java.util.List;
-
+/*
 @Repository
 public class AdminOperationsRepoImplements implements AdminOperationsRepository {
 
@@ -60,66 +60,4 @@ public class AdminOperationsRepoImplements implements AdminOperationsRepository 
 
     }
 
-
-
-/*    private static AdminOperationsRepoImplements repository = null;
-    private List<AdminOperations> repositoryList;
-
-    private AdminOperationsRepoImplements() {
-        this.repositoryList = new ArrayList<>();
-    }
-
-    public AdminOperations findOperations(String operationNo)
-    {
-        return this.repositoryList.stream().filter(repositoryOperations -> repositoryOperations.getOperation()
-                .trim().equals(operationNo))
-                .findAny()
-                .orElse(null);
-   }
-
-    public static AdminOperationsRepoImplements getRepository() {
-        if (repository == null) {
-            repository = new AdminOperationsRepoImplements();
-        }
-        return repository;
-    }
-
-    @Override
-    public List<AdminOperations> findAll() {
-        return this.repositoryList;
-    }
-
-    @Override
-    public AdminOperations create(AdminOperations repositoryOperations) {
-        this.repositoryList.add(repositoryOperations);
-        return repositoryOperations;
-    }
-
-    @Override
-    public AdminOperations read(String read) {
-        AdminOperations repositoryOperations = findOperations(read);
-        return repositoryOperations;
-    }
-
-    @Override
-    public AdminOperations update(AdminOperations repositoryOperations)
-    {
-        AdminOperations toUpdate = findOperations(repositoryOperations.getOperationID());
-        if(toUpdate != null){
-            this.repositoryList.remove(toUpdate);
-            return create(repositoryOperations);
-        }
-        return null;
-    }
-
-    @Override
-    public void delete(String delete)
-    {
-        AdminOperations toDelete = findOperations(delete);
-        if (toDelete != null)
-        {
-            this.repositoryList.remove(toDelete);
-        }
-
-    }*/
-}
+} */

@@ -2,10 +2,18 @@ package za.ac.cput.vehiclemanagementsystem.Domain.AdminOperations;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
-@EntityScan
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+@Entity
 public class AdminOperations {
 
+    @Id
     private String operationID;
+    @Column(name = "Operation")
+   // @OneToMany()
     private String operation;
    /* private String designation;
     private String destinationRoute;*/

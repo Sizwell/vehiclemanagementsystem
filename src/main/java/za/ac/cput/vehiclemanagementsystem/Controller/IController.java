@@ -18,7 +18,7 @@ public class IController
         return "Home Run!!!";
     }
 
-    @RequestMapping(value = {"/", "/vehicles"})
+    @RequestMapping(value = {"/", "/vehicles/create"})
     public ResponseEntity <String> home()
     {
         return new ResponseEntity<>("Welcome to the Cape Vehicle Management App!", HttpStatus.OK);

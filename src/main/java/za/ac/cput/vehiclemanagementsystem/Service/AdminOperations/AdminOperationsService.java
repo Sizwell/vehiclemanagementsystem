@@ -7,5 +7,8 @@ import java.util.List;
 
 public interface AdminOperationsService extends ControlService <AdminOperations, String>
 {
-    List<AdminOperations> findAll();
+   // List<AdminOperations> findAll();
+    AdminOperations retrieveByDesc(String operationDesc);
+    List<AdminOperations> getAll();
+
 }

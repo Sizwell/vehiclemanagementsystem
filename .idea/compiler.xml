@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ADP Year Project" />
-        <module name="vehiclemanagementsystem" />
         <module name="vehicleManagementSystem" />
+        <module name="vehiclemanagementsystem" />
       </profile>
     </annotationProcessing>
   </component>
