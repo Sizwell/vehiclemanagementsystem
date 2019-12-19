@@ -5,4 +5,11 @@ A group of tourists can request a bus for their tour, which will then require ap
 The System will also cater for individuals who will be moving from point A to B by providing cabs. 
 The System will consist of Admin Operationswhich will perform functions such as adding, updating,
 deleting and also viewing Employees and company fleet 
+
+This is an in-progress project of a Vehicle Management System for a Tour Company. It will manage company fleet of tour Vehicles, Drivers and Routes to and from touris destinations
+
+*It makes use of the CRUD operations
+*Maven project with Springboot framework
+*Micro services
+
 ![](images/Main.png)
